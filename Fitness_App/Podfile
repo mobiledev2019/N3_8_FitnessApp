@@ -10,8 +10,19 @@ target 'Fitness_App' do
   #swiftjson
   pod 'SwiftyJSON', '~> 4.0'
   pod 'AlamofireSwiftyJSON'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod "MBCircularProgressBar"
   pod 'Kingfisher', '~> 4.0'
   pod 'CryptoSwift'
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'GoogleSignIn'
+  pod 'Charts'
 
 end

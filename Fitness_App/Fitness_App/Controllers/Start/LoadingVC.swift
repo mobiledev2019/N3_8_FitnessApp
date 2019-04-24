@@ -12,6 +12,8 @@ class LoadingVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        VCService.present(type: ExerciseVC.self)
+        VCService.push(type: LoginVC.self, fromController: self, prepare: nil, animated: false, completion: nil)
 //        !SharedData.isUserAppFirst ? VCService.push(type: TutorialVC.self, fromController: self, prepare: nil, animated: false, completion: nil) : VCService.push(type: LoginVC.self, fromController: self, prepare: nil, animated: false, completion: nil)
         
     }
