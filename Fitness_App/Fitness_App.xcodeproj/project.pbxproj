@@ -11,7 +11,6 @@
 		9633C9B4224B250F00448D5B /* DoExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9B2224B250F00448D5B /* DoExerciseCell.swift */; };
 		9633C9B5224B250F00448D5B /* DoExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9B3224B250F00448D5B /* DoExerciseCell.xib */; };
 		9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9B6224B2AC300448D5B /* Exercise.swift */; };
-		9633C9B9224B2DBF00448D5B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9B8224B2DBF00448D5B /* video.mp4 */; };
 		9633C9BB224B39B100448D5B /* PlayerViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9BA224B39B100448D5B /* PlayerViewClass.swift */; };
 		9633C9BF224B60C000448D5B /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9BD224B60C000448D5B /* ExerciseCell.swift */; };
 		9633C9C0224B60C000448D5B /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9BE224B60C000448D5B /* ExerciseCell.xib */; };
@@ -101,7 +100,6 @@
 		9633C9B2224B250F00448D5B /* DoExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExerciseCell.swift; sourceTree = "<group>"; };
 		9633C9B3224B250F00448D5B /* DoExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoExerciseCell.xib; sourceTree = "<group>"; };
 		9633C9B6224B2AC300448D5B /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		9633C9B8224B2DBF00448D5B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		9633C9BA224B39B100448D5B /* PlayerViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewClass.swift; sourceTree = "<group>"; };
 		9633C9BD224B60C000448D5B /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		9633C9BE224B60C000448D5B /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 		9663C030224491F8001DA7B1 = {
 			isa = PBXGroup;
 			children = (
-				9633C9B8224B2DBF00448D5B /* video.mp4 */,
 				9663C03B224491F8001DA7B1 /* Fitness_App */,
 				9663C03A224491F8001DA7B1 /* Products */,
 				5C774F0439C2949DB387C8FB /* Pods */,
@@ -695,7 +692,6 @@
 				969F70882244C78300D83264 /* LoadingVC.xib in Resources */,
 				96973890225463430064A432 /* bent_elbow_shoulder_circle_2.png in Resources */,
 				9663C044224491FA001DA7B1 /* Assets.xcassets in Resources */,
-				9633C9B9224B2DBF00448D5B /* video.mp4 in Resources */,
 				969F706C2244C61E00D83264 /* TextPicker.xib in Resources */,
 				969F706B2244C61E00D83264 /* DateTimePicker.xib in Resources */,
 				9633C9B5224B250F00448D5B /* DoExerciseCell.xib in Resources */,
