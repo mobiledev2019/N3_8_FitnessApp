@@ -25,7 +25,7 @@ struct Exercises : Codable {
 		case id = "id"
 		case time_span = "time_span"
 	}
-
+    
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
 		get_ready = try values.decodeIfPresent(Int.self, forKey: .get_ready)

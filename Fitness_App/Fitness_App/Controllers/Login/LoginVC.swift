@@ -54,7 +54,7 @@ class LoginVC: BaseVC , GIDSignInUIDelegate{
             if let _ = error {
                 return
             }
-            VCService.push(type: ExerciseVC.self)
+            VCService.push(type: HomeVC.self)
         }
     }
     private func signIntoFirebase() {
@@ -65,7 +65,7 @@ class LoginVC: BaseVC , GIDSignInUIDelegate{
             if let _ = error {
                 return
             }
-            VCService.push(type: ExerciseVC.self)
+            VCService.push(type: HomeVC.self)
         }
     
     
