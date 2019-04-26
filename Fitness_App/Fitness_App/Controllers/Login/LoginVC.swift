@@ -45,7 +45,8 @@ class LoginVC: BaseVC , GIDSignInUIDelegate{
     }
     
     @IBAction func registerAction(_ sender: Any) {
-        VCService.push(type: RegisterVC.self)
+//        VCService.push(type: RegisterVC.self)
+        VCService.present(type: RegisterVC.self)
     }
     
     @IBAction func singIn(_ sender: Any) {
@@ -54,7 +55,7 @@ class LoginVC: BaseVC , GIDSignInUIDelegate{
             if let _ = error {
                 return
             }
-            VCService.push(type: HomeVC.self)
+            VCService.present(type: HomeVC.self)
         }
     }
     private func signIntoFirebase() {
@@ -65,7 +66,7 @@ class LoginVC: BaseVC , GIDSignInUIDelegate{
             if let _ = error {
                 return
             }
-            VCService.push(type: HomeVC.self)
+            VCService.present(type: HomeVC.self)
         }
     
     

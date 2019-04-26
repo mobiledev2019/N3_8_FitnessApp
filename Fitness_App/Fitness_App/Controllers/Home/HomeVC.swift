@@ -45,7 +45,9 @@ class HomeVC: BaseVC {
     //MARK: - actions
     @IBAction func addExercisesAction(_ sender: UIButton) {
         // to do
-        VCService.push(type: AddExercisesVc.self)
+        print("action button")
+        VCService.present(type: AddExercisesVc.self)
+//        VCService.push(type: AddExercisesVc.self)
     }
 }
 
@@ -63,7 +65,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        VCService.push(type: ExerciseVC.self)
+        VCService.present(type: ExerciseVC.self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

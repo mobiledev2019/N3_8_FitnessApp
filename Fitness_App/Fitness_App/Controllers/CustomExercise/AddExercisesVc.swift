@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddExercisesVc: UIViewController {
+class AddExercisesVc: BaseVC {
 
     //MARK: - Outlets
     @IBOutlet weak var tfName: BorderTextField!
@@ -28,17 +28,20 @@ class AddExercisesVc: UIViewController {
     
     //MARK: setup
     func setupData() {
+        print("setupdata")
         do {
             // data we are getting from network request
+            print("setupdata")
             let decoder = JSONDecoder()
             let json = Json.workoutJson
             let data = json.data(using: .utf8)
             listWorkOut = try decoder.decode([Workout].self, from: data!)
+            print("list workout: \(listWorkOut.count)")
             
             let jsonex = Json.exerciseJson
             let data2 = jsonex.data(using: .utf8)
             listExercise = try decoder.decode([ExerciseDetail].self, from: data2!)
-            print("reponse: \(listExercise[0].name)") //Output - EMT
+            print("list exercise: \(listExercise.count)")
         } catch { print(error) }
     }
 
@@ -51,6 +54,7 @@ class AddExercisesVc: UIViewController {
 
     //MARK: - Actions
     @IBAction func backAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func SaveAction(_ sender: UIButton) {

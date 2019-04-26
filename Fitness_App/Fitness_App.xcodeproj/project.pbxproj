@@ -105,6 +105,7 @@
 		96D5747A22711B7F00228AD0 /* ItemExerciseDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D5747822711B7F00228AD0 /* ItemExerciseDetailCell.xib */; };
 		96D5747F227121B900228AD0 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5747D227121B900228AD0 /* HeaderCell.swift */; };
 		96D57480227121B900228AD0 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D5747E227121B900228AD0 /* HeaderCell.xib */; };
+		96D57482227150FE00228AD0 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D57481227150FE00228AD0 /* Welcome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -207,6 +208,7 @@
 		96D5747822711B7F00228AD0 /* ItemExerciseDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemExerciseDetailCell.xib; sourceTree = "<group>"; };
 		96D5747D227121B900228AD0 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		96D5747E227121B900228AD0 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		96D57481227150FE00228AD0 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		D63B276F7E609B0B96435B2C /* Pods-Fitness_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fitness_App/Pods-Fitness_App.release.xcconfig"; sourceTree = "<group>"; };
 		DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitness_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50E53F3B60895225092BDC7 /* Pods-Fitness_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fitness_App/Pods-Fitness_App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -577,6 +579,7 @@
 				96D574442270B97200228AD0 /* Workout.swift */,
 				9633C9B6224B2AC300448D5B /* Exercise.swift */,
 				96D574662270FE6D00228AD0 /* ExerciseDetail.swift */,
+				96D57481227150FE00228AD0 /* Welcome.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -927,6 +930,7 @@
 				96D574452270B97200228AD0 /* Workout.swift in Sources */,
 				969F70502244C61E00D83264 /* BaseTableView.swift in Sources */,
 				969F70702244C61E00D83264 /* Utils.swift in Sources */,
+				96D57482227150FE00228AD0 /* Welcome.swift in Sources */,
 				969F70632244C61E00D83264 /* UITextView+Extension.swift in Sources */,
 				969F70832244C73F00D83264 /* BaseNavigationVC.swift in Sources */,
 				969F707A2244C63B00D83264 /* SystemBoots.swift in Sources */,

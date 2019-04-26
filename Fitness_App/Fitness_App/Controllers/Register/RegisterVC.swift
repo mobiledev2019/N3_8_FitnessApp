@@ -21,6 +21,7 @@ class RegisterVC: UIViewController {
     
 
     @IBAction func backAction(_ sender: Any) {
+//        VCService.pop()
         dismiss(animated: true, completion: nil)
     }
     @IBAction func registerAction(_ sender: Any) {
@@ -37,6 +38,7 @@ class RegisterVC: UIViewController {
             }
             DB.saveUser(uid: uid, name: name, email: email)
             VCService.present(type: HomeVC.self)
+//            VCService.pop()
             
         }
         

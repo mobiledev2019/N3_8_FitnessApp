@@ -31,7 +31,7 @@
                     </constraints>
                     <state key="normal" title="Button" image="ic_add"/>
                     <connections>
-                        <action selector="addExercisesAction:" destination="-1" eventType="touchUpInside" id="rNx-P8-tlj"/>
+                        <action selector="addExercisesAction:" destination="-1" eventType="touchUpInside" id="AqO-AS-nI9"/>
                     </connections>
                 </button>
             </subviews>

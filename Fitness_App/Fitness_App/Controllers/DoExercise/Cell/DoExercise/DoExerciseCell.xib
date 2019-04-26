@@ -240,6 +240,7 @@
             <color key="backgroundColor" red="0.23529411759999999" green="0.70196078429999997" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnBack" destination="6N9-QV-NlL" id="Coc-U5-gL3"/>
                 <outlet property="btnDescription" destination="QFk-LC-5g3" id="ucB-5s-46P"/>
                 <outlet property="btnDoneDes" destination="VgH-Tv-19w" id="E8l-Zg-GFU"/>
                 <outlet property="btnNext" destination="SDs-fX-D1V" id="s9a-ER-0tJ"/>

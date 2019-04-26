@@ -26,6 +26,7 @@ class DoExerciseCell: UITableViewCell {
     @IBOutlet weak var btnPrevious: UIButton!
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnBack: UIButton!
     
     // MARK: - Variables
     var isPlaying = false
@@ -47,6 +48,7 @@ class DoExerciseCell: UITableViewCell {
         viewAdjustPlay.isHidden = true
         viewDescription.isHidden = true
         setUpFirstUI()
+        btnBack.addTarget(self, action: #selector(backAction), for: .touchUpInside)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -99,6 +101,11 @@ class DoExerciseCell: UITableViewCell {
     }
     
     // MARK: - actions
+    @objc
+    func backAction() {
+//        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func descriptionAction(_ sender: UIButton) {
         switch sender {
         case btnDescription:
@@ -203,6 +210,7 @@ class DoExerciseCell: UITableViewCell {
                     self.circularProgressBar.value = CGFloat(integerLiteral: self.total)
                     print("count down progress bar")
                 })
+                
                 self.animate(imageView: self.imgGuide, images: self.listImage)
             }
         }
