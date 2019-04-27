@@ -12,7 +12,7 @@ class ItemExerciseDetailCell: UITableViewCell {
 
     //MARK: - Outlets
     @IBOutlet weak var img: UIImageView!
-    @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var tfNameEx: UITextView!
     @IBOutlet weak var btnChoose: UIButton!
     
     //MARK: - variables
@@ -33,7 +33,7 @@ class ItemExerciseDetailCell: UITableViewCell {
         btnChoose.setImage(UIImage(named: "ic_add_small"), for: .normal)
     }
     func setup(ex: ExerciseDetail) {
-        lbName.text = ex.name
+        tfNameEx.text = ex.name
         btnChoose.setImage(UIImage(named: "ic_add_small"), for: .normal)
     }
     

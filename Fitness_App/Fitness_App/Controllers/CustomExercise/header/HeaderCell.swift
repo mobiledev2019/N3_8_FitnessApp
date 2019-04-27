@@ -10,6 +10,9 @@ import UIKit
 
 class HeaderCell: UITableViewCell {
 
+    @IBOutlet weak var imgHeader: UIImageView!
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbNumberEx: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +22,12 @@ class HeaderCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    //MARK: - setup
+    func setUpCell(workout: Workout) {
+        lbTitle.text = workout.name
+        lbNumberEx.text = "\(workout.exercises?.count)"
     }
     
 }

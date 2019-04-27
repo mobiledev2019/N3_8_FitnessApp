@@ -38,7 +38,7 @@ class AddExercisesVc: BaseVC {
             listWorkOut = try decoder.decode([Workout].self, from: data!)
             print("list workout: \(listWorkOut.count)")
             
-            let jsonex = Json.exerciseJson
+            let jsonex = Json.exJson
             let data2 = jsonex.data(using: .utf8)
             listExercise = try decoder.decode([ExerciseDetail].self, from: data2!)
             print("list exercise: \(listExercise.count)")
@@ -96,6 +96,7 @@ extension AddExercisesVc: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: HeaderCell.self) {
+            cell.setUpCell(workout: listWorkOut[section])
             return cell
         }
         return UITableViewCell()

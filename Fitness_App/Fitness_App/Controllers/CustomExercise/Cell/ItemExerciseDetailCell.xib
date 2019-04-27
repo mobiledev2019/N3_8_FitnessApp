@@ -21,6 +21,12 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9e-oe-oXJ" customClass="RoundedView" customModule="Fitness_App" customModuleProvider="target">
                         <rect key="frame" x="10" y="0.0" width="300" height="58.5"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Bai tap the duc" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQg-ot-yjo">
+                                <rect key="frame" x="103.5" y="10" width="143" height="38.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivA-IY-abL">
                                 <rect key="frame" x="246.5" y="5" width="48.5" height="48.5"/>
                                 <constraints>
@@ -31,14 +37,8 @@
                                     <action selector="ChooseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0B5-2Z-pdQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bai the duc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-0J-9zP">
-                                <rect key="frame" x="133.5" y="19" width="85.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clapping_over_head_2" translatesAutoresizingMaskIntoConstraints="NO" id="93P-1E-Bxg">
-                                <rect key="frame" x="80" y="10" width="38.5" height="38.5"/>
+                                <rect key="frame" x="60" y="10" width="38.5" height="38.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="93P-1E-Bxg" secondAttribute="height" id="GLC-zb-G5d"/>
                                 </constraints>
@@ -46,14 +46,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TnV-0J-9zP" firstAttribute="leading" secondItem="93P-1E-Bxg" secondAttribute="trailing" constant="15" id="DjR-YI-KeF"/>
+                            <constraint firstItem="ZQg-ot-yjo" firstAttribute="leading" secondItem="93P-1E-Bxg" secondAttribute="trailing" constant="5" id="110-IT-GzJ"/>
+                            <constraint firstItem="ZQg-ot-yjo" firstAttribute="top" secondItem="U9e-oe-oXJ" secondAttribute="top" constant="10" id="1E6-tF-6AA"/>
+                            <constraint firstItem="ivA-IY-abL" firstAttribute="leading" secondItem="ZQg-ot-yjo" secondAttribute="trailing" id="1MG-c4-oOK"/>
                             <constraint firstAttribute="bottom" secondItem="ivA-IY-abL" secondAttribute="bottom" constant="5" id="FqP-R8-vKt"/>
                             <constraint firstItem="93P-1E-Bxg" firstAttribute="top" secondItem="U9e-oe-oXJ" secondAttribute="top" constant="10" id="M39-Uc-u6r"/>
+                            <constraint firstItem="ZQg-ot-yjo" firstAttribute="centerY" secondItem="U9e-oe-oXJ" secondAttribute="centerY" id="YYx-rq-grZ"/>
                             <constraint firstAttribute="bottom" secondItem="93P-1E-Bxg" secondAttribute="bottom" constant="10" id="m9R-F8-07N"/>
-                            <constraint firstItem="93P-1E-Bxg" firstAttribute="leading" secondItem="U9e-oe-oXJ" secondAttribute="leading" constant="80" id="oMz-2B-acK"/>
+                            <constraint firstItem="93P-1E-Bxg" firstAttribute="leading" secondItem="U9e-oe-oXJ" secondAttribute="leading" constant="60" id="oMz-2B-acK"/>
                             <constraint firstAttribute="trailing" secondItem="ivA-IY-abL" secondAttribute="trailing" constant="5" id="ohN-Fh-Zvx"/>
                             <constraint firstItem="ivA-IY-abL" firstAttribute="top" secondItem="U9e-oe-oXJ" secondAttribute="top" constant="5" id="pU3-FD-7rs"/>
-                            <constraint firstItem="TnV-0J-9zP" firstAttribute="centerY" secondItem="U9e-oe-oXJ" secondAttribute="centerY" id="soL-np-FEe"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -76,7 +78,7 @@
             <connections>
                 <outlet property="btnChoose" destination="ivA-IY-abL" id="uS7-g2-ndp"/>
                 <outlet property="img" destination="93P-1E-Bxg" id="qGx-EH-wD1"/>
-                <outlet property="lbName" destination="TnV-0J-9zP" id="Tj5-GF-H5J"/>
+                <outlet property="tfNameEx" destination="ZQg-ot-yjo" id="TVc-aG-Rcy"/>
             </connections>
             <point key="canvasLocation" x="56" y="116.94152923538232"/>
         </tableViewCell>
