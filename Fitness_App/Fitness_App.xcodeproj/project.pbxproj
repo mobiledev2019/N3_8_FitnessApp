@@ -14,6 +14,8 @@
 		9633C9BB224B39B100448D5B /* PlayerViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9BA224B39B100448D5B /* PlayerViewClass.swift */; };
 		9633C9BF224B60C000448D5B /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9BD224B60C000448D5B /* ExerciseCell.swift */; };
 		9633C9C0224B60C000448D5B /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9BE224B60C000448D5B /* ExerciseCell.xib */; };
+		963BDEF4227532F6001C7A23 /* big_arm_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 963BDEF3227532F6001C7A23 /* big_arm_circle.gif */; };
+		963BDEF622753397001C7A23 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963BDEF522753397001C7A23 /* GifImage.swift */; };
 		9663C03D224491F9001DA7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663C03C224491F9001DA7B1 /* AppDelegate.swift */; };
 		9663C03F224491F9001DA7B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663C03E224491F9001DA7B1 /* ViewController.swift */; };
 		9663C042224491F9001DA7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663C040224491F9001DA7B1 /* Main.storyboard */; };
@@ -115,6 +117,8 @@
 		9633C9BA224B39B100448D5B /* PlayerViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewClass.swift; sourceTree = "<group>"; };
 		9633C9BD224B60C000448D5B /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		9633C9BE224B60C000448D5B /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		963BDEF3227532F6001C7A23 /* big_arm_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big_arm_circle.gif; sourceTree = "<group>"; };
+		963BDEF522753397001C7A23 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		9663C039224491F8001DA7B1 /* Fitness_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9663C03C224491F9001DA7B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9663C03E224491F9001DA7B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 		9697388B225463130064A432 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				963BDEF3227532F6001C7A23 /* big_arm_circle.gif */,
 				9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */,
 				9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */,
 				9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */,
@@ -531,6 +536,7 @@
 			isa = PBXGroup;
 			children = (
 				969F70442244C61E00D83264 /* ColorImageView.swift */,
+				963BDEF522753397001C7A23 /* GifImage.swift */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -784,6 +790,7 @@
 				96D57476227115CB00228AD0 /* AddExercisesVc.xib in Resources */,
 				9697388F225463430064A432 /* bent_elbow_shoulder_circle_3.png in Resources */,
 				96D574612270CEF600228AD0 /* LoginVC.xib in Resources */,
+				963BDEF4227532F6001C7A23 /* big_arm_circle.gif in Resources */,
 				96973891225463430064A432 /* bent_elbow_shoulder_circle_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -904,6 +911,7 @@
 				969F705F2244C61E00D83264 /* UILabel+Extension.swift in Sources */,
 				96D5747922711B7F00228AD0 /* ItemExerciseDetailCell.swift in Sources */,
 				9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */,
+				963BDEF622753397001C7A23 /* GifImage.swift in Sources */,
 				969F70042244C5EB00D83264 /* GradientButton.swift in Sources */,
 				9663C03F224491F9001DA7B1 /* ViewController.swift in Sources */,
 				96D574702271042E00228AD0 /* ExercisesCell.swift in Sources */,
