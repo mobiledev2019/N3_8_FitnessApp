@@ -73,10 +73,18 @@ class DoExerciseCell: UITableViewCell {
         circularProgressBar.value = 30
         
         // circular image guide
-        imgGuide.layer.masksToBounds = false
-        imgGuide.layer.backgroundColor = UIColor.white.cgColor
-        imgGuide.layer.cornerRadius = imgGuide.frame.width / 2
-        imgGuide.clipsToBounds = true
+//        imgGuide.layer.masksToBounds = false
+//        imgGuide.layer.backgroundColor = UIColor.white.cgColor
+//        imgGuide.layer.cornerRadius = imgGuide.frame.width / 2
+//        imgGuide.clipsToBounds = true
+        
+        let imageData = try? Data(contentsOf: Bundle.main.url(forResource: "big_arm_circle", withExtension: "gif")!)
+        let advTimeGif = UIImage.gifImageWithData(imageData!)
+        imgGuide.image = advTimeGif
+//        let imageView2 = UIImageView(image: advTimeGif)
+//        imageView2.frame = CGRect(x: 20.0, y: 220.0, width:
+//            self.view.frame.size.width - 40, height: 150.0)
+//        view.addSubview(imageView2)
         
         // view
         viewAdjustPlay.isHidden = false
