@@ -13,6 +13,11 @@ class TrackingFitnessVC: UIViewController {
 
    
     @IBOutlet weak var viewChart: BarChartView!
+    
+    class func newNavigationController() -> UINavigationController {
+        return UINavigationController(rootViewController: TrackingFitnessVC(nibName: "TrackingFitnessVC", bundle: nil))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBarChart()

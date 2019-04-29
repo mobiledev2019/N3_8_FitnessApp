@@ -16,6 +16,7 @@ class UserProfile {
     var weight: Float?
     var answers: [String]?
     var email: String?
+    var isLogout: Bool = false
     
     init(UID: String?, userName: String?, pass: String?,avatar: String?, height: Float?, weight: Float?, answers: [String]?, email: String? ) {
         self.UID = UID

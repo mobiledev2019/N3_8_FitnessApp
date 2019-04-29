@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '9.2'
 
 target 'Fitness_App' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -11,10 +11,9 @@ target 'Fitness_App' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'AlamofireSwiftyJSON'
   pod 'MBProgressHUD', '~> 1.1.0'
-  pod "MBCircularProgressBar"
+  
   pod 'Kingfisher', '~> 4.0'
   pod 'CryptoSwift'
-  pod 'MBProgressHUD', '~> 1.1.0'
   pod 'FBSDKLoginKit'
   pod 'FBSDKCoreKit'
   pod 'FBSDKShareKit'
@@ -24,5 +23,8 @@ target 'Fitness_App' do
   pod 'Firebase/Storage'
   pod 'GoogleSignIn'
   pod 'Charts'
+  pod 'RealmSwift'
+
+  pod "MBCircularProgressBar"
 
 end

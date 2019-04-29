@@ -17,6 +17,7 @@ class AddExercisesVc: BaseVC {
     //MARK: - variables
     var listWorkOut: [Workout] = []
     var listExercise: [ExerciseDetail] = []
+    var list: [ExerciseClass] = []
     
     //MARK: - view life cycles
     override func viewDidLoad() {
@@ -42,6 +43,26 @@ class AddExercisesVc: BaseVC {
             let data2 = jsonex.data(using: .utf8)
             listExercise = try decoder.decode([ExerciseDetail].self, from: data2!)
             print("list exercise: \(listExercise.count)")
+            
+            for ex in listExercise {
+                var exClass = ExerciseClass()
+                if let id = ex.id {
+                    exClass.id = id
+                }
+                exClass.name = ex.name
+                exClass.body_part = ex.body_part
+                exClass.sound = ex.sound
+                if let calo = ex.calorie {
+                    exClass.calorie = calo
+                }
+                if let arr = ex.description {
+                        exClass.des = convertArrayToString(arr: arr)
+                }
+                exClass.gif_phone = ex.gif_phone
+                exClass.gif_pad = ex.gif_pad
+                list.append(exClass)
+            }
+            print("list exercise: \(list.count)")
         } catch { print(error) }
     }
 
@@ -58,6 +79,7 @@ class AddExercisesVc: BaseVC {
     }
     
     @IBAction func SaveAction(_ sender: UIButton) {
+        
     }
     
     //MARK: - suporting
@@ -68,6 +90,14 @@ class AddExercisesVc: BaseVC {
             }
         }
         return nil
+    }
+    
+    func convertArrayToString(arr: [String]) -> String {
+        var re = ""
+        for str in arr {
+            re = re + "\(str)"
+        }
+        return re
     }
 }
 

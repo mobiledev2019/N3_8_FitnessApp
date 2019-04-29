@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2900A27B1B2F483944F3A2D3 /* Pods_Fitness_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */; };
+		2900A27B1B2F483944F3A2D3 /* Pods_Fitness_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9633C9B4224B250F00448D5B /* DoExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9B2224B250F00448D5B /* DoExerciseCell.swift */; };
 		9633C9B5224B250F00448D5B /* DoExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9B3224B250F00448D5B /* DoExerciseCell.xib */; };
 		9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9B6224B2AC300448D5B /* Exercise.swift */; };
@@ -16,11 +16,16 @@
 		9633C9C0224B60C000448D5B /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9BE224B60C000448D5B /* ExerciseCell.xib */; };
 		963BDEF4227532F6001C7A23 /* big_arm_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 963BDEF3227532F6001C7A23 /* big_arm_circle.gif */; };
 		963BDEF622753397001C7A23 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963BDEF522753397001C7A23 /* GifImage.swift */; };
+		964CD07B22759D75007A79C1 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CD07A22759D75007A79C1 /* TabbarVC.swift */; };
+		964CD07D22759FB0007A79C1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CD07C22759FB0007A79C1 /* Extension.swift */; };
+		964CD0812275B23D007A79C1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CD07F2275B23D007A79C1 /* ProfileVC.swift */; };
+		964CD0822275B23D007A79C1 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964CD0802275B23D007A79C1 /* ProfileVC.xib */; };
 		9663C03D224491F9001DA7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663C03C224491F9001DA7B1 /* AppDelegate.swift */; };
 		9663C03F224491F9001DA7B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663C03E224491F9001DA7B1 /* ViewController.swift */; };
 		9663C042224491F9001DA7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663C040224491F9001DA7B1 /* Main.storyboard */; };
 		9663C044224491FA001DA7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9663C043224491FA001DA7B1 /* Assets.xcassets */; };
 		9663C047224491FA001DA7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663C045224491FA001DA7B1 /* LaunchScreen.storyboard */; };
+		968BE6562276820F006651A8 /* ExercisesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BE6552276820F006651A8 /* ExercisesClass.swift */; };
 		9697388F225463430064A432 /* bent_elbow_shoulder_circle_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */; };
 		96973890225463430064A432 /* bent_elbow_shoulder_circle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */; };
 		96973891225463430064A432 /* bent_elbow_shoulder_circle_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */; };
@@ -42,7 +47,6 @@
 		969F70532244C61E00D83264 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70172244C61D00D83264 /* InsetTextField.swift */; };
 		969F70542244C61E00D83264 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70192244C61D00D83264 /* GradientLayer.swift */; };
 		969F70552244C61E00D83264 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F701D2244C61E00D83264 /* UIFont+Extension.swift */; };
-		969F70562244C61E00D83264 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F701E2244C61E00D83264 /* UIColor+Extension.swift */; };
 		969F70572244C61E00D83264 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F701F2244C61E00D83264 /* Date+Extension.swift */; };
 		969F70582244C61E00D83264 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70212244C61E00D83264 /* UIApplication+Extension.swift */; };
 		969F70592244C61E00D83264 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70222244C61E00D83264 /* UIAlertController+Extension.swift */; };
@@ -83,6 +87,13 @@
 		969F70892244C78300D83264 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70872244C78300D83264 /* LoadingVC.swift */; };
 		969F708D2244D36B00D83264 /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F708B2244D36B00D83264 /* ExerciseVC.swift */; };
 		969F708E2244D36B00D83264 /* ExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969F708C2244D36B00D83264 /* ExerciseVC.xib */; };
+		96C98BB622768B9B008D57CB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C98BB522768B9B008D57CB /* RealmSwift.framework */; };
+		96C98BB822768BA4008D57CB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C98BB722768BA4008D57CB /* Realm.framework */; };
+		96C98BBA22768E25008D57CB /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BB922768E25008D57CB /* ExerciseClass.swift */; };
+		96C98BBD2276E81C008D57CB /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BBC2276E81C008D57CB /* SharedData.swift */; };
+		96C98BC12276F2FB008D57CB /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BBF2276F2FB008D57CB /* TutorialVC.swift */; };
+		96C98BC22276F2FB008D57CB /* TutorialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C98BC02276F2FB008D57CB /* TutorialVC.xib */; };
+		96C98BC42276F788008D57CB /* ProfileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BC32276F788008D57CB /* ProfileClass.swift */; };
 		96D574452270B97200228AD0 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D574442270B97200228AD0 /* Workout.swift */; };
 		96D574472270B97A00228AD0 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D574462270B97A00228AD0 /* Exercises.swift */; };
 		96D574492270BDA100228AD0 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D574482270BDA100228AD0 /* Json.swift */; };
@@ -119,6 +130,10 @@
 		9633C9BE224B60C000448D5B /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
 		963BDEF3227532F6001C7A23 /* big_arm_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big_arm_circle.gif; sourceTree = "<group>"; };
 		963BDEF522753397001C7A23 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		964CD07A22759D75007A79C1 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		964CD07C22759FB0007A79C1 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		964CD07F2275B23D007A79C1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		964CD0802275B23D007A79C1 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		9663C039224491F8001DA7B1 /* Fitness_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9663C03C224491F9001DA7B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9663C03E224491F9001DA7B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +141,7 @@
 		9663C043224491FA001DA7B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9663C046224491FA001DA7B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9663C048224491FA001DA7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968BE6552276820F006651A8 /* ExercisesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesClass.swift; sourceTree = "<group>"; };
 		9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_3.png; path = ../../../../image/bent_elbow_shoulder_circle_3.png; sourceTree = "<group>"; };
 		9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_2.png; path = ../../../../image/bent_elbow_shoulder_circle_2.png; sourceTree = "<group>"; };
 		9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_1.png; path = ../../../../image/bent_elbow_shoulder_circle_1.png; sourceTree = "<group>"; };
@@ -147,7 +163,6 @@
 		969F70172244C61D00D83264 /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		969F70192244C61D00D83264 /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
 		969F701D2244C61E00D83264 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		969F701E2244C61E00D83264 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		969F701F2244C61E00D83264 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		969F70212244C61E00D83264 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		969F70222244C61E00D83264 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
@@ -188,6 +203,13 @@
 		969F70872244C78300D83264 /* LoadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		969F708B2244D36B00D83264 /* ExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVC.swift; sourceTree = "<group>"; };
 		969F708C2244D36B00D83264 /* ExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseVC.xib; sourceTree = "<group>"; };
+		96C98BB522768B9B008D57CB /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C98BB722768BA4008D57CB /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C98BB922768E25008D57CB /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
+		96C98BBC2276E81C008D57CB /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		96C98BBF2276F2FB008D57CB /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		96C98BC02276F2FB008D57CB /* TutorialVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialVC.xib; sourceTree = "<group>"; };
+		96C98BC32276F788008D57CB /* ProfileClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileClass.swift; sourceTree = "<group>"; };
 		96D574442270B97200228AD0 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		96D574462270B97A00228AD0 /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		96D574482270BDA100228AD0 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
@@ -223,6 +245,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C98BB822768BA4008D57CB /* Realm.framework in Frameworks */,
+				96C98BB622768B9B008D57CB /* RealmSwift.framework in Frameworks */,
 				2900A27B1B2F483944F3A2D3 /* Pods_Fitness_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +257,8 @@
 		34AE0FB78156828F245BB6D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96C98BB722768BA4008D57CB /* Realm.framework */,
+				96C98BB522768B9B008D57CB /* RealmSwift.framework */,
 				DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */,
 			);
 			name = Frameworks;
@@ -273,6 +299,15 @@
 				9633C9BE224B60C000448D5B /* ExerciseCell.xib */,
 			);
 			path = ItemExercise;
+			sourceTree = "<group>";
+		};
+		964CD07E2275B213007A79C1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				964CD07F2275B23D007A79C1 /* ProfileVC.swift */,
+				964CD0802275B23D007A79C1 /* ProfileVC.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		9663C030224491F8001DA7B1 = {
@@ -448,8 +483,8 @@
 		969F701C2244C61E00D83264 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				964CD07C22759FB0007A79C1 /* Extension.swift */,
 				969F701D2244C61E00D83264 /* UIFont+Extension.swift */,
-				969F701E2244C61E00D83264 /* UIColor+Extension.swift */,
 				969F701F2244C61E00D83264 /* Date+Extension.swift */,
 			);
 			path = Other;
@@ -579,6 +614,7 @@
 		969F707E2244C6C500D83264 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				96C98BBB2276E81C008D57CB /* ShareData */,
 				96D574512270CECF00228AD0 /* Result.swift */,
 				96D5744F2270CEC300228AD0 /* UserProfile.swift */,
 				96D574462270B97A00228AD0 /* Exercises.swift */,
@@ -586,6 +622,9 @@
 				9633C9B6224B2AC300448D5B /* Exercise.swift */,
 				96D574662270FE6D00228AD0 /* ExerciseDetail.swift */,
 				96D57481227150FE00228AD0 /* Welcome.swift */,
+				968BE6552276820F006651A8 /* ExercisesClass.swift */,
+				96C98BB922768E25008D57CB /* ExerciseClass.swift */,
+				96C98BC32276F788008D57CB /* ProfileClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -593,15 +632,18 @@
 		969F707F2244C6D300D83264 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				96D574722271157600228AD0 /* CustomExercise */,
-				96D574682270FF6800228AD0 /* Home */,
-				96D574582270CEEC00228AD0 /* Register */,
-				96D5745D2270CEF600228AD0 /* Login */,
-				96D574532270CEDC00228AD0 /* TrackingFitness */,
-				969F708A2244D24700D83264 /* DoExercise */,
-				969F70852244C78300D83264 /* Start */,
 				969F70802244C72000D83264 /* Base */,
+				969F70852244C78300D83264 /* Start */,
+				96C98BBE2276F2C0008D57CB /* Tutorial */,
+				96D5745D2270CEF600228AD0 /* Login */,
+				96D574582270CEEC00228AD0 /* Register */,
+				96D574682270FF6800228AD0 /* Home */,
+				96D574532270CEDC00228AD0 /* TrackingFitness */,
+				964CD07E2275B213007A79C1 /* Profile */,
+				96D574722271157600228AD0 /* CustomExercise */,
+				969F708A2244D24700D83264 /* DoExercise */,
 				96D574622270CFCF00228AD0 /* DB.swift */,
+				964CD07A22759D75007A79C1 /* TabbarVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -632,6 +674,23 @@
 				969F708C2244D36B00D83264 /* ExerciseVC.xib */,
 			);
 			path = DoExercise;
+			sourceTree = "<group>";
+		};
+		96C98BBB2276E81C008D57CB /* ShareData */ = {
+			isa = PBXGroup;
+			children = (
+				96C98BBC2276E81C008D57CB /* SharedData.swift */,
+			);
+			path = ShareData;
+			sourceTree = "<group>";
+		};
+		96C98BBE2276F2C0008D57CB /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				96C98BBF2276F2FB008D57CB /* TutorialVC.swift */,
+				96C98BC02276F2FB008D57CB /* TutorialVC.xib */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 		96D574532270CEDC00228AD0 /* TrackingFitness */ = {
@@ -770,9 +829,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964CD0822275B23D007A79C1 /* ProfileVC.xib in Resources */,
 				9663C047224491FA001DA7B1 /* LaunchScreen.storyboard in Resources */,
 				96D574712271042E00228AD0 /* ExercisesCell.xib in Resources */,
 				969F70882244C78300D83264 /* LoadingVC.xib in Resources */,
+				96C98BC22276F2FB008D57CB /* TutorialVC.xib in Resources */,
 				96973890225463430064A432 /* bent_elbow_shoulder_circle_2.png in Resources */,
 				9663C044224491FA001DA7B1 /* Assets.xcassets in Resources */,
 				96D5747A22711B7F00228AD0 /* ItemExerciseDetailCell.xib in Resources */,
@@ -843,6 +904,8 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -865,6 +928,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -903,11 +968,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C98BC12276F2FB008D57CB /* TutorialVC.swift in Sources */,
 				96D574672270FE6D00228AD0 /* ExerciseDetail.swift in Sources */,
 				969F70602244C61E00D83264 /* UIButton+Extension.swift in Sources */,
-				969F70562244C61E00D83264 /* UIColor+Extension.swift in Sources */,
 				969F70572244C61E00D83264 /* Date+Extension.swift in Sources */,
 				969F70742244C61E00D83264 /* ColorImageView.swift in Sources */,
+				968BE6562276820F006651A8 /* ExercisesClass.swift in Sources */,
 				969F705F2244C61E00D83264 /* UILabel+Extension.swift in Sources */,
 				96D5747922711B7F00228AD0 /* ItemExerciseDetailCell.swift in Sources */,
 				9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */,
@@ -915,6 +981,8 @@
 				969F70042244C5EB00D83264 /* GradientButton.swift in Sources */,
 				9663C03F224491F9001DA7B1 /* ViewController.swift in Sources */,
 				96D574702271042E00228AD0 /* ExercisesCell.swift in Sources */,
+				96C98BBA22768E25008D57CB /* ExerciseClass.swift in Sources */,
+				964CD07B22759D75007A79C1 /* TabbarVC.swift in Sources */,
 				969F70682244C61E00D83264 /* BasePicker.swift in Sources */,
 				969F70542244C61E00D83264 /* GradientLayer.swift in Sources */,
 				96D574472270B97A00228AD0 /* Exercises.swift in Sources */,
@@ -923,6 +991,7 @@
 				96D574632270CFD000228AD0 /* DB.swift in Sources */,
 				969F70582244C61E00D83264 /* UIApplication+Extension.swift in Sources */,
 				969F70662244C61E00D83264 /* AttributeString+Extension.swift in Sources */,
+				964CD0812275B23D007A79C1 /* ProfileVC.swift in Sources */,
 				969F70512244C61E00D83264 /* BaseTextField.swift in Sources */,
 				969F70652244C61E00D83264 /* UITextField+Extension.swift in Sources */,
 				969F706E2244C61E00D83264 /* Permission.swift in Sources */,
@@ -957,6 +1026,7 @@
 				9663C03D224491F9001DA7B1 /* AppDelegate.swift in Sources */,
 				96D57475227115CB00228AD0 /* AddExercisesVc.swift in Sources */,
 				969F708D2244D36B00D83264 /* ExerciseVC.swift in Sources */,
+				964CD07D22759FB0007A79C1 /* Extension.swift in Sources */,
 				969F704F2244C61E00D83264 /* CameraPhotoService.swift in Sources */,
 				969F704D2244C61E00D83264 /* KeyboardHandlerScrollView.swift in Sources */,
 				969F70892244C78300D83264 /* LoadingVC.swift in Sources */,
@@ -976,6 +1046,8 @@
 				969F70062244C60500D83264 /* BaseCollectionView.swift in Sources */,
 				969F70552244C61E00D83264 /* UIFont+Extension.swift in Sources */,
 				969F70692244C61E00D83264 /* PickerViewer.swift in Sources */,
+				96C98BC42276F788008D57CB /* ProfileClass.swift in Sources */,
+				96C98BBD2276E81C008D57CB /* SharedData.swift in Sources */,
 				969F705D2244C61E00D83264 /* Float+Extension.swift in Sources */,
 				969F70532244C61E00D83264 /* InsetTextField.swift in Sources */,
 				969F70732244C61E00D83264 /* IndicatorViewer.swift in Sources */,

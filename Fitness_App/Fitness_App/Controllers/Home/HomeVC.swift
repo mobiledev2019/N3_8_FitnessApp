@@ -15,6 +15,11 @@ class HomeVC: BaseVC {
     //MARK: - variables
     var listWorkout: [Workout] = []
     
+    //instance navigation controller
+    class func newNavigationController() -> UINavigationController {
+        return UINavigationController(rootViewController: HomeVC(nibName: "HomeVC", bundle: nil))
+    }
+    
     //MARK: - view life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
