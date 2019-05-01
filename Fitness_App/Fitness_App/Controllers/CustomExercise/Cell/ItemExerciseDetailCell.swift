@@ -32,9 +32,14 @@ class ItemExerciseDetailCell: UITableViewCell {
     func setupFirst() {
         btnChoose.setImage(UIImage(named: "ic_add_small"), for: .normal)
     }
-    func setup(ex: ExerciseDetail) {
+    
+    func setup(ex: ExerciseClass, isActive: Bool) {
         tfNameEx.text = ex.name
-        btnChoose.setImage(UIImage(named: "ic_add_small"), for: .normal)
+        if isActive {
+            btnChoose.setImage(UIImage(named: "ic_add_small"), for: .normal)
+        } else {
+            btnChoose.setImage(UIImage(named: "ic_remove"), for: .normal)
+        }
     }
     
     @IBAction func ChooseAction(_ sender: UIButton) {

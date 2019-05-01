@@ -27,8 +27,8 @@ class ExercisesCell: UITableViewCell {
     }
     
     //MARK: - set up
-    func setUpCell(workout: Workout) {
-        lbName.text = workout.name
+    func setUpCell(exes: ExercisesClass) {
+        lbName.text = exes.name
     }
     
     // MARK: - Actions

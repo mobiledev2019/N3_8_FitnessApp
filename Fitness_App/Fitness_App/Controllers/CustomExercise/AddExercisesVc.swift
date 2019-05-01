@@ -15,9 +15,8 @@ class AddExercisesVc: BaseVC {
     @IBOutlet weak var tableView: BaseTableView!
     
     //MARK: - variables
-    var listWorkOut: [Workout] = []
-    var listExercise: [ExerciseDetail] = []
-    var list: [ExerciseClass] = []
+    var listExercises: [ExercisesClass] = []
+    var listExercise: [ExerciseClass] = []
     
     //MARK: - view life cycles
     override func viewDidLoad() {
@@ -29,41 +28,10 @@ class AddExercisesVc: BaseVC {
     
     //MARK: setup
     func setupData() {
-        print("setupdata")
-        do {
-            // data we are getting from network request
-            print("setupdata")
-            let decoder = JSONDecoder()
-            let json = Json.workoutJson
-            let data = json.data(using: .utf8)
-            listWorkOut = try decoder.decode([Workout].self, from: data!)
-            print("list workout: \(listWorkOut.count)")
-            
-            let jsonex = Json.exJson
-            let data2 = jsonex.data(using: .utf8)
-            listExercise = try decoder.decode([ExerciseDetail].self, from: data2!)
-            print("list exercise: \(listExercise.count)")
-            
-            for ex in listExercise {
-                var exClass = ExerciseClass()
-                if let id = ex.id {
-                    exClass.id = id
-                }
-                exClass.name = ex.name
-                exClass.body_part = ex.body_part
-                exClass.sound = ex.sound
-                if let calo = ex.calorie {
-                    exClass.calorie = calo
-                }
-                if let arr = ex.description {
-                        exClass.des = convertArrayToString(arr: arr)
-                }
-                exClass.gif_phone = ex.gif_phone
-                exClass.gif_pad = ex.gif_pad
-                list.append(exClass)
-            }
-            print("list exercise: \(list.count)")
-        } catch { print(error) }
+//        if let user = RealmData.getUserProfile(mail: "phuong123@gmail.com") {
+//            listExercises = RealmData.getAllExercises(user: user)
+//        }
+//        listExercise = RealmData.getAllExercise()
     }
 
     func setupTable() {
@@ -83,42 +51,27 @@ class AddExercisesVc: BaseVC {
     }
     
     //MARK: - suporting
-    func getExerciseDetail(id: Int) -> ExerciseDetail? {
-        for ex in listExercise {
-            if ex.id == id {
-                return ex
-            }
-        }
-        return nil
-    }
     
-    func convertArrayToString(arr: [String]) -> String {
-        var re = ""
-        for str in arr {
-            re = re + "\(str)"
-        }
-        return re
-    }
 }
 
 extension AddExercisesVc: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return listWorkOut.count
+        return listExercises.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let row = listWorkOut[section].exercises?.count {
-            return row
-        }
-        return 0
+        
+        return listExercises[section].listExercise.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: ItemExerciseDetailCell.self) {
-            cell.setupFirst()
-            if let ex = listWorkOut[indexPath.section].exercises?[indexPath.row], let exDetail = getExerciseDetail(id: ex.id!) {
-                cell.setup(ex: exDetail)
-            }
+            let isActive = listExercises[indexPath.section].listActive.shuffled()[indexPath.row]
+            let id = listExercises[indexPath.section].listExercise.shuffled()[indexPath.row]
+//            if let ex = RealmData.getExercise(id: id){
+//                cell.setup(ex: ex, isActive: isActive)
+//            }
+            
             return cell
         }
         return UITableViewCell()
@@ -126,7 +79,7 @@ extension AddExercisesVc: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: HeaderCell.self) {
-            cell.setUpCell(workout: listWorkOut[section])
+            cell.setUpCell(exes: listExercises[section])
             return cell
         }
         return UITableViewCell()

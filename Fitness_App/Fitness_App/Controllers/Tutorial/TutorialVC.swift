@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TutorialVC: UIViewController {
 
@@ -22,23 +23,20 @@ class TutorialVC: UIViewController {
     
     //MARK: - setup
     func setUpData(){
-        print("setupdata")
+        RealmManager.shareInstance.deleteAll()
+        
+        // data exercise
         do {
             // data we are getting from network request
             print("setupdata")
             let decoder = JSONDecoder()
-            let json = Json.workoutJson
-            let data = json.data(using: .utf8)
-            listWorkout = try decoder.decode([Workout].self, from: data!)
-            print("list workout: \(listWorkout.count)")
-            
+
+            //listexercise
             let jsonex = Json.exJson
             let data2 = jsonex.data(using: .utf8)
             listExercise = try decoder.decode([ExerciseDetail].self, from: data2!)
-            print("list exercise: \(listExercise.count)")
-            
             for ex in listExercise {
-                var exClass = ExerciseClass()
+                let exClass = ExerciseClass()
                 if let id = ex.id {
                     exClass.id = id
                 }
@@ -53,9 +51,35 @@ class TutorialVC: UIViewController {
                 }
                 exClass.gif_phone = ex.gif_phone
                 exClass.gif_pad = ex.gif_pad
-                list.append(exClass)
+
+                RealmManager.shareInstance.addNewExercise(ex: exClass)
             }
-            print("list exercise: \(list.count)")
+
+            // listExercises
+            let json = Json.workoutJson
+            let data = json.data(using: .utf8)
+            listWorkout = try decoder.decode([Workout].self, from: data!)
+            for temp in listWorkout {
+                print("temp of wwork out")
+                let exes = ExercisesClass()
+                exes.cover = temp.pic_pad
+                exes.isOriginal = true
+                exes.name = temp.name
+                if let listEx = temp.exercises {
+                    for temp2 in listEx {
+                        exes.listActive.append(true)
+                        if let id = temp2.id {
+                            exes.listExercise.append(id)
+                        } else {
+                            exes.listExercise.append(-1)
+                        }
+
+                    }
+                }
+
+                RealmManager.shareInstance.addNewExercises(exes: exes)
+
+            }
         } catch { print(error) }
     }
 

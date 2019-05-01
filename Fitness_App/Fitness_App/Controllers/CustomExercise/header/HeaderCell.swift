@@ -25,9 +25,9 @@ class HeaderCell: UITableViewCell {
     }
     
     //MARK: - setup
-    func setUpCell(workout: Workout) {
-        lbTitle.text = workout.name
-        lbNumberEx.text = "\(workout.exercises?.count)"
+    func setUpCell(exes: ExercisesClass) {
+        lbTitle.text = exes.name
+        lbNumberEx.text = "\(exes.listExercise.count)"
     }
     
 }

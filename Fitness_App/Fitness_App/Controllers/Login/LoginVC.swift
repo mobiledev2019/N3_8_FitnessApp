@@ -55,6 +55,13 @@ class LoginVC: BaseVC , GIDSignInUIDelegate{
             if let _ = error {
                 return
             }
+            let userResult = result?.user
+            let user = Profile()
+            user.UID = userResult?.uid
+            user.userName = userResult?.displayName
+            user.email = userResult?.email
+            RealmManager.shareInstance.addNewUser(user: user)
+            
             VCService.present(type: HomeVC.self)
         }
     }

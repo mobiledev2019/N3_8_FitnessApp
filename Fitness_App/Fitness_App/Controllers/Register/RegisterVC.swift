@@ -27,6 +27,18 @@ class RegisterVC: UIViewController {
     @IBAction func registerAction(_ sender: Any) {
         guard let user = checkInfor() else { return }
         guard let email = user.email, let pass = user.passWord, let name = user.userName else { return }
+        let newUser = Profile()
+        newUser.email = email
+        newUser.passWord = pass
+        newUser.userName = name
+        let listEx = RealmManager.shareInstance.getAllExercises()
+        for temp in listEx {
+            if let name = temp.name {
+                newUser.listExercies.append(name)
+            }
+        }
+        RealmManager.shareInstance.addNewUser(user: newUser)
+        
         Auth.auth().createUser(withEmail: email, password: pass) { (result, error) in
             if let _ = error {
                 UIAlertController.showSystemAlert(target: self, title: "Message", message: "Email nay da ton tai", buttons: ["Cancel"]) { (_, _) in

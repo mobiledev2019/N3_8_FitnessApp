@@ -7,13 +7,20 @@
 //
 import RealmSwift
 class Profile: Object {
-    @objc dynamic var UID: String?
-    @objc dynamic var userName: String?
-    @objc dynamic var passWord: String?
-    @objc dynamic var avatar: String?
-    @objc dynamic var height: float = 1.5
-    @objc dynamic var weight: float = 
-    @objc dynamic var answers: [String]?
-    @objc dynamic var email: String?
+    @objc dynamic var UID: String? = nil
+    @objc dynamic var profileId = UUID().uuidString
+    @objc dynamic var userName: String? = nil
+    @objc dynamic var passWord: String? = nil
+    @objc dynamic var avatar: String? = nil
+    let height = RealmOptional<Float>()
+    let weight = RealmOptional<Float>()
+    let answers = List<String>()
+    let listExercies = List<String>()
+    let listResult = List<String>()
+    @objc dynamic var email: String? = nil
     @objc dynamic var isLogout: Bool = false
+    
+    override static func primaryKey() -> String? {
+        return "profileId"
+    }
 }

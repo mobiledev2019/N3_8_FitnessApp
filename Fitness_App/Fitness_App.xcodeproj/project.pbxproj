@@ -25,7 +25,7 @@
 		9663C042224491F9001DA7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663C040224491F9001DA7B1 /* Main.storyboard */; };
 		9663C044224491FA001DA7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9663C043224491FA001DA7B1 /* Assets.xcassets */; };
 		9663C047224491FA001DA7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663C045224491FA001DA7B1 /* LaunchScreen.storyboard */; };
-		968BE6562276820F006651A8 /* ExercisesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BE6552276820F006651A8 /* ExercisesClass.swift */; };
+		968BE6562276820F006651A8 /* ListExercisesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BE6552276820F006651A8 /* ListExercisesClass.swift */; };
 		9697388F225463430064A432 /* bent_elbow_shoulder_circle_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */; };
 		96973890225463430064A432 /* bent_elbow_shoulder_circle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */; };
 		96973891225463430064A432 /* bent_elbow_shoulder_circle_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */; };
@@ -87,13 +87,13 @@
 		969F70892244C78300D83264 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70872244C78300D83264 /* LoadingVC.swift */; };
 		969F708D2244D36B00D83264 /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F708B2244D36B00D83264 /* ExerciseVC.swift */; };
 		969F708E2244D36B00D83264 /* ExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969F708C2244D36B00D83264 /* ExerciseVC.xib */; };
-		96C98BB622768B9B008D57CB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C98BB522768B9B008D57CB /* RealmSwift.framework */; };
-		96C98BB822768BA4008D57CB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C98BB722768BA4008D57CB /* Realm.framework */; };
 		96C98BBA22768E25008D57CB /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BB922768E25008D57CB /* ExerciseClass.swift */; };
 		96C98BBD2276E81C008D57CB /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BBC2276E81C008D57CB /* SharedData.swift */; };
 		96C98BC12276F2FB008D57CB /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BBF2276F2FB008D57CB /* TutorialVC.swift */; };
 		96C98BC22276F2FB008D57CB /* TutorialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C98BC02276F2FB008D57CB /* TutorialVC.xib */; };
 		96C98BC42276F788008D57CB /* ProfileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BC32276F788008D57CB /* ProfileClass.swift */; };
+		96C98BC622775B83008D57CB /* Resultclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BC522775B83008D57CB /* Resultclass.swift */; };
+		96C98BC822775C45008D57CB /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BC722775C45008D57CB /* RealmData.swift */; };
 		96D574452270B97200228AD0 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D574442270B97200228AD0 /* Workout.swift */; };
 		96D574472270B97A00228AD0 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D574462270B97A00228AD0 /* Exercises.swift */; };
 		96D574492270BDA100228AD0 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D574482270BDA100228AD0 /* Json.swift */; };
@@ -119,6 +119,8 @@
 		96D5747F227121B900228AD0 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5747D227121B900228AD0 /* HeaderCell.swift */; };
 		96D57480227121B900228AD0 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D5747E227121B900228AD0 /* HeaderCell.xib */; };
 		96D57482227150FE00228AD0 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D57481227150FE00228AD0 /* Welcome.swift */; };
+		96E4B7A12278389B003043B9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E4B7A02278389B003043B9 /* Realm.framework */; };
+		96E4B7A3227838A1003043B9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E4B7A2227838A1003043B9 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,7 +143,7 @@
 		9663C043224491FA001DA7B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9663C046224491FA001DA7B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9663C048224491FA001DA7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		968BE6552276820F006651A8 /* ExercisesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesClass.swift; sourceTree = "<group>"; };
+		968BE6552276820F006651A8 /* ListExercisesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExercisesClass.swift; sourceTree = "<group>"; };
 		9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_3.png; path = ../../../../image/bent_elbow_shoulder_circle_3.png; sourceTree = "<group>"; };
 		9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_2.png; path = ../../../../image/bent_elbow_shoulder_circle_2.png; sourceTree = "<group>"; };
 		9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_1.png; path = ../../../../image/bent_elbow_shoulder_circle_1.png; sourceTree = "<group>"; };
@@ -210,6 +212,8 @@
 		96C98BBF2276F2FB008D57CB /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		96C98BC02276F2FB008D57CB /* TutorialVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialVC.xib; sourceTree = "<group>"; };
 		96C98BC32276F788008D57CB /* ProfileClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileClass.swift; sourceTree = "<group>"; };
+		96C98BC522775B83008D57CB /* Resultclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resultclass.swift; sourceTree = "<group>"; };
+		96C98BC722775C45008D57CB /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
 		96D574442270B97200228AD0 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		96D574462270B97A00228AD0 /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		96D574482270BDA100228AD0 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 		96D5747D227121B900228AD0 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		96D5747E227121B900228AD0 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		96D57481227150FE00228AD0 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		96E4B7A02278389B003043B9 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E4B7A2227838A1003043B9 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63B276F7E609B0B96435B2C /* Pods-Fitness_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fitness_App/Pods-Fitness_App.release.xcconfig"; sourceTree = "<group>"; };
 		DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitness_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50E53F3B60895225092BDC7 /* Pods-Fitness_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fitness_App/Pods-Fitness_App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -245,8 +251,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C98BB822768BA4008D57CB /* Realm.framework in Frameworks */,
-				96C98BB622768B9B008D57CB /* RealmSwift.framework in Frameworks */,
+				96E4B7A3227838A1003043B9 /* RealmSwift.framework in Frameworks */,
+				96E4B7A12278389B003043B9 /* Realm.framework in Frameworks */,
 				2900A27B1B2F483944F3A2D3 /* Pods_Fitness_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +263,8 @@
 		34AE0FB78156828F245BB6D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96E4B7A2227838A1003043B9 /* RealmSwift.framework */,
+				96E4B7A02278389B003043B9 /* Realm.framework */,
 				96C98BB722768BA4008D57CB /* Realm.framework */,
 				96C98BB522768B9B008D57CB /* RealmSwift.framework */,
 				DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */,
@@ -622,9 +630,10 @@
 				9633C9B6224B2AC300448D5B /* Exercise.swift */,
 				96D574662270FE6D00228AD0 /* ExerciseDetail.swift */,
 				96D57481227150FE00228AD0 /* Welcome.swift */,
-				968BE6552276820F006651A8 /* ExercisesClass.swift */,
+				968BE6552276820F006651A8 /* ListExercisesClass.swift */,
 				96C98BB922768E25008D57CB /* ExerciseClass.swift */,
 				96C98BC32276F788008D57CB /* ProfileClass.swift */,
+				96C98BC522775B83008D57CB /* Resultclass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -680,6 +689,7 @@
 			isa = PBXGroup;
 			children = (
 				96C98BBC2276E81C008D57CB /* SharedData.swift */,
+				96C98BC722775C45008D57CB /* RealmData.swift */,
 			);
 			path = ShareData;
 			sourceTree = "<group>";
@@ -973,7 +983,7 @@
 				969F70602244C61E00D83264 /* UIButton+Extension.swift in Sources */,
 				969F70572244C61E00D83264 /* Date+Extension.swift in Sources */,
 				969F70742244C61E00D83264 /* ColorImageView.swift in Sources */,
-				968BE6562276820F006651A8 /* ExercisesClass.swift in Sources */,
+				968BE6562276820F006651A8 /* ListExercisesClass.swift in Sources */,
 				969F705F2244C61E00D83264 /* UILabel+Extension.swift in Sources */,
 				96D5747922711B7F00228AD0 /* ItemExerciseDetailCell.swift in Sources */,
 				9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */,
@@ -984,6 +994,7 @@
 				96C98BBA22768E25008D57CB /* ExerciseClass.swift in Sources */,
 				964CD07B22759D75007A79C1 /* TabbarVC.swift in Sources */,
 				969F70682244C61E00D83264 /* BasePicker.swift in Sources */,
+				96C98BC822775C45008D57CB /* RealmData.swift in Sources */,
 				969F70542244C61E00D83264 /* GradientLayer.swift in Sources */,
 				96D574472270B97A00228AD0 /* Exercises.swift in Sources */,
 				969F70762244C61E00D83264 /* InsetTextView.swift in Sources */,
@@ -1025,6 +1036,7 @@
 				9633C9B4224B250F00448D5B /* DoExerciseCell.swift in Sources */,
 				9663C03D224491F9001DA7B1 /* AppDelegate.swift in Sources */,
 				96D57475227115CB00228AD0 /* AddExercisesVc.swift in Sources */,
+				96C98BC622775B83008D57CB /* Resultclass.swift in Sources */,
 				969F708D2244D36B00D83264 /* ExerciseVC.swift in Sources */,
 				964CD07D22759FB0007A79C1 /* Extension.swift in Sources */,
 				969F704F2244C61E00D83264 /* CameraPhotoService.swift in Sources */,

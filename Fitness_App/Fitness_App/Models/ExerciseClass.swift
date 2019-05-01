@@ -19,4 +19,8 @@ class ExerciseClass: Object {
     @objc dynamic var calorie: Double = 0.6
     @objc dynamic var gif_phone: String?
     
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
 }

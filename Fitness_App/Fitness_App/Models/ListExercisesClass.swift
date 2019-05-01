@@ -11,8 +11,8 @@ import RealmSwift
 class ExercisesClass: Object {
     @objc dynamic var name: String?
     @objc dynamic var cover: String?
-    @objc dynamic var listActive: [Bool]?
-    @objc dynamic var listExercise: [ExerciseClass]?    
-    
+    @objc dynamic var isOriginal = true
+    let listActive = List<Bool>()
+    let listExercise = List<Int>()
 }
 
