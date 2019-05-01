@@ -55,27 +55,6 @@ class TabbarVC: UITabBarController {
         profileVC.tabBarItem.title = NSLocalizedString("profile", comment: "")
         profileVC.tabBarItem.image = UIImage(named: "ic_setting")
         
-//        let categoryViewController = CategoryViewController.newNavigationController()
-//        categoryViewController.title = NSLocalizedString("category", comment: "")
-//        categoryViewController.tabBarItem.title = NSLocalizedString("category", comment: "")
-//        categoryViewController.tabBarItem.image = UIImage(named: "icRocket")
-//
-//        let newTaskViewController = NewTaskViewController.newNavigationController()
-//        newTaskViewController.title = NSLocalizedString("newTask", comment: "")
-//        newTaskViewController.tabBarItem.title = ""
-//        newTaskViewController.tabBarItem.image = UIImage(named: "icPlus")
-//        newTaskViewController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-//
-//        let favoriteViewController = FavoriteViewController.newNavigationController()
-//        favoriteViewController.title = NSLocalizedString("favorite", comment: "")
-//        favoriteViewController.tabBarItem.title = NSLocalizedString("favorite", comment: "")
-//        favoriteViewController.tabBarItem.image = UIImage(named: "icBookmark")
-//
-//        let myPageViewController = MyPageViewController.newNavigationController()
-//        myPageViewController.title = NSLocalizedString("myPage", comment: "")
-//        myPageViewController.tabBarItem.title = NSLocalizedString("myPage", comment: "")
-//        myPageViewController.tabBarItem.image = UIImage(named: "icUser")
-        
         let controllers = [homeVC, settingVC, profileVC]
         self.viewControllers = controllers
     }
@@ -86,7 +65,7 @@ class TabbarVC: UITabBarController {
         tabbarApperance.tintColor = UIColor.Custom.AppGreen
         tabbarApperance.unselectedItemTintColor = UIColor.Custom.AppGray
         //tabbarApperance.barTintColor = UIColor.Custom.AppRed
-        //tabbarApperance.isTranslucent = false
+        tabbarApperance.isTranslucent = false
     }
     
     @objc func shouldEnableTabbar(notification: Notification) {

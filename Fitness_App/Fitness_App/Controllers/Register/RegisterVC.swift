@@ -49,7 +49,7 @@ class RegisterVC: UIViewController {
                 return
             }
             DB.saveUser(uid: uid, name: name, email: email)
-            VCService.present(type: HomeVC.self)
+            VCService.present(type: TabbarVC.self)
 //            VCService.pop()
             
         }

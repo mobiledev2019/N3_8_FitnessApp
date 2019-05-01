@@ -19,7 +19,7 @@ class LoadingVC: BaseVC {
         } else {
             
             if let _ = RealmManager.shareInstance.getCurrentUser() {
-                VCService.push(type: HomeVC.self, fromController: self, prepare: nil, animated: false, completion: nil)
+                VCService.push(type: TabbarVC.self, fromController: self, prepare: nil, animated: false, completion: nil)
             } else {
                 VCService.push(type: LoginVC.self, fromController: self, prepare: nil, animated: false, completion: nil)
             }
