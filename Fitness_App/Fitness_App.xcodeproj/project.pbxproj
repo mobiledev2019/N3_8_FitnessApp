@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2900A27B1B2F483944F3A2D3 /* Pods_Fitness_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8B75E301DD0026D0BB892C /* Pods_Fitness_App.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9613CFAA227DFDBC00AD09E6 /* CustomExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9613CFA8227DFDBC00AD09E6 /* CustomExercisesVC.swift */; };
+		9613CFAB227DFDBC00AD09E6 /* CustomExercisesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9613CFA9227DFDBC00AD09E6 /* CustomExercisesVC.xib */; };
 		9633C9B4224B250F00448D5B /* DoExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9B2224B250F00448D5B /* DoExerciseCell.swift */; };
 		9633C9B5224B250F00448D5B /* DoExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9B3224B250F00448D5B /* DoExerciseCell.xib */; };
 		9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9B6224B2AC300448D5B /* Exercise.swift */; };
 		9633C9BB224B39B100448D5B /* PlayerViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9BA224B39B100448D5B /* PlayerViewClass.swift */; };
 		9633C9BF224B60C000448D5B /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633C9BD224B60C000448D5B /* ExerciseCell.swift */; };
 		9633C9C0224B60C000448D5B /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633C9BE224B60C000448D5B /* ExerciseCell.xib */; };
-		963BDEF4227532F6001C7A23 /* big_arm_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 963BDEF3227532F6001C7A23 /* big_arm_circle.gif */; };
 		963BDEF622753397001C7A23 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963BDEF522753397001C7A23 /* GifImage.swift */; };
 		964CD07B22759D75007A79C1 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CD07A22759D75007A79C1 /* TabbarVC.swift */; };
 		964CD07D22759FB0007A79C1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964CD07C22759FB0007A79C1 /* Extension.swift */; };
@@ -26,9 +27,6 @@
 		9663C044224491FA001DA7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9663C043224491FA001DA7B1 /* Assets.xcassets */; };
 		9663C047224491FA001DA7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663C045224491FA001DA7B1 /* LaunchScreen.storyboard */; };
 		968BE6562276820F006651A8 /* ListExercisesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BE6552276820F006651A8 /* ListExercisesClass.swift */; };
-		9697388F225463430064A432 /* bent_elbow_shoulder_circle_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */; };
-		96973890225463430064A432 /* bent_elbow_shoulder_circle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */; };
-		96973891225463430064A432 /* bent_elbow_shoulder_circle_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */; };
 		969F70022244C5EB00D83264 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F6FFF2244C5EB00D83264 /* CheckBox.swift */; };
 		969F70032244C5EB00D83264 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70002244C5EB00D83264 /* ShadowButton.swift */; };
 		969F70042244C5EB00D83264 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70012244C5EB00D83264 /* GradientButton.swift */; };
@@ -87,6 +85,225 @@
 		969F70892244C78300D83264 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F70872244C78300D83264 /* LoadingVC.swift */; };
 		969F708D2244D36B00D83264 /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F708B2244D36B00D83264 /* ExerciseVC.swift */; };
 		969F708E2244D36B00D83264 /* ExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969F708C2244D36B00D83264 /* ExerciseVC.xib */; };
+		96AED861227D90EF008BE786 /* side_plank_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7E7227D90D2008BE786 /* side_plank_left.gif */; };
+		96AED862227D90EF008BE786 /* plank_with_leg_lift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7E8227D90D2008BE786 /* plank_with_leg_lift.gif */; };
+		96AED863227D90EF008BE786 /* flutter_kick_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7E9227D90D2008BE786 /* flutter_kick_squat.gif */; };
+		96AED864227D90EF008BE786 /* plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7EA227D90D2008BE786 /* plank.gif */; };
+		96AED865227D90EF008BE786 /* dynamic_downward_dog_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7EB227D90D3008BE786 /* dynamic_downward_dog_yoga.gif */; };
+		96AED866227D90EF008BE786 /* plie_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7EC227D90D3008BE786 /* plie_squat.gif */; };
+		96AED867227D90EF008BE786 /* neck_stretch_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7ED227D90D3008BE786 /* neck_stretch_yoga.gif */; };
+		96AED868227D90EF008BE786 /* burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7EE227D90D3008BE786 /* burpee.gif */; };
+		96AED869227D90EF008BE786 /* front_thigh_stretch_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7EF227D90D4008BE786 /* front_thigh_stretch_left.gif */; };
+		96AED86A227D90EF008BE786 /* front_thigh_stretch_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F0227D90D4008BE786 /* front_thigh_stretch_right.gif */; };
+		96AED86B227D90EF008BE786 /* step_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F1227D90D4008BE786 /* step_up.gif */; };
+		96AED86C227D90EF008BE786 /* side_kick_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F2227D90D4008BE786 /* side_kick_squat.gif */; };
+		96AED86D227D90EF008BE786 /* standing_hip_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F3227D90D4008BE786 /* standing_hip_circle.gif */; };
+		96AED86E227D90EF008BE786 /* easy_tree_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F4227D90D4008BE786 /* easy_tree_pose_left_yoga.gif */; };
+		96AED86F227D90EF008BE786 /* spiderman_plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F5227D90D5008BE786 /* spiderman_plank.gif */; };
+		96AED870227D90EF008BE786 /* half_wall_sit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F6227D90D5008BE786 /* half_wall_sit.gif */; };
+		96AED871227D90EF008BE786 /* curtsy_lunge.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F7227D90D5008BE786 /* curtsy_lunge.gif */; };
+		96AED872227D90EF008BE786 /* vertical_leg_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F8227D90D5008BE786 /* vertical_leg_crunch.gif */; };
+		96AED873227D90EF008BE786 /* butt_kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7F9227D90D6008BE786 /* butt_kick.gif */; };
+		96AED874227D90EF008BE786 /* up_and_down_plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7FA227D90D6008BE786 /* up_and_down_plank.gif */; };
+		96AED875227D90EF008BE786 /* flutter_kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7FB227D90D6008BE786 /* flutter_kick.gif */; };
+		96AED876227D90EF008BE786 /* push_ups_with_rotation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7FC227D90D6008BE786 /* push_ups_with_rotation.gif */; };
+		96AED877227D90EF008BE786 /* jumping_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7FD227D90D6008BE786 /* jumping_jack.gif */; };
+		96AED878227D90EF008BE786 /* single_leg_v_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7FE227D90D6008BE786 /* single_leg_v_up.gif */; };
+		96AED879227D90EF008BE786 /* opposite_arm_leg_lift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED7FF227D90D7008BE786 /* opposite_arm_leg_lift.gif */; };
+		96AED87A227D90EF008BE786 /* mountain_climber.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED800227D90D7008BE786 /* mountain_climber.gif */; };
+		96AED87B227D90EF008BE786 /* bent_elbow_shoulder_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED801227D90D7008BE786 /* bent_elbow_shoulder_circle.gif */; };
+		96AED87C227D90EF008BE786 /* half_wind_relieving_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED802227D90D7008BE786 /* half_wind_relieving_pose_right_yoga.gif */; };
+		96AED87D227D90EF008BE786 /* downward_dog_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED803227D90D8008BE786 /* downward_dog_yoga.gif */; };
+		96AED87E227D90EF008BE786 /* hip_bridge_hold.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED804227D90D8008BE786 /* hip_bridge_hold.gif */; };
+		96AED87F227D90EF008BE786 /* plank_yoga_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED805227D90D8008BE786 /* plank_yoga_yoga.gif */; };
+		96AED880227D90EF008BE786 /* side_lunge_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED806227D90D8008BE786 /* side_lunge_alternate.gif */; };
+		96AED881227D90EF008BE786 /* upward_salute_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED807227D90D9008BE786 /* upward_salute_pose_yoga.gif */; };
+		96AED882227D90EF008BE786 /* half_squat_walk.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED808227D90D9008BE786 /* half_squat_walk.gif */; };
+		96AED883227D90EF008BE786 /* donkey_kick_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED809227D90D9008BE786 /* donkey_kick_alternate.gif */; };
+		96AED884227D90EF008BE786 /* child_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED80A227D90DA008BE786 /* child_pose_yoga.gif */; };
+		96AED885227D90EF008BE786 /* cobra_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED80B227D90DA008BE786 /* cobra_yoga.gif */; };
+		96AED886227D90EF008BE786 /* half_wind_relieving_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED80C227D90DA008BE786 /* half_wind_relieving_pose_left_yoga.gif */; };
+		96AED887227D90EF008BE786 /* mountain_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED80D227D90DA008BE786 /* mountain_pose_yoga.gif */; };
+		96AED888227D90EF008BE786 /* high_knees_running_in_place.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED80E227D90DB008BE786 /* high_knees_running_in_place.gif */; };
+		96AED889227D90EF008BE786 /* lying_spinal_twist_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED80F227D90DB008BE786 /* lying_spinal_twist_pose_right_yoga.gif */; };
+		96AED88A227D90EF008BE786 /* high_knee_walking_in_place.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED810227D90DB008BE786 /* high_knee_walking_in_place.gif */; };
+		96AED88B227D90EF008BE786 /* standing_forward_bend_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED811227D90DB008BE786 /* standing_forward_bend_pose_yoga.gif */; };
+		96AED88C227D90EF008BE786 /* bicycle_kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED812227D90DB008BE786 /* bicycle_kick.gif */; };
+		96AED88D227D90EF008BE786 /* plank_shoulder_tap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED813227D90DB008BE786 /* plank_shoulder_tap.gif */; };
+		96AED88E227D90EF008BE786 /* squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED814227D90DC008BE786 /* squat.gif */; };
+		96AED88F227D90EF008BE786 /* wind_relieving_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED815227D90DC008BE786 /* wind_relieving_pose_yoga.gif */; };
+		96AED890227D90EF008BE786 /* v_sit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED816227D90DC008BE786 /* v_sit.gif */; };
+		96AED891227D90EF008BE786 /* single_leg_downward_dog_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED817227D90DC008BE786 /* single_leg_downward_dog_right_yoga.gif */; };
+		96AED892227D90EF008BE786 /* marching_hip_raise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED818227D90DC008BE786 /* marching_hip_raise.gif */; };
+		96AED893227D90EF008BE786 /* plank_hip_twist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED819227D90DC008BE786 /* plank_hip_twist.gif */; };
+		96AED894227D90EF008BE786 /* wall_push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED81A227D90DD008BE786 /* wall_push_up.gif */; };
+		96AED895227D90EF008BE786 /* side_leg_raise_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED81B227D90DD008BE786 /* side_leg_raise_right.gif */; };
+		96AED896227D90EF008BE786 /* standing_side_bend_yoga_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED81C227D90DD008BE786 /* standing_side_bend_yoga_yoga.gif */; };
+		96AED897227D90EF008BE786 /* russian_twist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED81D227D90DD008BE786 /* russian_twist.gif */; };
+		96AED898227D90EF008BE786 /* frog_jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED81E227D90DE008BE786 /* frog_jump.gif */; };
+		96AED899227D90EF008BE786 /* swimmer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED81F227D90DE008BE786 /* swimmer.gif */; };
+		96AED89A227D90EF008BE786 /* single_leg_arm_reach_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED820227D90DE008BE786 /* single_leg_arm_reach_alternate.gif */; };
+		96AED89B227D90EF008BE786 /* hand_release_push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED821227D90DE008BE786 /* hand_release_push_up.gif */; };
+		96AED89C227D90EF008BE786 /* step_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED822227D90DE008BE786 /* step_jack.gif */; };
+		96AED89D227D90EF008BE786 /* big_arm_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED823227D90DE008BE786 /* big_arm_circle.gif */; };
+		96AED89E227D90EF008BE786 /* wall_sit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED824227D90DF008BE786 /* wall_sit.gif */; };
+		96AED89F227D90EF008BE786 /* lunge_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED825227D90DF008BE786 /* lunge_alternate.gif */; };
+		96AED8A0227D90EF008BE786 /* standing_twist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED826227D90E0008BE786 /* standing_twist.gif */; };
+		96AED8A1227D90EF008BE786 /* warriori_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED827227D90E0008BE786 /* warriori_left_yoga.gif */; };
+		96AED8A2227D90EF008BE786 /* cat_camel_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED828227D90E1008BE786 /* cat_camel_yoga.gif */; };
+		96AED8A3227D90EF008BE786 /* single_leg_hip_extension_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED829227D90E1008BE786 /* single_leg_hip_extension_right.gif */; };
+		96AED8A4227D90EF008BE786 /* shoulder_expansion_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED82A227D90E1008BE786 /* shoulder_expansion_yoga.gif */; };
+		96AED8A5227D90EF008BE786 /* push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED82B227D90E2008BE786 /* push_up.gif */; };
+		96AED8A6227D90EF008BE786 /* squat_jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED82C227D90E2008BE786 /* squat_jump.gif */; };
+		96AED8A7227D90EF008BE786 /* extended_side_angle_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED82D227D90E2008BE786 /* extended_side_angle_left_yoga.gif */; };
+		96AED8A8227D90EF008BE786 /* lying_spinal_twist_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED82E227D90E2008BE786 /* lying_spinal_twist_pose_left_yoga.gif */; };
+		96AED8A9227D90EF008BE786 /* walking_burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED82F227D90E3008BE786 /* walking_burpee.gif */; };
+		96AED8AA227D90EF008BE786 /* upward_salute_pose_dynamic_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED830227D90E3008BE786 /* upward_salute_pose_dynamic_yoga.gif */; };
+		96AED8AB227D90EF008BE786 /* reverse_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED831227D90E3008BE786 /* reverse_crunch.gif */; };
+		96AED8AC227D90EF008BE786 /* seated_spinal_twist_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED832227D90E4008BE786 /* seated_spinal_twist_left_yoga.gif */; };
+		96AED8AD227D90EF008BE786 /* full_plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED833227D90E5008BE786 /* full_plank.gif */; };
+		96AED8AE227D90EF008BE786 /* seated_spinal_twist_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED834227D90E5008BE786 /* seated_spinal_twist_right_yoga.gif */; };
+		96AED8AF227D90EF008BE786 /* warriori_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED835227D90E5008BE786 /* warriori_right_yoga.gif */; };
+		96AED8B0227D90EF008BE786 /* extended_side_angle_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED836227D90E6008BE786 /* extended_side_angle_right_yoga.gif */; };
+		96AED8B1227D90EF008BE786 /* low_lunges_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED837227D90E7008BE786 /* low_lunges_right_yoga.gif */; };
+		96AED8B2227D90EF008BE786 /* shuffle_side_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED838227D90E7008BE786 /* shuffle_side_squat.gif */; };
+		96AED8B3227D90EF008BE786 /* lunge_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED839227D90E7008BE786 /* lunge_left.gif */; };
+		96AED8B4227D90EF008BE786 /* single_leg_hip_extension_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED83A227D90E8008BE786 /* single_leg_hip_extension_left.gif */; };
+		96AED8B5227D90EF008BE786 /* squat_thrust.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED83B227D90E8008BE786 /* squat_thrust.gif */; };
+		96AED8B6227D90EF008BE786 /* lying_triceps_lift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED83C227D90E8008BE786 /* lying_triceps_lift.gif */; };
+		96AED8B7227D90EF008BE786 /* low_lunges_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED83D227D90E8008BE786 /* low_lunges_left_yoga.gif */; };
+		96AED8B8227D90EF008BE786 /* easy_twist_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED83E227D90E8008BE786 /* easy_twist_right_yoga.gif */; };
+		96AED8B9227D90EF008BE786 /* hip_thrust.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED83F227D90E8008BE786 /* hip_thrust.gif */; };
+		96AED8BA227D90EF008BE786 /* thread_the_needle_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED840227D90E9008BE786 /* thread_the_needle_left_yoga.gif */; };
+		96AED8BB227D90EF008BE786 /* overhead_press.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED841227D90E9008BE786 /* overhead_press.gif */; };
+		96AED8BC227D90EF008BE786 /* lateral_punch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED842227D90E9008BE786 /* lateral_punch.gif */; };
+		96AED8BD227D90EF008BE786 /* inchworm.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED843227D90E9008BE786 /* inchworm.gif */; };
+		96AED8BE227D90EF008BE786 /* bicycle_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED844227D90E9008BE786 /* bicycle_crunch.gif */; };
+		96AED8BF227D90EF008BE786 /* easy_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED845227D90E9008BE786 /* easy_pose_yoga.gif */; };
+		96AED8C0227D90EF008BE786 /* side_leg_raise_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED846227D90EA008BE786 /* side_leg_raise_left.gif */; };
+		96AED8C1227D90EF008BE786 /* extended_triangle_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED847227D90EA008BE786 /* extended_triangle_pose_right_yoga.gif */; };
+		96AED8C2227D90EF008BE786 /* extended_triangle_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED848227D90EA008BE786 /* extended_triangle_pose_left_yoga.gif */; };
+		96AED8C3227D90EF008BE786 /* bound_angle_forward_bend_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED849227D90EA008BE786 /* bound_angle_forward_bend_yoga.gif */; };
+		96AED8C4227D90EF008BE786 /* prayer_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED84A227D90EA008BE786 /* prayer_pose_yoga.gif */; };
+		96AED8C5227D90EF008BE786 /* standing_side_bend.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED84B227D90EB008BE786 /* standing_side_bend.gif */; };
+		96AED8C6227D90EF008BE786 /* step_ups_with_a_kickback.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED84C227D90EB008BE786 /* step_ups_with_a_kickback.gif */; };
+		96AED8C7227D90EF008BE786 /* lunge_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED84D227D90EB008BE786 /* lunge_right.gif */; };
+		96AED8C8227D90EF008BE786 /* thread_the_needle_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED84E227D90EB008BE786 /* thread_the_needle_right_yoga.gif */; };
+		96AED8C9227D90EF008BE786 /* corpse_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED84F227D90EC008BE786 /* corpse_pose_yoga.gif */; };
+		96AED8CA227D90EF008BE786 /* spinal_rolling_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED850227D90EC008BE786 /* spinal_rolling_yoga.gif */; };
+		96AED8CB227D90EF008BE786 /* side_plank_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED851227D90EC008BE786 /* side_plank_right.gif */; };
+		96AED8CC227D90EF008BE786 /* half_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED852227D90EC008BE786 /* half_squat.gif */; };
+		96AED8CD227D90EF008BE786 /* cross_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED853227D90EC008BE786 /* cross_jack.gif */; };
+		96AED8CE227D90EF008BE786 /* jog_in_place.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED854227D90EC008BE786 /* jog_in_place.gif */; };
+		96AED8CF227D90EF008BE786 /* single_leg_downward_dog_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED855227D90ED008BE786 /* single_leg_downward_dog_left_yoga.gif */; };
+		96AED8D0227D90EF008BE786 /* shoulder_blade_squeeze.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED856227D90ED008BE786 /* shoulder_blade_squeeze.gif */; };
+		96AED8D1227D90EF008BE786 /* standing_bicycle_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED857227D90ED008BE786 /* standing_bicycle_crunch.gif */; };
+		96AED8D2227D90EF008BE786 /* tricep_dip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED858227D90ED008BE786 /* tricep_dip.gif */; };
+		96AED8D3227D90EF008BE786 /* rest.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED859227D90ED008BE786 /* rest.gif */; };
+		96AED8D4227D90EF008BE786 /* superman.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED85A227D90EE008BE786 /* superman.gif */; };
+		96AED8D5227D90EF008BE786 /* easy_twist_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED85B227D90EE008BE786 /* easy_twist_left_yoga.gif */; };
+		96AED8D6227D90EF008BE786 /* abdominal_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED85C227D90EE008BE786 /* abdominal_crunch.gif */; };
+		96AED8D7227D90EF008BE786 /* speed_skater.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED85D227D90EE008BE786 /* speed_skater.gif */; };
+		96AED8D8227D90EF008BE786 /* easy_tree_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED85E227D90EE008BE786 /* easy_tree_pose_right_yoga.gif */; };
+		96AED8D9227D90EF008BE786 /* knee_push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED85F227D90EE008BE786 /* knee_push_up.gif */; };
+		96AED8DA227D90EF008BE786 /* plank_jumping_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96AED860227D90EF008BE786 /* plank_jumping_jack.gif */; };
+		96AED93D227D9199008BE786 /* flutter_kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8DC227D9185008BE786 /* flutter_kick.mp3 */; };
+		96AED93E227D9199008BE786 /* high_knees_running_in_place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8DD227D9185008BE786 /* high_knees_running_in_place.mp3 */; };
+		96AED93F227D9199008BE786 /* squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8DE227D9185008BE786 /* squat.mp3 */; };
+		96AED940227D9199008BE786 /* push_ups_with_rotation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8DF227D9185008BE786 /* push_ups_with_rotation.mp3 */; };
+		96AED941227D9199008BE786 /* rest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E0227D9186008BE786 /* rest.mp3 */; };
+		96AED942227D9199008BE786 /* spiderman_plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E1227D9186008BE786 /* spiderman_plank.mp3 */; };
+		96AED943227D9199008BE786 /* hip_thrust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E2227D9186008BE786 /* hip_thrust.mp3 */; };
+		96AED944227D9199008BE786 /* standing_hip_circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E3227D9186008BE786 /* standing_hip_circle.mp3 */; };
+		96AED945227D9199008BE786 /* lunge_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E4227D9186008BE786 /* lunge_right.mp3 */; };
+		96AED946227D9199008BE786 /* sys_getready.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E5227D9187008BE786 /* sys_getready.mp3 */; };
+		96AED947227D9199008BE786 /* swimmer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E6227D9187008BE786 /* swimmer.mp3 */; };
+		96AED948227D9199008BE786 /* curtsy_lunge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E7227D9187008BE786 /* curtsy_lunge.mp3 */; };
+		96AED949227D9199008BE786 /* hand_release_push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E8227D9187008BE786 /* hand_release_push_up.mp3 */; };
+		96AED94A227D9199008BE786 /* plank_jumping_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8E9227D9187008BE786 /* plank_jumping_jack.mp3 */; };
+		96AED94B227D9199008BE786 /* reverse_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8EA227D9187008BE786 /* reverse_crunch.mp3 */; };
+		96AED94C227D9199008BE786 /* superman.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8EB227D9188008BE786 /* superman.mp3 */; };
+		96AED94D227D9199008BE786 /* squat_thrust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8EC227D9188008BE786 /* squat_thrust.mp3 */; };
+		96AED94E227D9199008BE786 /* sys_countdown1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8ED227D9188008BE786 /* sys_countdown1.mp3 */; };
+		96AED94F227D9199008BE786 /* plank_shoulder_tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8EE227D9188008BE786 /* plank_shoulder_tap.mp3 */; };
+		96AED950227D9199008BE786 /* sys_countdown3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8EF227D9188008BE786 /* sys_countdown3.mp3 */; };
+		96AED951227D9199008BE786 /* plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F0227D9189008BE786 /* plank.mp3 */; };
+		96AED952227D9199008BE786 /* lunge_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F1227D9189008BE786 /* lunge_left.mp3 */; };
+		96AED953227D9199008BE786 /* jog_in_place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F2227D9189008BE786 /* jog_in_place.mp3 */; };
+		96AED954227D9199008BE786 /* sys_countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F3227D9189008BE786 /* sys_countdown.mp3 */; };
+		96AED955227D9199008BE786 /* standing_twist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F4227D9189008BE786 /* standing_twist.mp3 */; };
+		96AED956227D9199008BE786 /* half_wall_sit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F5227D918A008BE786 /* half_wall_sit.mp3 */; };
+		96AED957227D9199008BE786 /* shoulder_blade_squeeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F6227D918A008BE786 /* shoulder_blade_squeeze.mp3 */; };
+		96AED958227D9199008BE786 /* tricep_dip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F7227D918A008BE786 /* tricep_dip.mp3 */; };
+		96AED959227D9199008BE786 /* sys_halfwaythere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F8227D918A008BE786 /* sys_halfwaythere.mp3 */; };
+		96AED95A227D9199008BE786 /* step_ups_with_a_kickback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8F9227D918B008BE786 /* step_ups_with_a_kickback.mp3 */; };
+		96AED95B227D9199008BE786 /* high_knee_walking_in_place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8FA227D918B008BE786 /* high_knee_walking_in_place.mp3 */; };
+		96AED95C227D9199008BE786 /* push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8FB227D918B008BE786 /* push_up.mp3 */; };
+		96AED95D227D9199008BE786 /* inchworm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8FC227D918C008BE786 /* inchworm.mp3 */; };
+		96AED95E227D9199008BE786 /* half_squat_walk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8FD227D918C008BE786 /* half_squat_walk.mp3 */; };
+		96AED95F227D9199008BE786 /* switch_side.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8FE227D918C008BE786 /* switch_side.mp3 */; };
+		96AED960227D9199008BE786 /* bicycle_kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED8FF227D918D008BE786 /* bicycle_kick.mp3 */; };
+		96AED961227D9199008BE786 /* russian_twist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED900227D918D008BE786 /* russian_twist.mp3 */; };
+		96AED962227D9199008BE786 /* opposite_arm_leg_lift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED901227D918D008BE786 /* opposite_arm_leg_lift.mp3 */; };
+		96AED963227D9199008BE786 /* up_and_down_plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED902227D918D008BE786 /* up_and_down_plank.mp3 */; };
+		96AED964227D9199008BE786 /* shuffle_side_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED903227D918E008BE786 /* shuffle_side_squat.mp3 */; };
+		96AED965227D9199008BE786 /* squat_jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED904227D918E008BE786 /* squat_jump.mp3 */; };
+		96AED966227D9199008BE786 /* sys_dong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED905227D918E008BE786 /* sys_dong.mp3 */; };
+		96AED967227D9199008BE786 /* big_arm_circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED906227D918E008BE786 /* big_arm_circle.mp3 */; };
+		96AED968227D9199008BE786 /* plie_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED907227D918E008BE786 /* plie_squat.mp3 */; };
+		96AED969227D9199008BE786 /* side_leg_raise_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED908227D918F008BE786 /* side_leg_raise_right.mp3 */; };
+		96AED96A227D9199008BE786 /* full_plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED909227D918F008BE786 /* full_plank.mp3 */; };
+		96AED96B227D9199008BE786 /* side_plank_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED90A227D918F008BE786 /* side_plank_right.mp3 */; };
+		96AED96C227D9199008BE786 /* butt_kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED90B227D918F008BE786 /* butt_kick.mp3 */; };
+		96AED96D227D9199008BE786 /* sys_nextstep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED90C227D918F008BE786 /* sys_nextstep.mp3 */; };
+		96AED96E227D9199008BE786 /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED90D227D9190008BE786 /* loop.mp3 */; };
+		96AED96F227D9199008BE786 /* cross_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED90E227D9190008BE786 /* cross_jack.mp3 */; };
+		96AED970227D9199008BE786 /* half_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED90F227D9190008BE786 /* half_squat.mp3 */; };
+		96AED971227D9199008BE786 /* step_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED910227D9190008BE786 /* step_up.mp3 */; };
+		96AED972227D9199008BE786 /* sys_onemoretime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED911227D9190008BE786 /* sys_onemoretime.mp3 */; };
+		96AED973227D9199008BE786 /* front_thigh_stretch_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED912227D9191008BE786 /* front_thigh_stretch_right.mp3 */; };
+		96AED974227D9199008BE786 /* lunge_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED913227D9192008BE786 /* lunge_alternate.mp3 */; };
+		96AED975227D9199008BE786 /* wall_sit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED914227D9192008BE786 /* wall_sit.mp3 */; };
+		96AED976227D9199008BE786 /* sys_begin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED915227D9192008BE786 /* sys_begin.mp3 */; };
+		96AED977227D9199008BE786 /* overhead_press.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED916227D9192008BE786 /* overhead_press.mp3 */; };
+		96AED978227D9199008BE786 /* wall_push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED917227D9193008BE786 /* wall_push_up.mp3 */; };
+		96AED979227D9199008BE786 /* side_plank_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED918227D9193008BE786 /* side_plank_left.mp3 */; };
+		96AED97A227D9199008BE786 /* burpee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED919227D9193008BE786 /* burpee.mp3 */; };
+		96AED97B227D9199008BE786 /* donkey_kick_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED91A227D9193008BE786 /* donkey_kick_alternate.mp3 */; };
+		96AED97C227D9199008BE786 /* flutter_kick_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED91B227D9193008BE786 /* flutter_kick_squat.mp3 */; };
+		96AED97D227D9199008BE786 /* step_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED91C227D9194008BE786 /* step_jack.mp3 */; };
+		96AED97E227D9199008BE786 /* vertical_leg_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED91D227D9194008BE786 /* vertical_leg_crunch.mp3 */; };
+		96AED97F227D9199008BE786 /* plank_with_leg_lift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED91E227D9194008BE786 /* plank_with_leg_lift.mp3 */; };
+		96AED980227D9199008BE786 /* sys_congratulations.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED91F227D9194008BE786 /* sys_congratulations.mp3 */; };
+		96AED981227D9199008BE786 /* single_leg_v_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED920227D9194008BE786 /* single_leg_v_up.mp3 */; };
+		96AED982227D9199008BE786 /* switch_sides.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED921227D9194008BE786 /* switch_sides.mp3 */; };
+		96AED983227D9199008BE786 /* marching_hip_raise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED922227D9195008BE786 /* marching_hip_raise.mp3 */; };
+		96AED984227D9199008BE786 /* side_leg_raise_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED923227D9195008BE786 /* side_leg_raise_left.mp3 */; };
+		96AED985227D9199008BE786 /* single_leg_hip_extension_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED924227D9195008BE786 /* single_leg_hip_extension_left.mp3 */; };
+		96AED986227D9199008BE786 /* speed_skater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED925227D9195008BE786 /* speed_skater.mp3 */; };
+		96AED987227D919A008BE786 /* bicycle_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED926227D9195008BE786 /* bicycle_crunch.mp3 */; };
+		96AED988227D919A008BE786 /* v_sit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED927227D9195008BE786 /* v_sit.mp3 */; };
+		96AED989227D919A008BE786 /* standing_bicycle_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED928227D9196008BE786 /* standing_bicycle_crunch.mp3 */; };
+		96AED98A227D919A008BE786 /* hip_bridge_hold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED929227D9196008BE786 /* hip_bridge_hold.mp3 */; };
+		96AED98B227D919A008BE786 /* sys_ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED92A227D9196008BE786 /* sys_ding.mp3 */; };
+		96AED98C227D919A008BE786 /* mountain_climber.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED92B227D9196008BE786 /* mountain_climber.mp3 */; };
+		96AED98D227D919A008BE786 /* standing_side_bend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED92C227D9196008BE786 /* standing_side_bend.mp3 */; };
+		96AED98E227D919A008BE786 /* frog_jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED92D227D9196008BE786 /* frog_jump.mp3 */; };
+		96AED98F227D919A008BE786 /* side_kick_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED92E227D9197008BE786 /* side_kick_squat.mp3 */; };
+		96AED990227D919A008BE786 /* lateral_punch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED92F227D9197008BE786 /* lateral_punch.mp3 */; };
+		96AED991227D919A008BE786 /* lying_triceps_lift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED930227D9197008BE786 /* lying_triceps_lift.mp3 */; };
+		96AED992227D919A008BE786 /* abdominal_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED931227D9197008BE786 /* abdominal_crunch.mp3 */; };
+		96AED993227D919A008BE786 /* side_lunge_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED932227D9197008BE786 /* side_lunge_alternate.mp3 */; };
+		96AED994227D919A008BE786 /* walking_burpee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED933227D9198008BE786 /* walking_burpee.mp3 */; };
+		96AED995227D919A008BE786 /* single_leg_arm_reach_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED934227D9198008BE786 /* single_leg_arm_reach_alternate.mp3 */; };
+		96AED996227D919A008BE786 /* sys_countdown2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED935227D9198008BE786 /* sys_countdown2.mp3 */; };
+		96AED997227D919A008BE786 /* front_thigh_stretch_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED936227D9198008BE786 /* front_thigh_stretch_left.mp3 */; };
+		96AED998227D919A008BE786 /* knee_push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED937227D9198008BE786 /* knee_push_up.mp3 */; };
+		96AED999227D919A008BE786 /* plank_hip_twist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED938227D9198008BE786 /* plank_hip_twist.mp3 */; };
+		96AED99A227D919A008BE786 /* jumping_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED939227D9199008BE786 /* jumping_jack.mp3 */; };
+		96AED99B227D919A008BE786 /* single_leg_hip_extension_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED93A227D9199008BE786 /* single_leg_hip_extension_right.mp3 */; };
+		96AED99C227D919A008BE786 /* bent_elbow_shoulder_circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED93B227D9199008BE786 /* bent_elbow_shoulder_circle.mp3 */; };
+		96AED99D227D919A008BE786 /* sys_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AED93C227D9199008BE786 /* sys_start.mp3 */; };
 		96C98BBA22768E25008D57CB /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BB922768E25008D57CB /* ExerciseClass.swift */; };
 		96C98BBD2276E81C008D57CB /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BBC2276E81C008D57CB /* SharedData.swift */; };
 		96C98BC12276F2FB008D57CB /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C98BBF2276F2FB008D57CB /* TutorialVC.swift */; };
@@ -124,13 +341,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9613CFA8227DFDBC00AD09E6 /* CustomExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExercisesVC.swift; sourceTree = "<group>"; };
+		9613CFA9227DFDBC00AD09E6 /* CustomExercisesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomExercisesVC.xib; sourceTree = "<group>"; };
 		9633C9B2224B250F00448D5B /* DoExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExerciseCell.swift; sourceTree = "<group>"; };
 		9633C9B3224B250F00448D5B /* DoExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoExerciseCell.xib; sourceTree = "<group>"; };
 		9633C9B6224B2AC300448D5B /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		9633C9BA224B39B100448D5B /* PlayerViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewClass.swift; sourceTree = "<group>"; };
 		9633C9BD224B60C000448D5B /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		9633C9BE224B60C000448D5B /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
-		963BDEF3227532F6001C7A23 /* big_arm_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big_arm_circle.gif; sourceTree = "<group>"; };
 		963BDEF522753397001C7A23 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		964CD07A22759D75007A79C1 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		964CD07C22759FB0007A79C1 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -144,9 +362,6 @@
 		9663C046224491FA001DA7B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9663C048224491FA001DA7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968BE6552276820F006651A8 /* ListExercisesClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExercisesClass.swift; sourceTree = "<group>"; };
-		9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_3.png; path = ../../../../image/bent_elbow_shoulder_circle_3.png; sourceTree = "<group>"; };
-		9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_2.png; path = ../../../../image/bent_elbow_shoulder_circle_2.png; sourceTree = "<group>"; };
-		9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bent_elbow_shoulder_circle_1.png; path = ../../../../image/bent_elbow_shoulder_circle_1.png; sourceTree = "<group>"; };
 		969F6FFF2244C5EB00D83264 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		969F70002244C5EB00D83264 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
 		969F70012244C5EB00D83264 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
@@ -205,6 +420,225 @@
 		969F70872244C78300D83264 /* LoadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		969F708B2244D36B00D83264 /* ExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVC.swift; sourceTree = "<group>"; };
 		969F708C2244D36B00D83264 /* ExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseVC.xib; sourceTree = "<group>"; };
+		96AED7E7227D90D2008BE786 /* side_plank_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_plank_left.gif; sourceTree = "<group>"; };
+		96AED7E8227D90D2008BE786 /* plank_with_leg_lift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_with_leg_lift.gif; sourceTree = "<group>"; };
+		96AED7E9227D90D2008BE786 /* flutter_kick_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flutter_kick_squat.gif; sourceTree = "<group>"; };
+		96AED7EA227D90D2008BE786 /* plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank.gif; sourceTree = "<group>"; };
+		96AED7EB227D90D3008BE786 /* dynamic_downward_dog_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dynamic_downward_dog_yoga.gif; sourceTree = "<group>"; };
+		96AED7EC227D90D3008BE786 /* plie_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plie_squat.gif; sourceTree = "<group>"; };
+		96AED7ED227D90D3008BE786 /* neck_stretch_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = neck_stretch_yoga.gif; sourceTree = "<group>"; };
+		96AED7EE227D90D3008BE786 /* burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = burpee.gif; sourceTree = "<group>"; };
+		96AED7EF227D90D4008BE786 /* front_thigh_stretch_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = front_thigh_stretch_left.gif; sourceTree = "<group>"; };
+		96AED7F0227D90D4008BE786 /* front_thigh_stretch_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = front_thigh_stretch_right.gif; sourceTree = "<group>"; };
+		96AED7F1227D90D4008BE786 /* step_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = step_up.gif; sourceTree = "<group>"; };
+		96AED7F2227D90D4008BE786 /* side_kick_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_kick_squat.gif; sourceTree = "<group>"; };
+		96AED7F3227D90D4008BE786 /* standing_hip_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_hip_circle.gif; sourceTree = "<group>"; };
+		96AED7F4227D90D4008BE786 /* easy_tree_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_tree_pose_left_yoga.gif; sourceTree = "<group>"; };
+		96AED7F5227D90D5008BE786 /* spiderman_plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spiderman_plank.gif; sourceTree = "<group>"; };
+		96AED7F6227D90D5008BE786 /* half_wall_sit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_wall_sit.gif; sourceTree = "<group>"; };
+		96AED7F7227D90D5008BE786 /* curtsy_lunge.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = curtsy_lunge.gif; sourceTree = "<group>"; };
+		96AED7F8227D90D5008BE786 /* vertical_leg_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vertical_leg_crunch.gif; sourceTree = "<group>"; };
+		96AED7F9227D90D6008BE786 /* butt_kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = butt_kick.gif; sourceTree = "<group>"; };
+		96AED7FA227D90D6008BE786 /* up_and_down_plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = up_and_down_plank.gif; sourceTree = "<group>"; };
+		96AED7FB227D90D6008BE786 /* flutter_kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flutter_kick.gif; sourceTree = "<group>"; };
+		96AED7FC227D90D6008BE786 /* push_ups_with_rotation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = push_ups_with_rotation.gif; sourceTree = "<group>"; };
+		96AED7FD227D90D6008BE786 /* jumping_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jumping_jack.gif; sourceTree = "<group>"; };
+		96AED7FE227D90D6008BE786 /* single_leg_v_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_v_up.gif; sourceTree = "<group>"; };
+		96AED7FF227D90D7008BE786 /* opposite_arm_leg_lift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = opposite_arm_leg_lift.gif; sourceTree = "<group>"; };
+		96AED800227D90D7008BE786 /* mountain_climber.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mountain_climber.gif; sourceTree = "<group>"; };
+		96AED801227D90D7008BE786 /* bent_elbow_shoulder_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bent_elbow_shoulder_circle.gif; sourceTree = "<group>"; };
+		96AED802227D90D7008BE786 /* half_wind_relieving_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_wind_relieving_pose_right_yoga.gif; sourceTree = "<group>"; };
+		96AED803227D90D8008BE786 /* downward_dog_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = downward_dog_yoga.gif; sourceTree = "<group>"; };
+		96AED804227D90D8008BE786 /* hip_bridge_hold.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hip_bridge_hold.gif; sourceTree = "<group>"; };
+		96AED805227D90D8008BE786 /* plank_yoga_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_yoga_yoga.gif; sourceTree = "<group>"; };
+		96AED806227D90D8008BE786 /* side_lunge_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_lunge_alternate.gif; sourceTree = "<group>"; };
+		96AED807227D90D9008BE786 /* upward_salute_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = upward_salute_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED808227D90D9008BE786 /* half_squat_walk.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_squat_walk.gif; sourceTree = "<group>"; };
+		96AED809227D90D9008BE786 /* donkey_kick_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = donkey_kick_alternate.gif; sourceTree = "<group>"; };
+		96AED80A227D90DA008BE786 /* child_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = child_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED80B227D90DA008BE786 /* cobra_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cobra_yoga.gif; sourceTree = "<group>"; };
+		96AED80C227D90DA008BE786 /* half_wind_relieving_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_wind_relieving_pose_left_yoga.gif; sourceTree = "<group>"; };
+		96AED80D227D90DA008BE786 /* mountain_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mountain_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED80E227D90DB008BE786 /* high_knees_running_in_place.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = high_knees_running_in_place.gif; sourceTree = "<group>"; };
+		96AED80F227D90DB008BE786 /* lying_spinal_twist_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lying_spinal_twist_pose_right_yoga.gif; sourceTree = "<group>"; };
+		96AED810227D90DB008BE786 /* high_knee_walking_in_place.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = high_knee_walking_in_place.gif; sourceTree = "<group>"; };
+		96AED811227D90DB008BE786 /* standing_forward_bend_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_forward_bend_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED812227D90DB008BE786 /* bicycle_kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bicycle_kick.gif; sourceTree = "<group>"; };
+		96AED813227D90DB008BE786 /* plank_shoulder_tap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_shoulder_tap.gif; sourceTree = "<group>"; };
+		96AED814227D90DC008BE786 /* squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat.gif; sourceTree = "<group>"; };
+		96AED815227D90DC008BE786 /* wind_relieving_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wind_relieving_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED816227D90DC008BE786 /* v_sit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = v_sit.gif; sourceTree = "<group>"; };
+		96AED817227D90DC008BE786 /* single_leg_downward_dog_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_downward_dog_right_yoga.gif; sourceTree = "<group>"; };
+		96AED818227D90DC008BE786 /* marching_hip_raise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = marching_hip_raise.gif; sourceTree = "<group>"; };
+		96AED819227D90DC008BE786 /* plank_hip_twist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_hip_twist.gif; sourceTree = "<group>"; };
+		96AED81A227D90DD008BE786 /* wall_push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wall_push_up.gif; sourceTree = "<group>"; };
+		96AED81B227D90DD008BE786 /* side_leg_raise_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_leg_raise_right.gif; sourceTree = "<group>"; };
+		96AED81C227D90DD008BE786 /* standing_side_bend_yoga_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_side_bend_yoga_yoga.gif; sourceTree = "<group>"; };
+		96AED81D227D90DD008BE786 /* russian_twist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = russian_twist.gif; sourceTree = "<group>"; };
+		96AED81E227D90DE008BE786 /* frog_jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = frog_jump.gif; sourceTree = "<group>"; };
+		96AED81F227D90DE008BE786 /* swimmer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swimmer.gif; sourceTree = "<group>"; };
+		96AED820227D90DE008BE786 /* single_leg_arm_reach_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_arm_reach_alternate.gif; sourceTree = "<group>"; };
+		96AED821227D90DE008BE786 /* hand_release_push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hand_release_push_up.gif; sourceTree = "<group>"; };
+		96AED822227D90DE008BE786 /* step_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = step_jack.gif; sourceTree = "<group>"; };
+		96AED823227D90DE008BE786 /* big_arm_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big_arm_circle.gif; sourceTree = "<group>"; };
+		96AED824227D90DF008BE786 /* wall_sit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wall_sit.gif; sourceTree = "<group>"; };
+		96AED825227D90DF008BE786 /* lunge_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lunge_alternate.gif; sourceTree = "<group>"; };
+		96AED826227D90E0008BE786 /* standing_twist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_twist.gif; sourceTree = "<group>"; };
+		96AED827227D90E0008BE786 /* warriori_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = warriori_left_yoga.gif; sourceTree = "<group>"; };
+		96AED828227D90E1008BE786 /* cat_camel_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cat_camel_yoga.gif; sourceTree = "<group>"; };
+		96AED829227D90E1008BE786 /* single_leg_hip_extension_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_hip_extension_right.gif; sourceTree = "<group>"; };
+		96AED82A227D90E1008BE786 /* shoulder_expansion_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shoulder_expansion_yoga.gif; sourceTree = "<group>"; };
+		96AED82B227D90E2008BE786 /* push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = push_up.gif; sourceTree = "<group>"; };
+		96AED82C227D90E2008BE786 /* squat_jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat_jump.gif; sourceTree = "<group>"; };
+		96AED82D227D90E2008BE786 /* extended_side_angle_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_side_angle_left_yoga.gif; sourceTree = "<group>"; };
+		96AED82E227D90E2008BE786 /* lying_spinal_twist_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lying_spinal_twist_pose_left_yoga.gif; sourceTree = "<group>"; };
+		96AED82F227D90E3008BE786 /* walking_burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walking_burpee.gif; sourceTree = "<group>"; };
+		96AED830227D90E3008BE786 /* upward_salute_pose_dynamic_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = upward_salute_pose_dynamic_yoga.gif; sourceTree = "<group>"; };
+		96AED831227D90E3008BE786 /* reverse_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = reverse_crunch.gif; sourceTree = "<group>"; };
+		96AED832227D90E4008BE786 /* seated_spinal_twist_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seated_spinal_twist_left_yoga.gif; sourceTree = "<group>"; };
+		96AED833227D90E5008BE786 /* full_plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = full_plank.gif; sourceTree = "<group>"; };
+		96AED834227D90E5008BE786 /* seated_spinal_twist_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seated_spinal_twist_right_yoga.gif; sourceTree = "<group>"; };
+		96AED835227D90E5008BE786 /* warriori_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = warriori_right_yoga.gif; sourceTree = "<group>"; };
+		96AED836227D90E6008BE786 /* extended_side_angle_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_side_angle_right_yoga.gif; sourceTree = "<group>"; };
+		96AED837227D90E7008BE786 /* low_lunges_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = low_lunges_right_yoga.gif; sourceTree = "<group>"; };
+		96AED838227D90E7008BE786 /* shuffle_side_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shuffle_side_squat.gif; sourceTree = "<group>"; };
+		96AED839227D90E7008BE786 /* lunge_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lunge_left.gif; sourceTree = "<group>"; };
+		96AED83A227D90E8008BE786 /* single_leg_hip_extension_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_hip_extension_left.gif; sourceTree = "<group>"; };
+		96AED83B227D90E8008BE786 /* squat_thrust.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat_thrust.gif; sourceTree = "<group>"; };
+		96AED83C227D90E8008BE786 /* lying_triceps_lift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lying_triceps_lift.gif; sourceTree = "<group>"; };
+		96AED83D227D90E8008BE786 /* low_lunges_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = low_lunges_left_yoga.gif; sourceTree = "<group>"; };
+		96AED83E227D90E8008BE786 /* easy_twist_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_twist_right_yoga.gif; sourceTree = "<group>"; };
+		96AED83F227D90E8008BE786 /* hip_thrust.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hip_thrust.gif; sourceTree = "<group>"; };
+		96AED840227D90E9008BE786 /* thread_the_needle_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thread_the_needle_left_yoga.gif; sourceTree = "<group>"; };
+		96AED841227D90E9008BE786 /* overhead_press.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = overhead_press.gif; sourceTree = "<group>"; };
+		96AED842227D90E9008BE786 /* lateral_punch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lateral_punch.gif; sourceTree = "<group>"; };
+		96AED843227D90E9008BE786 /* inchworm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inchworm.gif; sourceTree = "<group>"; };
+		96AED844227D90E9008BE786 /* bicycle_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bicycle_crunch.gif; sourceTree = "<group>"; };
+		96AED845227D90E9008BE786 /* easy_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED846227D90EA008BE786 /* side_leg_raise_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_leg_raise_left.gif; sourceTree = "<group>"; };
+		96AED847227D90EA008BE786 /* extended_triangle_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_triangle_pose_right_yoga.gif; sourceTree = "<group>"; };
+		96AED848227D90EA008BE786 /* extended_triangle_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_triangle_pose_left_yoga.gif; sourceTree = "<group>"; };
+		96AED849227D90EA008BE786 /* bound_angle_forward_bend_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bound_angle_forward_bend_yoga.gif; sourceTree = "<group>"; };
+		96AED84A227D90EA008BE786 /* prayer_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = prayer_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED84B227D90EB008BE786 /* standing_side_bend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_side_bend.gif; sourceTree = "<group>"; };
+		96AED84C227D90EB008BE786 /* step_ups_with_a_kickback.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = step_ups_with_a_kickback.gif; sourceTree = "<group>"; };
+		96AED84D227D90EB008BE786 /* lunge_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lunge_right.gif; sourceTree = "<group>"; };
+		96AED84E227D90EB008BE786 /* thread_the_needle_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thread_the_needle_right_yoga.gif; sourceTree = "<group>"; };
+		96AED84F227D90EC008BE786 /* corpse_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = corpse_pose_yoga.gif; sourceTree = "<group>"; };
+		96AED850227D90EC008BE786 /* spinal_rolling_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinal_rolling_yoga.gif; sourceTree = "<group>"; };
+		96AED851227D90EC008BE786 /* side_plank_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_plank_right.gif; sourceTree = "<group>"; };
+		96AED852227D90EC008BE786 /* half_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_squat.gif; sourceTree = "<group>"; };
+		96AED853227D90EC008BE786 /* cross_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cross_jack.gif; sourceTree = "<group>"; };
+		96AED854227D90EC008BE786 /* jog_in_place.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jog_in_place.gif; sourceTree = "<group>"; };
+		96AED855227D90ED008BE786 /* single_leg_downward_dog_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_downward_dog_left_yoga.gif; sourceTree = "<group>"; };
+		96AED856227D90ED008BE786 /* shoulder_blade_squeeze.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shoulder_blade_squeeze.gif; sourceTree = "<group>"; };
+		96AED857227D90ED008BE786 /* standing_bicycle_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_bicycle_crunch.gif; sourceTree = "<group>"; };
+		96AED858227D90ED008BE786 /* tricep_dip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tricep_dip.gif; sourceTree = "<group>"; };
+		96AED859227D90ED008BE786 /* rest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rest.gif; sourceTree = "<group>"; };
+		96AED85A227D90EE008BE786 /* superman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = superman.gif; sourceTree = "<group>"; };
+		96AED85B227D90EE008BE786 /* easy_twist_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_twist_left_yoga.gif; sourceTree = "<group>"; };
+		96AED85C227D90EE008BE786 /* abdominal_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = abdominal_crunch.gif; sourceTree = "<group>"; };
+		96AED85D227D90EE008BE786 /* speed_skater.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = speed_skater.gif; sourceTree = "<group>"; };
+		96AED85E227D90EE008BE786 /* easy_tree_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_tree_pose_right_yoga.gif; sourceTree = "<group>"; };
+		96AED85F227D90EE008BE786 /* knee_push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knee_push_up.gif; sourceTree = "<group>"; };
+		96AED860227D90EF008BE786 /* plank_jumping_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_jumping_jack.gif; sourceTree = "<group>"; };
+		96AED8DC227D9185008BE786 /* flutter_kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flutter_kick.mp3; sourceTree = "<group>"; };
+		96AED8DD227D9185008BE786 /* high_knees_running_in_place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = high_knees_running_in_place.mp3; sourceTree = "<group>"; };
+		96AED8DE227D9185008BE786 /* squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = squat.mp3; sourceTree = "<group>"; };
+		96AED8DF227D9185008BE786 /* push_ups_with_rotation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = push_ups_with_rotation.mp3; sourceTree = "<group>"; };
+		96AED8E0227D9186008BE786 /* rest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rest.mp3; sourceTree = "<group>"; };
+		96AED8E1227D9186008BE786 /* spiderman_plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spiderman_plank.mp3; sourceTree = "<group>"; };
+		96AED8E2227D9186008BE786 /* hip_thrust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hip_thrust.mp3; sourceTree = "<group>"; };
+		96AED8E3227D9186008BE786 /* standing_hip_circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_hip_circle.mp3; sourceTree = "<group>"; };
+		96AED8E4227D9186008BE786 /* lunge_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunge_right.mp3; sourceTree = "<group>"; };
+		96AED8E5227D9187008BE786 /* sys_getready.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_getready.mp3; sourceTree = "<group>"; };
+		96AED8E6227D9187008BE786 /* swimmer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swimmer.mp3; sourceTree = "<group>"; };
+		96AED8E7227D9187008BE786 /* curtsy_lunge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = curtsy_lunge.mp3; sourceTree = "<group>"; };
+		96AED8E8227D9187008BE786 /* hand_release_push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hand_release_push_up.mp3; sourceTree = "<group>"; };
+		96AED8E9227D9187008BE786 /* plank_jumping_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_jumping_jack.mp3; sourceTree = "<group>"; };
+		96AED8EA227D9187008BE786 /* reverse_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reverse_crunch.mp3; sourceTree = "<group>"; };
+		96AED8EB227D9188008BE786 /* superman.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = superman.mp3; sourceTree = "<group>"; };
+		96AED8EC227D9188008BE786 /* squat_thrust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = squat_thrust.mp3; sourceTree = "<group>"; };
+		96AED8ED227D9188008BE786 /* sys_countdown1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown1.mp3; sourceTree = "<group>"; };
+		96AED8EE227D9188008BE786 /* plank_shoulder_tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_shoulder_tap.mp3; sourceTree = "<group>"; };
+		96AED8EF227D9188008BE786 /* sys_countdown3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown3.mp3; sourceTree = "<group>"; };
+		96AED8F0227D9189008BE786 /* plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank.mp3; sourceTree = "<group>"; };
+		96AED8F1227D9189008BE786 /* lunge_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunge_left.mp3; sourceTree = "<group>"; };
+		96AED8F2227D9189008BE786 /* jog_in_place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jog_in_place.mp3; sourceTree = "<group>"; };
+		96AED8F3227D9189008BE786 /* sys_countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown.mp3; sourceTree = "<group>"; };
+		96AED8F4227D9189008BE786 /* standing_twist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_twist.mp3; sourceTree = "<group>"; };
+		96AED8F5227D918A008BE786 /* half_wall_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_wall_sit.mp3; sourceTree = "<group>"; };
+		96AED8F6227D918A008BE786 /* shoulder_blade_squeeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoulder_blade_squeeze.mp3; sourceTree = "<group>"; };
+		96AED8F7227D918A008BE786 /* tricep_dip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tricep_dip.mp3; sourceTree = "<group>"; };
+		96AED8F8227D918A008BE786 /* sys_halfwaythere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_halfwaythere.mp3; sourceTree = "<group>"; };
+		96AED8F9227D918B008BE786 /* step_ups_with_a_kickback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_ups_with_a_kickback.mp3; sourceTree = "<group>"; };
+		96AED8FA227D918B008BE786 /* high_knee_walking_in_place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = high_knee_walking_in_place.mp3; sourceTree = "<group>"; };
+		96AED8FB227D918B008BE786 /* push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = push_up.mp3; sourceTree = "<group>"; };
+		96AED8FC227D918C008BE786 /* inchworm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inchworm.mp3; sourceTree = "<group>"; };
+		96AED8FD227D918C008BE786 /* half_squat_walk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_squat_walk.mp3; sourceTree = "<group>"; };
+		96AED8FE227D918C008BE786 /* switch_side.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch_side.mp3; sourceTree = "<group>"; };
+		96AED8FF227D918D008BE786 /* bicycle_kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicycle_kick.mp3; sourceTree = "<group>"; };
+		96AED900227D918D008BE786 /* russian_twist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = russian_twist.mp3; sourceTree = "<group>"; };
+		96AED901227D918D008BE786 /* opposite_arm_leg_lift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = opposite_arm_leg_lift.mp3; sourceTree = "<group>"; };
+		96AED902227D918D008BE786 /* up_and_down_plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = up_and_down_plank.mp3; sourceTree = "<group>"; };
+		96AED903227D918E008BE786 /* shuffle_side_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shuffle_side_squat.mp3; sourceTree = "<group>"; };
+		96AED904227D918E008BE786 /* squat_jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = squat_jump.mp3; sourceTree = "<group>"; };
+		96AED905227D918E008BE786 /* sys_dong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_dong.mp3; sourceTree = "<group>"; };
+		96AED906227D918E008BE786 /* big_arm_circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = big_arm_circle.mp3; sourceTree = "<group>"; };
+		96AED907227D918E008BE786 /* plie_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plie_squat.mp3; sourceTree = "<group>"; };
+		96AED908227D918F008BE786 /* side_leg_raise_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_leg_raise_right.mp3; sourceTree = "<group>"; };
+		96AED909227D918F008BE786 /* full_plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = full_plank.mp3; sourceTree = "<group>"; };
+		96AED90A227D918F008BE786 /* side_plank_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_plank_right.mp3; sourceTree = "<group>"; };
+		96AED90B227D918F008BE786 /* butt_kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = butt_kick.mp3; sourceTree = "<group>"; };
+		96AED90C227D918F008BE786 /* sys_nextstep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_nextstep.mp3; sourceTree = "<group>"; };
+		96AED90D227D9190008BE786 /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
+		96AED90E227D9190008BE786 /* cross_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cross_jack.mp3; sourceTree = "<group>"; };
+		96AED90F227D9190008BE786 /* half_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_squat.mp3; sourceTree = "<group>"; };
+		96AED910227D9190008BE786 /* step_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_up.mp3; sourceTree = "<group>"; };
+		96AED911227D9190008BE786 /* sys_onemoretime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_onemoretime.mp3; sourceTree = "<group>"; };
+		96AED912227D9191008BE786 /* front_thigh_stretch_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = front_thigh_stretch_right.mp3; sourceTree = "<group>"; };
+		96AED913227D9192008BE786 /* lunge_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunge_alternate.mp3; sourceTree = "<group>"; };
+		96AED914227D9192008BE786 /* wall_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wall_sit.mp3; sourceTree = "<group>"; };
+		96AED915227D9192008BE786 /* sys_begin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_begin.mp3; sourceTree = "<group>"; };
+		96AED916227D9192008BE786 /* overhead_press.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overhead_press.mp3; sourceTree = "<group>"; };
+		96AED917227D9193008BE786 /* wall_push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wall_push_up.mp3; sourceTree = "<group>"; };
+		96AED918227D9193008BE786 /* side_plank_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_plank_left.mp3; sourceTree = "<group>"; };
+		96AED919227D9193008BE786 /* burpee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = burpee.mp3; sourceTree = "<group>"; };
+		96AED91A227D9193008BE786 /* donkey_kick_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = donkey_kick_alternate.mp3; sourceTree = "<group>"; };
+		96AED91B227D9193008BE786 /* flutter_kick_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flutter_kick_squat.mp3; sourceTree = "<group>"; };
+		96AED91C227D9194008BE786 /* step_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_jack.mp3; sourceTree = "<group>"; };
+		96AED91D227D9194008BE786 /* vertical_leg_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vertical_leg_crunch.mp3; sourceTree = "<group>"; };
+		96AED91E227D9194008BE786 /* plank_with_leg_lift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_with_leg_lift.mp3; sourceTree = "<group>"; };
+		96AED91F227D9194008BE786 /* sys_congratulations.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_congratulations.mp3; sourceTree = "<group>"; };
+		96AED920227D9194008BE786 /* single_leg_v_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_v_up.mp3; sourceTree = "<group>"; };
+		96AED921227D9194008BE786 /* switch_sides.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch_sides.mp3; sourceTree = "<group>"; };
+		96AED922227D9195008BE786 /* marching_hip_raise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marching_hip_raise.mp3; sourceTree = "<group>"; };
+		96AED923227D9195008BE786 /* side_leg_raise_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_leg_raise_left.mp3; sourceTree = "<group>"; };
+		96AED924227D9195008BE786 /* single_leg_hip_extension_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_hip_extension_left.mp3; sourceTree = "<group>"; };
+		96AED925227D9195008BE786 /* speed_skater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = speed_skater.mp3; sourceTree = "<group>"; };
+		96AED926227D9195008BE786 /* bicycle_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicycle_crunch.mp3; sourceTree = "<group>"; };
+		96AED927227D9195008BE786 /* v_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v_sit.mp3; sourceTree = "<group>"; };
+		96AED928227D9196008BE786 /* standing_bicycle_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_bicycle_crunch.mp3; sourceTree = "<group>"; };
+		96AED929227D9196008BE786 /* hip_bridge_hold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hip_bridge_hold.mp3; sourceTree = "<group>"; };
+		96AED92A227D9196008BE786 /* sys_ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_ding.mp3; sourceTree = "<group>"; };
+		96AED92B227D9196008BE786 /* mountain_climber.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mountain_climber.mp3; sourceTree = "<group>"; };
+		96AED92C227D9196008BE786 /* standing_side_bend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_side_bend.mp3; sourceTree = "<group>"; };
+		96AED92D227D9196008BE786 /* frog_jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frog_jump.mp3; sourceTree = "<group>"; };
+		96AED92E227D9197008BE786 /* side_kick_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_kick_squat.mp3; sourceTree = "<group>"; };
+		96AED92F227D9197008BE786 /* lateral_punch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lateral_punch.mp3; sourceTree = "<group>"; };
+		96AED930227D9197008BE786 /* lying_triceps_lift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lying_triceps_lift.mp3; sourceTree = "<group>"; };
+		96AED931227D9197008BE786 /* abdominal_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = abdominal_crunch.mp3; sourceTree = "<group>"; };
+		96AED932227D9197008BE786 /* side_lunge_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_lunge_alternate.mp3; sourceTree = "<group>"; };
+		96AED933227D9198008BE786 /* walking_burpee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walking_burpee.mp3; sourceTree = "<group>"; };
+		96AED934227D9198008BE786 /* single_leg_arm_reach_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_arm_reach_alternate.mp3; sourceTree = "<group>"; };
+		96AED935227D9198008BE786 /* sys_countdown2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown2.mp3; sourceTree = "<group>"; };
+		96AED936227D9198008BE786 /* front_thigh_stretch_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = front_thigh_stretch_left.mp3; sourceTree = "<group>"; };
+		96AED937227D9198008BE786 /* knee_push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knee_push_up.mp3; sourceTree = "<group>"; };
+		96AED938227D9198008BE786 /* plank_hip_twist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_hip_twist.mp3; sourceTree = "<group>"; };
+		96AED939227D9199008BE786 /* jumping_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jumping_jack.mp3; sourceTree = "<group>"; };
+		96AED93A227D9199008BE786 /* single_leg_hip_extension_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_hip_extension_right.mp3; sourceTree = "<group>"; };
+		96AED93B227D9199008BE786 /* bent_elbow_shoulder_circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bent_elbow_shoulder_circle.mp3; sourceTree = "<group>"; };
+		96AED93C227D9199008BE786 /* sys_start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_start.mp3; sourceTree = "<group>"; };
 		96C98BB522768B9B008D57CB /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C98BB722768BA4008D57CB /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C98BB922768E25008D57CB /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
@@ -279,6 +713,24 @@
 				D63B276F7E609B0B96435B2C /* Pods-Fitness_App.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9613CFA6227DFD7400AD09E6 /* add new exercise */ = {
+			isa = PBXGroup;
+			children = (
+				96D57473227115CB00228AD0 /* AddExercisesVc.swift */,
+				96D57474227115CB00228AD0 /* AddExercisesVc.xib */,
+			);
+			path = "add new exercise";
+			sourceTree = "<group>";
+		};
+		9613CFA7227DFD8B00AD09E6 /* customExercises */ = {
+			isa = PBXGroup;
+			children = (
+				9613CFA8227DFDBC00AD09E6 /* CustomExercisesVC.swift */,
+				9613CFA9227DFDBC00AD09E6 /* CustomExercisesVC.xib */,
+			);
+			path = customExercises;
 			sourceTree = "<group>";
 		};
 		9633C9B0224B249600448D5B /* Cell */ = {
@@ -356,10 +808,128 @@
 		9697388B225463130064A432 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				963BDEF3227532F6001C7A23 /* big_arm_circle.gif */,
-				9697388E225463430064A432 /* bent_elbow_shoulder_circle_1.png */,
-				9697388D225463430064A432 /* bent_elbow_shoulder_circle_2.png */,
-				9697388C225463430064A432 /* bent_elbow_shoulder_circle_3.png */,
+				96AED85C227D90EE008BE786 /* abdominal_crunch.gif */,
+				96AED801227D90D7008BE786 /* bent_elbow_shoulder_circle.gif */,
+				96AED844227D90E9008BE786 /* bicycle_crunch.gif */,
+				96AED812227D90DB008BE786 /* bicycle_kick.gif */,
+				96AED823227D90DE008BE786 /* big_arm_circle.gif */,
+				96AED849227D90EA008BE786 /* bound_angle_forward_bend_yoga.gif */,
+				96AED7EE227D90D3008BE786 /* burpee.gif */,
+				96AED7F9227D90D6008BE786 /* butt_kick.gif */,
+				96AED828227D90E1008BE786 /* cat_camel_yoga.gif */,
+				96AED80A227D90DA008BE786 /* child_pose_yoga.gif */,
+				96AED80B227D90DA008BE786 /* cobra_yoga.gif */,
+				96AED84F227D90EC008BE786 /* corpse_pose_yoga.gif */,
+				96AED853227D90EC008BE786 /* cross_jack.gif */,
+				96AED7F7227D90D5008BE786 /* curtsy_lunge.gif */,
+				96AED809227D90D9008BE786 /* donkey_kick_alternate.gif */,
+				96AED803227D90D8008BE786 /* downward_dog_yoga.gif */,
+				96AED7EB227D90D3008BE786 /* dynamic_downward_dog_yoga.gif */,
+				96AED845227D90E9008BE786 /* easy_pose_yoga.gif */,
+				96AED7F4227D90D4008BE786 /* easy_tree_pose_left_yoga.gif */,
+				96AED85E227D90EE008BE786 /* easy_tree_pose_right_yoga.gif */,
+				96AED85B227D90EE008BE786 /* easy_twist_left_yoga.gif */,
+				96AED83E227D90E8008BE786 /* easy_twist_right_yoga.gif */,
+				96AED82D227D90E2008BE786 /* extended_side_angle_left_yoga.gif */,
+				96AED836227D90E6008BE786 /* extended_side_angle_right_yoga.gif */,
+				96AED848227D90EA008BE786 /* extended_triangle_pose_left_yoga.gif */,
+				96AED847227D90EA008BE786 /* extended_triangle_pose_right_yoga.gif */,
+				96AED7E9227D90D2008BE786 /* flutter_kick_squat.gif */,
+				96AED7FB227D90D6008BE786 /* flutter_kick.gif */,
+				96AED81E227D90DE008BE786 /* frog_jump.gif */,
+				96AED7EF227D90D4008BE786 /* front_thigh_stretch_left.gif */,
+				96AED7F0227D90D4008BE786 /* front_thigh_stretch_right.gif */,
+				96AED833227D90E5008BE786 /* full_plank.gif */,
+				96AED808227D90D9008BE786 /* half_squat_walk.gif */,
+				96AED852227D90EC008BE786 /* half_squat.gif */,
+				96AED7F6227D90D5008BE786 /* half_wall_sit.gif */,
+				96AED80C227D90DA008BE786 /* half_wind_relieving_pose_left_yoga.gif */,
+				96AED802227D90D7008BE786 /* half_wind_relieving_pose_right_yoga.gif */,
+				96AED821227D90DE008BE786 /* hand_release_push_up.gif */,
+				96AED810227D90DB008BE786 /* high_knee_walking_in_place.gif */,
+				96AED80E227D90DB008BE786 /* high_knees_running_in_place.gif */,
+				96AED804227D90D8008BE786 /* hip_bridge_hold.gif */,
+				96AED83F227D90E8008BE786 /* hip_thrust.gif */,
+				96AED843227D90E9008BE786 /* inchworm.gif */,
+				96AED854227D90EC008BE786 /* jog_in_place.gif */,
+				96AED7FD227D90D6008BE786 /* jumping_jack.gif */,
+				96AED85F227D90EE008BE786 /* knee_push_up.gif */,
+				96AED842227D90E9008BE786 /* lateral_punch.gif */,
+				96AED83D227D90E8008BE786 /* low_lunges_left_yoga.gif */,
+				96AED837227D90E7008BE786 /* low_lunges_right_yoga.gif */,
+				96AED825227D90DF008BE786 /* lunge_alternate.gif */,
+				96AED839227D90E7008BE786 /* lunge_left.gif */,
+				96AED84D227D90EB008BE786 /* lunge_right.gif */,
+				96AED82E227D90E2008BE786 /* lying_spinal_twist_pose_left_yoga.gif */,
+				96AED80F227D90DB008BE786 /* lying_spinal_twist_pose_right_yoga.gif */,
+				96AED83C227D90E8008BE786 /* lying_triceps_lift.gif */,
+				96AED818227D90DC008BE786 /* marching_hip_raise.gif */,
+				96AED800227D90D7008BE786 /* mountain_climber.gif */,
+				96AED80D227D90DA008BE786 /* mountain_pose_yoga.gif */,
+				96AED7ED227D90D3008BE786 /* neck_stretch_yoga.gif */,
+				96AED7FF227D90D7008BE786 /* opposite_arm_leg_lift.gif */,
+				96AED841227D90E9008BE786 /* overhead_press.gif */,
+				96AED819227D90DC008BE786 /* plank_hip_twist.gif */,
+				96AED860227D90EF008BE786 /* plank_jumping_jack.gif */,
+				96AED813227D90DB008BE786 /* plank_shoulder_tap.gif */,
+				96AED7E8227D90D2008BE786 /* plank_with_leg_lift.gif */,
+				96AED805227D90D8008BE786 /* plank_yoga_yoga.gif */,
+				96AED7EA227D90D2008BE786 /* plank.gif */,
+				96AED7EC227D90D3008BE786 /* plie_squat.gif */,
+				96AED84A227D90EA008BE786 /* prayer_pose_yoga.gif */,
+				96AED82B227D90E2008BE786 /* push_up.gif */,
+				96AED7FC227D90D6008BE786 /* push_ups_with_rotation.gif */,
+				96AED859227D90ED008BE786 /* rest.gif */,
+				96AED831227D90E3008BE786 /* reverse_crunch.gif */,
+				96AED81D227D90DD008BE786 /* russian_twist.gif */,
+				96AED832227D90E4008BE786 /* seated_spinal_twist_left_yoga.gif */,
+				96AED834227D90E5008BE786 /* seated_spinal_twist_right_yoga.gif */,
+				96AED856227D90ED008BE786 /* shoulder_blade_squeeze.gif */,
+				96AED82A227D90E1008BE786 /* shoulder_expansion_yoga.gif */,
+				96AED838227D90E7008BE786 /* shuffle_side_squat.gif */,
+				96AED7F2227D90D4008BE786 /* side_kick_squat.gif */,
+				96AED846227D90EA008BE786 /* side_leg_raise_left.gif */,
+				96AED81B227D90DD008BE786 /* side_leg_raise_right.gif */,
+				96AED806227D90D8008BE786 /* side_lunge_alternate.gif */,
+				96AED7E7227D90D2008BE786 /* side_plank_left.gif */,
+				96AED851227D90EC008BE786 /* side_plank_right.gif */,
+				96AED820227D90DE008BE786 /* single_leg_arm_reach_alternate.gif */,
+				96AED855227D90ED008BE786 /* single_leg_downward_dog_left_yoga.gif */,
+				96AED817227D90DC008BE786 /* single_leg_downward_dog_right_yoga.gif */,
+				96AED83A227D90E8008BE786 /* single_leg_hip_extension_left.gif */,
+				96AED829227D90E1008BE786 /* single_leg_hip_extension_right.gif */,
+				96AED7FE227D90D6008BE786 /* single_leg_v_up.gif */,
+				96AED85D227D90EE008BE786 /* speed_skater.gif */,
+				96AED7F5227D90D5008BE786 /* spiderman_plank.gif */,
+				96AED850227D90EC008BE786 /* spinal_rolling_yoga.gif */,
+				96AED82C227D90E2008BE786 /* squat_jump.gif */,
+				96AED83B227D90E8008BE786 /* squat_thrust.gif */,
+				96AED814227D90DC008BE786 /* squat.gif */,
+				96AED857227D90ED008BE786 /* standing_bicycle_crunch.gif */,
+				96AED811227D90DB008BE786 /* standing_forward_bend_pose_yoga.gif */,
+				96AED7F3227D90D4008BE786 /* standing_hip_circle.gif */,
+				96AED81C227D90DD008BE786 /* standing_side_bend_yoga_yoga.gif */,
+				96AED84B227D90EB008BE786 /* standing_side_bend.gif */,
+				96AED826227D90E0008BE786 /* standing_twist.gif */,
+				96AED822227D90DE008BE786 /* step_jack.gif */,
+				96AED7F1227D90D4008BE786 /* step_up.gif */,
+				96AED84C227D90EB008BE786 /* step_ups_with_a_kickback.gif */,
+				96AED85A227D90EE008BE786 /* superman.gif */,
+				96AED81F227D90DE008BE786 /* swimmer.gif */,
+				96AED840227D90E9008BE786 /* thread_the_needle_left_yoga.gif */,
+				96AED84E227D90EB008BE786 /* thread_the_needle_right_yoga.gif */,
+				96AED858227D90ED008BE786 /* tricep_dip.gif */,
+				96AED7FA227D90D6008BE786 /* up_and_down_plank.gif */,
+				96AED830227D90E3008BE786 /* upward_salute_pose_dynamic_yoga.gif */,
+				96AED807227D90D9008BE786 /* upward_salute_pose_yoga.gif */,
+				96AED816227D90DC008BE786 /* v_sit.gif */,
+				96AED7F8227D90D5008BE786 /* vertical_leg_crunch.gif */,
+				96AED82F227D90E3008BE786 /* walking_burpee.gif */,
+				96AED81A227D90DD008BE786 /* wall_push_up.gif */,
+				96AED824227D90DF008BE786 /* wall_sit.gif */,
+				96AED827227D90E0008BE786 /* warriori_left_yoga.gif */,
+				96AED835227D90E5008BE786 /* warriori_right_yoga.gif */,
+				96AED815227D90DC008BE786 /* wind_relieving_pose_yoga.gif */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -605,6 +1175,7 @@
 		969F707C2244C65300D83264 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				96AED8DB227D9174008BE786 /* sound */,
 				9697388B225463130064A432 /* image */,
 				9663C043224491FA001DA7B1 /* Assets.xcassets */,
 			);
@@ -685,6 +1256,110 @@
 			path = DoExercise;
 			sourceTree = "<group>";
 		};
+		96AED8DB227D9174008BE786 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				96AED931227D9197008BE786 /* abdominal_crunch.mp3 */,
+				96AED93B227D9199008BE786 /* bent_elbow_shoulder_circle.mp3 */,
+				96AED926227D9195008BE786 /* bicycle_crunch.mp3 */,
+				96AED8FF227D918D008BE786 /* bicycle_kick.mp3 */,
+				96AED906227D918E008BE786 /* big_arm_circle.mp3 */,
+				96AED919227D9193008BE786 /* burpee.mp3 */,
+				96AED90B227D918F008BE786 /* butt_kick.mp3 */,
+				96AED90E227D9190008BE786 /* cross_jack.mp3 */,
+				96AED8E7227D9187008BE786 /* curtsy_lunge.mp3 */,
+				96AED91A227D9193008BE786 /* donkey_kick_alternate.mp3 */,
+				96AED91B227D9193008BE786 /* flutter_kick_squat.mp3 */,
+				96AED8DC227D9185008BE786 /* flutter_kick.mp3 */,
+				96AED92D227D9196008BE786 /* frog_jump.mp3 */,
+				96AED936227D9198008BE786 /* front_thigh_stretch_left.mp3 */,
+				96AED912227D9191008BE786 /* front_thigh_stretch_right.mp3 */,
+				96AED909227D918F008BE786 /* full_plank.mp3 */,
+				96AED8FD227D918C008BE786 /* half_squat_walk.mp3 */,
+				96AED90F227D9190008BE786 /* half_squat.mp3 */,
+				96AED8F5227D918A008BE786 /* half_wall_sit.mp3 */,
+				96AED8E8227D9187008BE786 /* hand_release_push_up.mp3 */,
+				96AED8FA227D918B008BE786 /* high_knee_walking_in_place.mp3 */,
+				96AED8DD227D9185008BE786 /* high_knees_running_in_place.mp3 */,
+				96AED929227D9196008BE786 /* hip_bridge_hold.mp3 */,
+				96AED8E2227D9186008BE786 /* hip_thrust.mp3 */,
+				96AED8FC227D918C008BE786 /* inchworm.mp3 */,
+				96AED8F2227D9189008BE786 /* jog_in_place.mp3 */,
+				96AED939227D9199008BE786 /* jumping_jack.mp3 */,
+				96AED937227D9198008BE786 /* knee_push_up.mp3 */,
+				96AED92F227D9197008BE786 /* lateral_punch.mp3 */,
+				96AED90D227D9190008BE786 /* loop.mp3 */,
+				96AED913227D9192008BE786 /* lunge_alternate.mp3 */,
+				96AED8F1227D9189008BE786 /* lunge_left.mp3 */,
+				96AED8E4227D9186008BE786 /* lunge_right.mp3 */,
+				96AED930227D9197008BE786 /* lying_triceps_lift.mp3 */,
+				96AED922227D9195008BE786 /* marching_hip_raise.mp3 */,
+				96AED92B227D9196008BE786 /* mountain_climber.mp3 */,
+				96AED901227D918D008BE786 /* opposite_arm_leg_lift.mp3 */,
+				96AED916227D9192008BE786 /* overhead_press.mp3 */,
+				96AED938227D9198008BE786 /* plank_hip_twist.mp3 */,
+				96AED8E9227D9187008BE786 /* plank_jumping_jack.mp3 */,
+				96AED8EE227D9188008BE786 /* plank_shoulder_tap.mp3 */,
+				96AED91E227D9194008BE786 /* plank_with_leg_lift.mp3 */,
+				96AED8F0227D9189008BE786 /* plank.mp3 */,
+				96AED907227D918E008BE786 /* plie_squat.mp3 */,
+				96AED8FB227D918B008BE786 /* push_up.mp3 */,
+				96AED8DF227D9185008BE786 /* push_ups_with_rotation.mp3 */,
+				96AED8E0227D9186008BE786 /* rest.mp3 */,
+				96AED8EA227D9187008BE786 /* reverse_crunch.mp3 */,
+				96AED900227D918D008BE786 /* russian_twist.mp3 */,
+				96AED8F6227D918A008BE786 /* shoulder_blade_squeeze.mp3 */,
+				96AED903227D918E008BE786 /* shuffle_side_squat.mp3 */,
+				96AED92E227D9197008BE786 /* side_kick_squat.mp3 */,
+				96AED923227D9195008BE786 /* side_leg_raise_left.mp3 */,
+				96AED908227D918F008BE786 /* side_leg_raise_right.mp3 */,
+				96AED932227D9197008BE786 /* side_lunge_alternate.mp3 */,
+				96AED918227D9193008BE786 /* side_plank_left.mp3 */,
+				96AED90A227D918F008BE786 /* side_plank_right.mp3 */,
+				96AED934227D9198008BE786 /* single_leg_arm_reach_alternate.mp3 */,
+				96AED924227D9195008BE786 /* single_leg_hip_extension_left.mp3 */,
+				96AED93A227D9199008BE786 /* single_leg_hip_extension_right.mp3 */,
+				96AED920227D9194008BE786 /* single_leg_v_up.mp3 */,
+				96AED925227D9195008BE786 /* speed_skater.mp3 */,
+				96AED8E1227D9186008BE786 /* spiderman_plank.mp3 */,
+				96AED904227D918E008BE786 /* squat_jump.mp3 */,
+				96AED8EC227D9188008BE786 /* squat_thrust.mp3 */,
+				96AED8DE227D9185008BE786 /* squat.mp3 */,
+				96AED928227D9196008BE786 /* standing_bicycle_crunch.mp3 */,
+				96AED8E3227D9186008BE786 /* standing_hip_circle.mp3 */,
+				96AED92C227D9196008BE786 /* standing_side_bend.mp3 */,
+				96AED8F4227D9189008BE786 /* standing_twist.mp3 */,
+				96AED91C227D9194008BE786 /* step_jack.mp3 */,
+				96AED910227D9190008BE786 /* step_up.mp3 */,
+				96AED8F9227D918B008BE786 /* step_ups_with_a_kickback.mp3 */,
+				96AED8EB227D9188008BE786 /* superman.mp3 */,
+				96AED8E6227D9187008BE786 /* swimmer.mp3 */,
+				96AED8FE227D918C008BE786 /* switch_side.mp3 */,
+				96AED921227D9194008BE786 /* switch_sides.mp3 */,
+				96AED915227D9192008BE786 /* sys_begin.mp3 */,
+				96AED91F227D9194008BE786 /* sys_congratulations.mp3 */,
+				96AED8F3227D9189008BE786 /* sys_countdown.mp3 */,
+				96AED8ED227D9188008BE786 /* sys_countdown1.mp3 */,
+				96AED935227D9198008BE786 /* sys_countdown2.mp3 */,
+				96AED8EF227D9188008BE786 /* sys_countdown3.mp3 */,
+				96AED92A227D9196008BE786 /* sys_ding.mp3 */,
+				96AED905227D918E008BE786 /* sys_dong.mp3 */,
+				96AED8E5227D9187008BE786 /* sys_getready.mp3 */,
+				96AED8F8227D918A008BE786 /* sys_halfwaythere.mp3 */,
+				96AED90C227D918F008BE786 /* sys_nextstep.mp3 */,
+				96AED911227D9190008BE786 /* sys_onemoretime.mp3 */,
+				96AED93C227D9199008BE786 /* sys_start.mp3 */,
+				96AED8F7227D918A008BE786 /* tricep_dip.mp3 */,
+				96AED902227D918D008BE786 /* up_and_down_plank.mp3 */,
+				96AED927227D9195008BE786 /* v_sit.mp3 */,
+				96AED91D227D9194008BE786 /* vertical_leg_crunch.mp3 */,
+				96AED933227D9198008BE786 /* walking_burpee.mp3 */,
+				96AED917227D9193008BE786 /* wall_push_up.mp3 */,
+				96AED914227D9192008BE786 /* wall_sit.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		96C98BBB2276E81C008D57CB /* ShareData */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,10 +1427,10 @@
 		96D574722271157600228AD0 /* CustomExercise */ = {
 			isa = PBXGroup;
 			children = (
+				9613CFA7227DFD8B00AD09E6 /* customExercises */,
+				9613CFA6227DFD7400AD09E6 /* add new exercise */,
 				96D5747C22711F5D00228AD0 /* header */,
 				96D5747B22711B8F00228AD0 /* Cell */,
-				96D57473227115CB00228AD0 /* AddExercisesVc.swift */,
-				96D57474227115CB00228AD0 /* AddExercisesVc.xib */,
 			);
 			path = CustomExercise;
 			sourceTree = "<group>";
@@ -840,29 +1515,245 @@
 			buildActionMask = 2147483647;
 			files = (
 				964CD0822275B23D007A79C1 /* ProfileVC.xib in Resources */,
+				96AED88E227D90EF008BE786 /* squat.gif in Resources */,
+				96AED882227D90EF008BE786 /* half_squat_walk.gif in Resources */,
+				96AED862227D90EF008BE786 /* plank_with_leg_lift.gif in Resources */,
+				96AED89D227D90EF008BE786 /* big_arm_circle.gif in Resources */,
+				96AED8AD227D90EF008BE786 /* full_plank.gif in Resources */,
 				9663C047224491FA001DA7B1 /* LaunchScreen.storyboard in Resources */,
+				96AED86F227D90EF008BE786 /* spiderman_plank.gif in Resources */,
+				96AED874227D90EF008BE786 /* up_and_down_plank.gif in Resources */,
+				96AED8AA227D90EF008BE786 /* upward_salute_pose_dynamic_yoga.gif in Resources */,
+				96AED94D227D9199008BE786 /* squat_thrust.mp3 in Resources */,
 				96D574712271042E00228AD0 /* ExercisesCell.xib in Resources */,
+				96AED993227D919A008BE786 /* side_lunge_alternate.mp3 in Resources */,
+				96AED94A227D9199008BE786 /* plank_jumping_jack.mp3 in Resources */,
+				96AED8C9227D90EF008BE786 /* corpse_pose_yoga.gif in Resources */,
+				96AED8A5227D90EF008BE786 /* push_up.gif in Resources */,
+				96AED940227D9199008BE786 /* push_ups_with_rotation.mp3 in Resources */,
+				96AED97C227D9199008BE786 /* flutter_kick_squat.mp3 in Resources */,
+				96AED89B227D90EF008BE786 /* hand_release_push_up.gif in Resources */,
 				969F70882244C78300D83264 /* LoadingVC.xib in Resources */,
+				96AED999227D919A008BE786 /* plank_hip_twist.mp3 in Resources */,
+				96AED8B1227D90EF008BE786 /* low_lunges_right_yoga.gif in Resources */,
+				96AED953227D9199008BE786 /* jog_in_place.mp3 in Resources */,
+				96AED96A227D9199008BE786 /* full_plank.mp3 in Resources */,
+				96AED97B227D9199008BE786 /* donkey_kick_alternate.mp3 in Resources */,
+				96AED965227D9199008BE786 /* squat_jump.mp3 in Resources */,
+				96AED8B5227D90EF008BE786 /* squat_thrust.gif in Resources */,
+				96AED948227D9199008BE786 /* curtsy_lunge.mp3 in Resources */,
+				96AED93F227D9199008BE786 /* squat.mp3 in Resources */,
+				96AED966227D9199008BE786 /* sys_dong.mp3 in Resources */,
+				96AED994227D919A008BE786 /* walking_burpee.mp3 in Resources */,
+				96AED8C8227D90EF008BE786 /* thread_the_needle_right_yoga.gif in Resources */,
+				96AED879227D90EF008BE786 /* opposite_arm_leg_lift.gif in Resources */,
+				96AED8CA227D90EF008BE786 /* spinal_rolling_yoga.gif in Resources */,
+				96AED94B227D9199008BE786 /* reverse_crunch.mp3 in Resources */,
+				96AED963227D9199008BE786 /* up_and_down_plank.mp3 in Resources */,
+				96AED995227D919A008BE786 /* single_leg_arm_reach_alternate.mp3 in Resources */,
+				96AED8B3227D90EF008BE786 /* lunge_left.gif in Resources */,
+				96AED959227D9199008BE786 /* sys_halfwaythere.mp3 in Resources */,
+				96AED974227D9199008BE786 /* lunge_alternate.mp3 in Resources */,
+				96AED96B227D9199008BE786 /* side_plank_right.mp3 in Resources */,
+				96AED954227D9199008BE786 /* sys_countdown.mp3 in Resources */,
+				96AED8D6227D90EF008BE786 /* abdominal_crunch.gif in Resources */,
 				96C98BC22276F2FB008D57CB /* TutorialVC.xib in Resources */,
-				96973890225463430064A432 /* bent_elbow_shoulder_circle_2.png in Resources */,
+				96AED863227D90EF008BE786 /* flutter_kick_squat.gif in Resources */,
+				96AED8D8227D90EF008BE786 /* easy_tree_pose_right_yoga.gif in Resources */,
+				96AED876227D90EF008BE786 /* push_ups_with_rotation.gif in Resources */,
+				96AED967227D9199008BE786 /* big_arm_circle.mp3 in Resources */,
 				9663C044224491FA001DA7B1 /* Assets.xcassets in Resources */,
+				96AED970227D9199008BE786 /* half_squat.mp3 in Resources */,
+				96AED8B7227D90EF008BE786 /* low_lunges_left_yoga.gif in Resources */,
+				96AED8CC227D90EF008BE786 /* half_squat.gif in Resources */,
+				96AED960227D9199008BE786 /* bicycle_kick.mp3 in Resources */,
+				96AED97D227D9199008BE786 /* step_jack.mp3 in Resources */,
+				96AED8AF227D90EF008BE786 /* warriori_right_yoga.gif in Resources */,
+				96AED898227D90EF008BE786 /* frog_jump.gif in Resources */,
+				96AED8AB227D90EF008BE786 /* reverse_crunch.gif in Resources */,
 				96D5747A22711B7F00228AD0 /* ItemExerciseDetailCell.xib in Resources */,
+				96AED95A227D9199008BE786 /* step_ups_with_a_kickback.mp3 in Resources */,
+				96AED95C227D9199008BE786 /* push_up.mp3 in Resources */,
+				96AED88B227D90EF008BE786 /* standing_forward_bend_pose_yoga.gif in Resources */,
+				96AED8CD227D90EF008BE786 /* cross_jack.gif in Resources */,
+				96AED8BA227D90EF008BE786 /* thread_the_needle_left_yoga.gif in Resources */,
+				96AED8BD227D90EF008BE786 /* inchworm.gif in Resources */,
+				96AED88A227D90EF008BE786 /* high_knee_walking_in_place.gif in Resources */,
+				96AED88C227D90EF008BE786 /* bicycle_kick.gif in Resources */,
+				96AED8D7227D90EF008BE786 /* speed_skater.gif in Resources */,
+				96AED899227D90EF008BE786 /* swimmer.gif in Resources */,
+				96AED95B227D9199008BE786 /* high_knee_walking_in_place.mp3 in Resources */,
+				96AED89C227D90EF008BE786 /* step_jack.gif in Resources */,
+				96AED8C5227D90EF008BE786 /* standing_side_bend.gif in Resources */,
+				96AED95E227D9199008BE786 /* half_squat_walk.mp3 in Resources */,
+				96AED87C227D90EF008BE786 /* half_wind_relieving_pose_right_yoga.gif in Resources */,
+				96AED962227D9199008BE786 /* opposite_arm_leg_lift.mp3 in Resources */,
+				96AED8CF227D90EF008BE786 /* single_leg_downward_dog_left_yoga.gif in Resources */,
+				96AED877227D90EF008BE786 /* jumping_jack.gif in Resources */,
+				96AED97E227D9199008BE786 /* vertical_leg_crunch.mp3 in Resources */,
+				96AED878227D90EF008BE786 /* single_leg_v_up.gif in Resources */,
+				96AED870227D90EF008BE786 /* half_wall_sit.gif in Resources */,
+				96AED866227D90EF008BE786 /* plie_squat.gif in Resources */,
+				96AED894227D90EF008BE786 /* wall_push_up.gif in Resources */,
+				96AED86C227D90EF008BE786 /* side_kick_squat.gif in Resources */,
+				96AED958227D9199008BE786 /* tricep_dip.mp3 in Resources */,
+				96AED8AE227D90EF008BE786 /* seated_spinal_twist_right_yoga.gif in Resources */,
+				96AED881227D90EF008BE786 /* upward_salute_pose_yoga.gif in Resources */,
+				96AED947227D9199008BE786 /* swimmer.mp3 in Resources */,
+				96AED867227D90EF008BE786 /* neck_stretch_yoga.gif in Resources */,
+				96AED8A0227D90EF008BE786 /* standing_twist.gif in Resources */,
+				96AED984227D9199008BE786 /* side_leg_raise_left.mp3 in Resources */,
+				96AED86E227D90EF008BE786 /* easy_tree_pose_left_yoga.gif in Resources */,
+				96AED8CB227D90EF008BE786 /* side_plank_right.gif in Resources */,
+				96AED945227D9199008BE786 /* lunge_right.mp3 in Resources */,
+				96AED968227D9199008BE786 /* plie_squat.mp3 in Resources */,
+				96AED952227D9199008BE786 /* lunge_left.mp3 in Resources */,
+				96AED895227D90EF008BE786 /* side_leg_raise_right.gif in Resources */,
+				96AED8B2227D90EF008BE786 /* shuffle_side_squat.gif in Resources */,
+				96AED97A227D9199008BE786 /* burpee.mp3 in Resources */,
+				96AED998227D919A008BE786 /* knee_push_up.mp3 in Resources */,
+				96AED987227D919A008BE786 /* bicycle_crunch.mp3 in Resources */,
 				969F706C2244C61E00D83264 /* TextPicker.xib in Resources */,
+				96AED86A227D90EF008BE786 /* front_thigh_stretch_right.gif in Resources */,
+				96AED891227D90EF008BE786 /* single_leg_downward_dog_right_yoga.gif in Resources */,
+				96AED8D4227D90EF008BE786 /* superman.gif in Resources */,
+				96AED896227D90EF008BE786 /* standing_side_bend_yoga_yoga.gif in Resources */,
+				96AED88D227D90EF008BE786 /* plank_shoulder_tap.gif in Resources */,
+				96AED8CE227D90EF008BE786 /* jog_in_place.gif in Resources */,
+				96AED8A9227D90EF008BE786 /* walking_burpee.gif in Resources */,
+				96AED996227D919A008BE786 /* sys_countdown2.mp3 in Resources */,
+				96AED883227D90EF008BE786 /* donkey_kick_alternate.gif in Resources */,
+				96AED990227D919A008BE786 /* lateral_punch.mp3 in Resources */,
+				96AED8B6227D90EF008BE786 /* lying_triceps_lift.gif in Resources */,
+				96AED98D227D919A008BE786 /* standing_side_bend.mp3 in Resources */,
+				96AED98F227D919A008BE786 /* side_kick_squat.mp3 in Resources */,
+				96AED8BB227D90EF008BE786 /* overhead_press.gif in Resources */,
+				96AED986227D9199008BE786 /* speed_skater.mp3 in Resources */,
+				96AED96F227D9199008BE786 /* cross_jack.mp3 in Resources */,
+				96AED989227D919A008BE786 /* standing_bicycle_crunch.mp3 in Resources */,
+				96AED979227D9199008BE786 /* side_plank_left.mp3 in Resources */,
+				96AED86B227D90EF008BE786 /* step_up.gif in Resources */,
+				96AED972227D9199008BE786 /* sys_onemoretime.mp3 in Resources */,
+				96AED96C227D9199008BE786 /* butt_kick.mp3 in Resources */,
+				96AED949227D9199008BE786 /* hand_release_push_up.mp3 in Resources */,
+				96AED942227D9199008BE786 /* spiderman_plank.mp3 in Resources */,
+				96AED87B227D90EF008BE786 /* bent_elbow_shoulder_circle.gif in Resources */,
+				96AED8A1227D90EF008BE786 /* warriori_left_yoga.gif in Resources */,
+				96AED897227D90EF008BE786 /* russian_twist.gif in Resources */,
+				96AED8B9227D90EF008BE786 /* hip_thrust.gif in Resources */,
+				96AED956227D9199008BE786 /* half_wall_sit.mp3 in Resources */,
+				96AED871227D90EF008BE786 /* curtsy_lunge.gif in Resources */,
+				96AED99B227D919A008BE786 /* single_leg_hip_extension_right.mp3 in Resources */,
+				96AED880227D90EF008BE786 /* side_lunge_alternate.gif in Resources */,
+				96AED946227D9199008BE786 /* sys_getready.mp3 in Resources */,
+				96AED93D227D9199008BE786 /* flutter_kick.mp3 in Resources */,
+				96AED98B227D919A008BE786 /* sys_ding.mp3 in Resources */,
 				96D5746C2270FFD300228AD0 /* HomeVC.xib in Resources */,
+				96AED893227D90EF008BE786 /* plank_hip_twist.gif in Resources */,
+				96AED89F227D90EF008BE786 /* lunge_alternate.gif in Resources */,
+				96AED8B4227D90EF008BE786 /* single_leg_hip_extension_left.gif in Resources */,
+				96AED885227D90EF008BE786 /* cobra_yoga.gif in Resources */,
+				96AED99C227D919A008BE786 /* bent_elbow_shoulder_circle.mp3 in Resources */,
+				96AED96D227D9199008BE786 /* sys_nextstep.mp3 in Resources */,
+				96AED983227D9199008BE786 /* marching_hip_raise.mp3 in Resources */,
+				96AED8B8227D90EF008BE786 /* easy_twist_right_yoga.gif in Resources */,
+				96AED969227D9199008BE786 /* side_leg_raise_right.mp3 in Resources */,
+				96AED8A7227D90EF008BE786 /* extended_side_angle_left_yoga.gif in Resources */,
+				96AED99D227D919A008BE786 /* sys_start.mp3 in Resources */,
+				96AED94E227D9199008BE786 /* sys_countdown1.mp3 in Resources */,
+				96AED944227D9199008BE786 /* standing_hip_circle.mp3 in Resources */,
+				96AED86D227D90EF008BE786 /* standing_hip_circle.gif in Resources */,
+				9613CFAB227DFDBC00AD09E6 /* CustomExercisesVC.xib in Resources */,
+				96AED89E227D90EF008BE786 /* wall_sit.gif in Resources */,
+				96AED981227D9199008BE786 /* single_leg_v_up.mp3 in Resources */,
+				96AED868227D90EF008BE786 /* burpee.gif in Resources */,
+				96AED889227D90EF008BE786 /* lying_spinal_twist_pose_right_yoga.gif in Resources */,
+				96AED8D0227D90EF008BE786 /* shoulder_blade_squeeze.gif in Resources */,
+				96AED8AC227D90EF008BE786 /* seated_spinal_twist_left_yoga.gif in Resources */,
+				96AED87D227D90EF008BE786 /* downward_dog_yoga.gif in Resources */,
+				96AED8C2227D90EF008BE786 /* extended_triangle_pose_left_yoga.gif in Resources */,
+				96AED98A227D919A008BE786 /* hip_bridge_hold.mp3 in Resources */,
+				96AED96E227D9199008BE786 /* loop.mp3 in Resources */,
+				96AED8A3227D90EF008BE786 /* single_leg_hip_extension_right.gif in Resources */,
+				96AED977227D9199008BE786 /* overhead_press.mp3 in Resources */,
+				96AED886227D90EF008BE786 /* half_wind_relieving_pose_left_yoga.gif in Resources */,
+				96AED982227D9199008BE786 /* switch_sides.mp3 in Resources */,
+				96AED872227D90EF008BE786 /* vertical_leg_crunch.gif in Resources */,
+				96AED87F227D90EF008BE786 /* plank_yoga_yoga.gif in Resources */,
+				96AED8D5227D90EF008BE786 /* easy_twist_left_yoga.gif in Resources */,
+				96AED991227D919A008BE786 /* lying_triceps_lift.mp3 in Resources */,
+				96AED8B0227D90EF008BE786 /* extended_side_angle_right_yoga.gif in Resources */,
+				96AED8C7227D90EF008BE786 /* lunge_right.gif in Resources */,
+				96AED95D227D9199008BE786 /* inchworm.mp3 in Resources */,
+				96AED8C6227D90EF008BE786 /* step_ups_with_a_kickback.gif in Resources */,
+				96AED98C227D919A008BE786 /* mountain_climber.mp3 in Resources */,
+				96AED95F227D9199008BE786 /* switch_side.mp3 in Resources */,
+				96AED88F227D90EF008BE786 /* wind_relieving_pose_yoga.gif in Resources */,
+				96AED941227D9199008BE786 /* rest.mp3 in Resources */,
+				96AED875227D90EF008BE786 /* flutter_kick.gif in Resources */,
+				96AED8D3227D90EF008BE786 /* rest.gif in Resources */,
+				96AED980227D9199008BE786 /* sys_congratulations.mp3 in Resources */,
+				96AED864227D90EF008BE786 /* plank.gif in Resources */,
+				96AED8D9227D90EF008BE786 /* knee_push_up.gif in Resources */,
+				96AED8C1227D90EF008BE786 /* extended_triangle_pose_right_yoga.gif in Resources */,
 				969F706B2244C61E00D83264 /* DateTimePicker.xib in Resources */,
+				96AED8C4227D90EF008BE786 /* prayer_pose_yoga.gif in Resources */,
+				96AED94C227D9199008BE786 /* superman.mp3 in Resources */,
 				9633C9B5224B250F00448D5B /* DoExerciseCell.xib in Resources */,
+				96AED8C3227D90EF008BE786 /* bound_angle_forward_bend_yoga.gif in Resources */,
+				96AED950227D9199008BE786 /* sys_countdown3.mp3 in Resources */,
+				96AED97F227D9199008BE786 /* plank_with_leg_lift.mp3 in Resources */,
+				96AED87A227D90EF008BE786 /* mountain_climber.gif in Resources */,
 				96D574562270CEDC00228AD0 /* TrackingFitnessVC.xib in Resources */,
+				96AED861227D90EF008BE786 /* side_plank_left.gif in Resources */,
 				96D5745C2270CEEC00228AD0 /* RegisterVC.xib in Resources */,
+				96AED98E227D919A008BE786 /* frog_jump.mp3 in Resources */,
+				96AED973227D9199008BE786 /* front_thigh_stretch_right.mp3 in Resources */,
+				96AED892227D90EF008BE786 /* marching_hip_raise.gif in Resources */,
+				96AED888227D90EF008BE786 /* high_knees_running_in_place.gif in Resources */,
+				96AED8BF227D90EF008BE786 /* easy_pose_yoga.gif in Resources */,
+				96AED957227D9199008BE786 /* shoulder_blade_squeeze.mp3 in Resources */,
+				96AED8BE227D90EF008BE786 /* bicycle_crunch.gif in Resources */,
+				96AED976227D9199008BE786 /* sys_begin.mp3 in Resources */,
+				96AED865227D90EF008BE786 /* dynamic_downward_dog_yoga.gif in Resources */,
+				96AED8A6227D90EF008BE786 /* squat_jump.gif in Resources */,
+				96AED869227D90EF008BE786 /* front_thigh_stretch_left.gif in Resources */,
 				9633C9C0224B60C000448D5B /* ExerciseCell.xib in Resources */,
+				96AED975227D9199008BE786 /* wall_sit.mp3 in Resources */,
+				96AED8D1227D90EF008BE786 /* standing_bicycle_crunch.gif in Resources */,
+				96AED943227D9199008BE786 /* hip_thrust.mp3 in Resources */,
+				96AED99A227D919A008BE786 /* jumping_jack.mp3 in Resources */,
+				96AED997227D919A008BE786 /* front_thigh_stretch_left.mp3 in Resources */,
+				96AED93E227D9199008BE786 /* high_knees_running_in_place.mp3 in Resources */,
+				96AED988227D919A008BE786 /* v_sit.mp3 in Resources */,
 				969F708E2244D36B00D83264 /* ExerciseVC.xib in Resources */,
+				96AED884227D90EF008BE786 /* child_pose_yoga.gif in Resources */,
+				96AED961227D9199008BE786 /* russian_twist.mp3 in Resources */,
 				96D574652270D03500228AD0 /* GoogleService-Info.plist in Resources */,
+				96AED985227D9199008BE786 /* single_leg_hip_extension_left.mp3 in Resources */,
+				96AED873227D90EF008BE786 /* butt_kick.gif in Resources */,
 				9663C042224491F9001DA7B1 /* Main.storyboard in Resources */,
+				96AED8D2227D90EF008BE786 /* tricep_dip.gif in Resources */,
+				96AED890227D90EF008BE786 /* v_sit.gif in Resources */,
+				96AED8A8227D90EF008BE786 /* lying_spinal_twist_pose_left_yoga.gif in Resources */,
+				96AED8BC227D90EF008BE786 /* lateral_punch.gif in Resources */,
+				96AED992227D919A008BE786 /* abdominal_crunch.mp3 in Resources */,
+				96AED8A4227D90EF008BE786 /* shoulder_expansion_yoga.gif in Resources */,
+				96AED8DA227D90EF008BE786 /* plank_jumping_jack.gif in Resources */,
+				96AED964227D9199008BE786 /* shuffle_side_squat.mp3 in Resources */,
+				96AED8C0227D90EF008BE786 /* side_leg_raise_left.gif in Resources */,
+				96AED87E227D90EF008BE786 /* hip_bridge_hold.gif in Resources */,
+				96AED89A227D90EF008BE786 /* single_leg_arm_reach_alternate.gif in Resources */,
 				96D57480227121B900228AD0 /* HeaderCell.xib in Resources */,
 				96D57476227115CB00228AD0 /* AddExercisesVc.xib in Resources */,
-				9697388F225463430064A432 /* bent_elbow_shoulder_circle_3.png in Resources */,
+				96AED951227D9199008BE786 /* plank.mp3 in Resources */,
+				96AED94F227D9199008BE786 /* plank_shoulder_tap.mp3 in Resources */,
+				96AED971227D9199008BE786 /* step_up.mp3 in Resources */,
 				96D574612270CEF600228AD0 /* LoginVC.xib in Resources */,
-				963BDEF4227532F6001C7A23 /* big_arm_circle.gif in Resources */,
-				96973891225463430064A432 /* bent_elbow_shoulder_circle_1.png in Resources */,
+				96AED955227D9199008BE786 /* standing_twist.mp3 in Resources */,
+				96AED978227D9199008BE786 /* wall_push_up.mp3 in Resources */,
+				96AED8A2227D90EF008BE786 /* cat_camel_yoga.gif in Resources */,
+				96AED887227D90EF008BE786 /* mountain_pose_yoga.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +1878,7 @@
 				969F705F2244C61E00D83264 /* UILabel+Extension.swift in Sources */,
 				96D5747922711B7F00228AD0 /* ItemExerciseDetailCell.swift in Sources */,
 				9633C9B7224B2AC300448D5B /* Exercise.swift in Sources */,
+				9613CFAA227DFDBC00AD09E6 /* CustomExercisesVC.swift in Sources */,
 				963BDEF622753397001C7A23 /* GifImage.swift in Sources */,
 				969F70042244C5EB00D83264 /* GradientButton.swift in Sources */,
 				9663C03F224491F9001DA7B1 /* ViewController.swift in Sources */,

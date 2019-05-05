@@ -83,6 +83,18 @@ class RealmManager {
         return list
     }
     
+    func getAllExerciseActive(exes: ExercisesClass) -> [ExerciseClass] {
+        
+        var list: [ExerciseClass] = [ExerciseClass]()
+        for index in 0...(exes.listActive.count - 1) {
+            if exes.listActive[index], let ex = getExercise(id: exes.listExercise[index]) {
+                list.append(ex)
+            }
+        }
+        
+        return list
+    }
+    
     func getAllExercise() -> Results<ExerciseClass> {
         return realm.objects(ExerciseClass.self)
     }

@@ -14,17 +14,26 @@ class ExerciseVC: BaseVC {
     @IBOutlet weak var tableExercise: BaseTableView!
     
     // MARK: - Variables
-    var exer = Exercise(name: "Arm", pathVideo: "5_f")
-    var isPlaying = false
-    var listExercise: [ExerciseDetail] = []
+    var exer: ExercisesClass?
+    var currentIndex = 0
+    var isBig = false
+    var listExercise: [ExerciseClass] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpData()
         setUpTable()
         
     }
     
     // MARK: - setup
+    func setUpData() {
+        guard let exes = exer else {
+            return
+        }
+        listExercise = RealmManager.shareInstance.getAllExerciseActive(exes: exes)
+    }
+    
     func setUpTable() {
         tableExercise.registerNibCellFor(type: DoExerciseCell.self)
         tableExercise.registerNibCellFor(type: ExerciseCell.self)
@@ -36,25 +45,21 @@ class ExerciseVC: BaseVC {
 
 extension ExerciseVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12
+        return listExercise.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: DoExerciseCell.self, indexPath: indexPath) {
-                cell.setUpCell(exercise: exer, isPlaying: isPlaying, resizeCellClosure: { isPlay in
-                    self.isPlaying = isPlay
-                    tableView.beginUpdates()
-                    cell.updateCell(isPlaying: isPlay)
-                    tableView.endUpdates()
-                } )
-                cell.animate(imageView: cell.imgGuide, images: cell.listImage)
+                cell.delegate = self
+                cell.exercise = listExercise[currentIndex]
+                cell.setUpFirstUI()
                 
                 return cell
             }
         }
         if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: ExerciseCell.self, indexPath: indexPath) {
-            cell.setUpCell(ex: exer)
+            cell.setUpCell(ex: listExercise[indexPath.row], ordinal: "\(indexPath.row + 1) of \(listExercise.count)")
             return cell
         }
         
@@ -65,14 +70,45 @@ extension ExerciseVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == 0, let cell = cell as? DoExerciseCell {
             cell.updateCell(isPlaying: false)
+        } 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row != 0 {
+            currentIndex = indexPath.row
+            tableView.reloadData()
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        print("update height of row in table")
         if indexPath.row == 0 {
-            return isPlaying ? self.view.safeAreaLayoutGuide.layoutFrame.size.height: (self.view.safeAreaLayoutGuide.layoutFrame.size.height - 170)
+            return isBig ? self.view.safeAreaLayoutGuide.layoutFrame.size.height: (self.view.safeAreaLayoutGuide.layoutFrame.size.height - 170)
         }
         return 80
     }
+}
+
+extension ExerciseVC: DoExerciseDelegate {
+    func changeExercise(jump: Int) {
+        currentIndex += jump
+        if currentIndex >= listExercise.count {
+            currentIndex = 0
+        }
+        
+        if currentIndex < 0 {
+            currentIndex = listExercise.count - 1
+        }
+        tableExercise.reloadCellAt(row: 0)
+    }
     
+    func resizeCell(isBig: Bool) {
+        self.isBig = isBig
+        tableExercise.beginUpdates()
+        tableExercise.endUpdates()
+    }
+    
+    func backClosure() {
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddExercisesVc: BaseVC {
 
@@ -17,6 +18,7 @@ class AddExercisesVc: BaseVC {
     //MARK: - variables
     var listExercises: [ExercisesClass] = []
     var listExercise: [ExerciseClass] = []
+    var orginalArray: [[Bool]] = []
     
     //MARK: - view life cycles
     override func viewDidLoad() {
@@ -28,10 +30,15 @@ class AddExercisesVc: BaseVC {
     
     //MARK: setup
     func setupData() {
-//        if let user = RealmData.getUserProfile(mail: "phuong123@gmail.com") {
-//            listExercises = RealmData.getAllExercises(user: user)
-//        }
-//        listExercise = RealmData.getAllExercise()
+        listExercises = RealmManager.shareInstance.getAllExercises()
+        for i in 0...(listExercises.count - 1) {
+            orginalArray.append([])
+            let listActive = listExercises[i].listActive
+            for j in 0...(listActive.count - 1 ) {
+                print(listActive[j])
+                orginalArray[i].append(listActive[j])
+            }
+        }
     }
 
     func setupTable() {
@@ -47,11 +54,62 @@ class AddExercisesVc: BaseVC {
     }
     
     @IBAction func SaveAction(_ sender: UIButton) {
+        guard let name = tfName.text, name != "" else {
+            showMess(mess: "You need to enter the name of new exercise")
+            return
+        }
+        let list = getAllNewExercise()
+        guard list.count != 0  else {
+            showMess(mess: "You need to choose at least one exercise")
+            return
+        }
+       
+        let newExes = ExercisesClass()
+        newExes.name = name
+        newExes.isOriginal = false
+        for temp in list {
+            newExes.listExercise.append(temp)
+            newExes.listActive.append(true)
+        }
+        print("size of list before: \(listExercises)")
+        RealmManager.shareInstance.addNewExercises(exes: newExes)
+        print("size of list after: \(listExercises)")
+        let realm = try! Realm()
+        for i in 0...(listExercises.count - 1) {
+            let exes = listExercises[i]
+            let listActive = listExercises[i].listActive
+            for j in 0...(listActive.count - 1) {
+                print("active: \(orginalArray[i][j])")
+                try! realm.write {
+                    exes.listActive[j] = orginalArray[i][j]
+                }
+                
+            }
+        }
+        showMess(mess: "Add new Exercises success!")
+        tfName.text = ""
+        setupData()
+        tableView.reloadData()
         
     }
     
     //MARK: - suporting
+    func getAllNewExercise() -> [Int] {
+        var list = [Int]()
+        for exes in listExercises {
+            for index in 0...(exes.listActive.count - 1) {
+                if !exes.listActive[index] {
+                    list.append(exes.listExercise[index])
+                }
+            }
+        }
+        
+        return list
+    }
     
+    func showMess(mess: String) {
+        UIAlertController.showSystemAlert(target: self, title: "Message", message: mess, buttons:["OK"])
+    }
 }
 
 extension AddExercisesVc: UITableViewDataSource, UITableViewDelegate {
@@ -66,11 +124,11 @@ extension AddExercisesVc: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: ItemExerciseDetailCell.self) {
-            let isActive = listExercises[indexPath.section].listActive.shuffled()[indexPath.row]
-            let id = listExercises[indexPath.section].listExercise.shuffled()[indexPath.row]
-//            if let ex = RealmData.getExercise(id: id){
-//                cell.setup(ex: ex, isActive: isActive)
-//            }
+            if let temp = RealmManager.shareInstance.getExercise(id: listExercises[indexPath.section].listExercise[indexPath.row]) {
+                cell.setup(ex: temp, exes: listExercises[indexPath.section], index: indexPath.row)
+            } else {
+                cell.setupFirst()
+            }
             
             return cell
         }

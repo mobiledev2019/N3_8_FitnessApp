@@ -55,14 +55,20 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let table = tableView as? BaseTableView, let cell = table.reusableCell(type: ExercisesCell.self, indexPath: indexPath) {
-            cell.setUpCell(exes: listExercises[indexPath.row])
+            cell.setUpCell(exes: listExercises[indexPath.row]) { () in
+                let customEx = CustomExercisesVC()
+                customEx.exes = self.listExercises[indexPath.row]
+                VCService.present(controller: customEx.self)
+            }
             return cell
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        VCService.present(type: ExerciseVC.self)
+        let vc = ExerciseVC()
+        vc.exer = listExercises[indexPath.row]
+        VCService.present(controller: vc.self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

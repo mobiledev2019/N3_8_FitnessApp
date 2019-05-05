@@ -28,8 +28,9 @@ class ExerciseCell: UITableViewCell {
     }
     
     // MARK: - Set up
-    func setUpCell(ex: Exercise) {
+    func setUpCell(ex: ExerciseClass, ordinal: String) {
         lbName.text = ex.name
+        lbOrdinal.text = ordinal
     }
     
 }

@@ -14,6 +14,9 @@ class ExercisesCell: UITableViewCell {
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var imgExercises: UIImageView!
     
+    //MARK: - Variables
+    var detailClosure: ( () -> Void)?
+    
     //MARK: view life cycles
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,12 +30,16 @@ class ExercisesCell: UITableViewCell {
     }
     
     //MARK: - set up
-    func setUpCell(exes: ExercisesClass) {
+    func setUpCell(exes: ExercisesClass, detailClosure: @escaping ( () -> Void)) {
         lbName.text = exes.name
+        self.detailClosure = detailClosure
     }
     
     // MARK: - Actions
     @IBAction func detailAction(_ sender: UIButton) {
+        if let detail = detailClosure {
+            detail()
+        }
     }
     
 }

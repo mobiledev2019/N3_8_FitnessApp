@@ -124,7 +124,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
-            landmarkName = "singIn(_:)"
+            landmarkName = "signIntoFirebase()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -140,7 +140,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
             endingLineNumber = "74"
-            landmarkName = "singIn(_:)"
+            landmarkName = "signIntoFirebase()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -231,13 +231,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fitness_App/Models/ShareData/RealmData.swift"
-            timestampString = "578390204.6510611"
+            timestampString = "578686825.997261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "updateUser(user:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fitness_App.RealmManager.updateUser(user: Fitness_App.Profile) -&gt; ()"
+                  moduleName = "Fitness_App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phuongnguyen/Documents/subject/4_1/ptud/project_demo/Fitness/Fitness_App/Fitness_App/Models/ShareData/RealmData.swift"
+                  timestampString = "578685751.844107"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Fitness_App.RealmManager.updateUser(user: Fitness_App.Profile) -&gt; ()"
+                  moduleName = "Fitness_App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phuongnguyen/Documents/subject/4_1/ptud/project_demo/Fitness/Fitness_App/Fitness_App/Models/ShareData/RealmData.swift"
+                  timestampString = "578685751.84817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

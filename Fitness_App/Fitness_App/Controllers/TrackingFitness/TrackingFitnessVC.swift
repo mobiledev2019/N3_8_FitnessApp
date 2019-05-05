@@ -8,7 +8,7 @@
 
 import UIKit
 import Charts
-class TrackingFitnessVC: UIViewController {
+class TrackingFitnessVC: BaseVC {
 
 
    

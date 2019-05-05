@@ -8,7 +8,13 @@
 
 import UIKit
 import MBCircularProgressBar
-import AVKit
+import AVFoundation
+
+protocol DoExerciseDelegate: class {
+    func backClosure()
+    func resizeCell(isBig: Bool)
+    func changeExercise(jump: Int)
+}
 
 class DoExerciseCell: UITableViewCell {
     
@@ -27,9 +33,12 @@ class DoExerciseCell: UITableViewCell {
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var tvDes: UITextView!
     
     // MARK: - Variables
-    var isPlaying = false
+    weak var delegate: DoExerciseDelegate?
+    weak var player: AVAudioPlayer?
+    weak var exercise: ExerciseClass?
     var isPause = false
     var haveSound = true
     var positionExercise = 0
@@ -37,34 +46,34 @@ class DoExerciseCell: UITableViewCell {
     var timer: DispatchSourceTimer?
     var timerProgress: DispatchSourceTimer?
     var total = 30
-    var listImage: [UIImage] = []
     
-    var resizeCellClosure: ((Bool) -> Void)?
-   
     // MARK: - View life cycles
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         viewAdjustPlay.isHidden = true
         viewDescription.isHidden = true
-        setUpFirstUI()
-        btnBack.addTarget(self, action: #selector(backAction), for: .touchUpInside)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         self.timer?.cancel()
         self.layer.backgroundColor = UIColor(red: 60, green: 179, blue: 113).cgColor
-        isPlaying = !isPlaying
-        if let resize = resizeCellClosure {
-            resize(isPlaying)
-            
-        }
+        setUpCellNotPlaying()
+        delegate?.resizeCell(isBig: false)
+//        if isPlaying {
+//            setUpCellPlaying()
+//            delegate?.resizeCell(isBig: true)
+//        } else {
+//            setUpCellNotPlaying()
+//            delegate?.resizeCell(isBig: false)
+//        }
     }
     
     // MARK: - setup
     
     func setUpFirstUI() {
+        lbNameExercise.text = exercise?.name
         // btn Sound
         btnSound.setImage(UIImage(named: "ic_volume"), for: .normal)
         btnSound.isHidden = false
@@ -73,54 +82,56 @@ class DoExerciseCell: UITableViewCell {
         circularProgressBar.value = 30
         
         // circular image guide
-//        imgGuide.layer.masksToBounds = false
-//        imgGuide.layer.backgroundColor = UIColor.white.cgColor
-//        imgGuide.layer.cornerRadius = imgGuide.frame.width / 2
-//        imgGuide.clipsToBounds = true
-        
-        let imageData = try? Data(contentsOf: Bundle.main.url(forResource: "big_arm_circle", withExtension: "gif")!)
-        let advTimeGif = UIImage.gifImageWithData(imageData!)
-        imgGuide.image = advTimeGif
-//        let imageView2 = UIImageView(image: advTimeGif)
-//        imageView2.frame = CGRect(x: 20.0, y: 220.0, width:
-//            self.view.frame.size.width - 40, height: 150.0)
-//        view.addSubview(imageView2)
+        imgGuide.layer.masksToBounds = false
+        imgGuide.layer.backgroundColor = UIColor.white.cgColor
+        imgGuide.layer.cornerRadius = imgGuide.frame.height / 2
+        imgGuide.clipsToBounds = true
         
         // view
-        viewAdjustPlay.isHidden = false
-        viewDescription.isHidden = true
+        setUpCellNotPlaying()
         
-        lbCountDown.isHidden = true
-        
-        // list image
-        listImage = createImageArray(listName: ["bent_elbow_shoulder_circle_1", "bent_elbow_shoulder_circle_2", "bent_elbow_shoulder_circle_3"])
-        animate(imageView: imgGuide, images: listImage)
+//        playSound()
     }
-    func setUpCell(exercise: Exercise, isPlaying: Bool, resizeCellClosure: @escaping ((Bool) -> Void)) {
+    
+    func setUpCell(exercise: Exercise) {
         lbNameExercise.text = exercise.name
-        self.resizeCellClosure = resizeCellClosure
-        if isPlaying {
-            viewAdjustPlay.isHidden = true
-            lbCountDown.isHidden = false
-        } else {
-            viewAdjustPlay.isHidden = false
-            lbCountDown.isHidden = true
-        }
+        setUpCellNotPlaying()
+    }
+    
+    func setUpCellPlaying() {
+        viewAdjustPlay.isHidden = true
+        lbCountDown.isHidden = false
+    }
+    
+    func setUpCellNotPlaying() {
+        print("view not playing")
+        viewAdjustPlay.isHidden = false
+        lbCountDown.isHidden = true
+        viewDescription.isHidden = true
+        self.imgGuide.layer.removeAllAnimations()
+    }
+    
+    func setUpCellDes() {
+        viewDescription.isHidden = false
+        viewAdjustPlay.isHidden = true
+        lbCountDown.isHidden = true
+        tvDes.text = exercise?.des
     }
     
     // MARK: - actions
-    @objc
-    func backAction() {
-//        dismiss(animated: true, completion: nil)
+    @IBAction func backAction(_ sender: UIButton) {
+        stopTimer()
+        delegate?.backClosure()
     }
     
     @IBAction func descriptionAction(_ sender: UIButton) {
         switch sender {
         case btnDescription:
-            viewDescription.isHidden = false
-            btnDoneDes.isHidden = false
+            setUpCellDes()
+            delegate?.resizeCell(isBig: true)
         default:
-            viewDescription.isHidden = true
+            setUpCellNotPlaying()
+            delegate?.resizeCell(isBig: false)
         }
     }
     
@@ -135,9 +146,11 @@ class DoExerciseCell: UITableViewCell {
     @IBAction func controlExerciseAction(_ sender: UIButton) {
         switch sender {
         case btnPrevious:
-            print()
+            stopTimer()
+            delegate?.changeExercise(jump: -1)
         case btnNext:
-            print("")
+            stopTimer()
+            delegate?.changeExercise(jump: 1)
         default:
             doExercise()
         }
@@ -145,52 +158,91 @@ class DoExerciseCell: UITableViewCell {
     
     // MARK: - update UI
     func doExercise() {
-        isPlaying = true
-        if let resize = resizeCellClosure {
-            resize(isPlaying)
-        }
-        
-        animate(imageView: imgGuide, images: listImage)
+        setUpCellPlaying()
+        delegate?.resizeCell(isBig: true)
         startTimer()
     }
     
     func updateCell(isPlaying: Bool) {
-        print("begin update")
         if isPlaying {
             setView(view: viewAdjustPlay, hidden: true)
             setView(view: viewDescription, hidden: true)
             lbCountDown.isHidden = false
+            animateImageView()
         } else {
             setView(view: viewAdjustPlay, hidden: false)
             setView(view: viewDescription, hidden: true)
             lbCountDown.isHidden = true
+            self.imgGuide.layer.removeAllAnimations()
         }
-//        pauseLayer(layer: circularProgressBar.layer)
         timer?.cancel()
     }
     
     // MARK: - methods support
     func animate(imageView: UIImageView, images: [UIImage]) {
-        DispatchQueue.main.async {
-            print("animate Image view\(images.count)")
-            imageView.animationImages = images
-            imageView.animationDuration = 1.75
-            imageView.animationRepeatCount = 10
-            imageView.startAnimating()
+        
+//        DispatchQueue.main.async {
+//            print("animate Image view\(images.count)")
+//            imageView.animationImages = images
+//            imageView.animationDuration = 1.75
+//            imageView.animationRepeatCount = 10
+//            imageView.startAnimating()
+//        }
+    }
+    
+    func animateImageView() {
+        
+        let namer = String((exercise?.gif_phone?.dropLast(4))!)
+        let imageData = try? Data(contentsOf: Bundle.main.url(forResource: namer, withExtension: "gif")!)
+        let advTimeGif = UIImage.gifImageWithData(imageData!)
+        imgGuide.image = advTimeGif
+    }
+    
+    func playSound() {
+        guard haveSound else {
+            return
+        }
+        
+        let path = exercise?.sound?.dropLast(4)
+        guard let url = Bundle.main.url(forResource: "wall_sit", withExtension: "mp3") else { return }
+        
+        do {
+            
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+//            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            /* iOS 10 and earlier require the following line:
+             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+            
+            guard let player = player else {
+                print("can not play this sound")
+                return
+                
+            }
+            
+            player.play()
+            print("play sound")
+            
+        } catch let error {
+            print(error.localizedDescription)
         }
     }
     
-    func createImageArray(listName: [String]) -> [UIImage] {
-        var imageArray: [UIImage] = []
-        
-        for name in listName {
-            let name = "\(name).png"
-            let image = UIImage(named: name)!
-            imageArray.append(image)
-        }
-        
-        return imageArray
-    }
+//    func createImageArray(listName: [String]) -> [UIImage] {
+//        var imageArray: [UIImage] = []
+//
+//        for name in listName {
+//            let name = "\(name).png"
+//            let image = UIImage(named: name)!
+//            imageArray.append(image)
+//        }
+//
+//        return imageArray
+//    }
     
     func setView(view: UIView, hidden: Bool) {
         
@@ -207,6 +259,9 @@ class DoExerciseCell: UITableViewCell {
         timer = DispatchSource.makeTimerSource(queue: queue)
         timer?.schedule(deadline: .now(), repeating: .milliseconds(1000), leeway: .milliseconds(10))
         timer?.setEventHandler {// `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
+//            if self.total == 30 {
+//                self.playSound()
+//            }
             self.total = self.total - 1
             if self.total <  0 {
                 self.total = 30
@@ -214,12 +269,11 @@ class DoExerciseCell: UITableViewCell {
             
             DispatchQueue.main.async {
                 self.lbCountDown.text = String(self.total)
+                self.animateImageView()
                 UIView.animate(withDuration: 1.0, animations: {
                     self.circularProgressBar.value = CGFloat(integerLiteral: self.total)
                     print("count down progress bar")
                 })
-                
-                self.animate(imageView: self.imgGuide, images: self.listImage)
             }
         }
         
@@ -227,7 +281,6 @@ class DoExerciseCell: UITableViewCell {
     }
     
     private func stopTimer() {
-        print("stop timer")
         timer?.cancel()
         timer = nil
     }

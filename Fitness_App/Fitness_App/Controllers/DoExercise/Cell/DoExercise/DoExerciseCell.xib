@@ -24,6 +24,9 @@
                             <constraint firstAttribute="width" secondItem="6N9-QV-NlL" secondAttribute="height" id="rWY-vn-a0s"/>
                         </constraints>
                         <state key="normal" image="ic_back"/>
+                        <connections>
+                            <action selector="backAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H7W-QQ-0YO"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9L-Sw-OXm">
                         <rect key="frame" x="165.5" y="33" width="44.5" height="18"/>
@@ -63,6 +66,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bent_elbow_shoulder_circle_1" translatesAutoresizingMaskIntoConstraints="NO" id="v4X-LF-3ct">
                                 <rect key="frame" x="25" y="25" width="273" height="273"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="v4X-LF-3ct" secondAttribute="height" multiplier="1:1" id="smI-gm-xBE"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.70196078429999997" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,7 +246,6 @@
             <color key="backgroundColor" red="0.23529411759999999" green="0.70196078429999997" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="btnBack" destination="6N9-QV-NlL" id="Coc-U5-gL3"/>
                 <outlet property="btnDescription" destination="QFk-LC-5g3" id="ucB-5s-46P"/>
                 <outlet property="btnDoneDes" destination="VgH-Tv-19w" id="E8l-Zg-GFU"/>
                 <outlet property="btnNext" destination="SDs-fX-D1V" id="s9a-ER-0tJ"/>
@@ -252,6 +257,7 @@
                 <outlet property="lbCountDown" destination="nQT-Jc-EsR" id="eF3-yT-gdT"/>
                 <outlet property="lbNameExercise" destination="lH4-rO-cOC" id="e9S-xL-BO3"/>
                 <outlet property="lbOrdinal" destination="a9L-Sw-OXm" id="0Qh-hW-uSb"/>
+                <outlet property="tvDes" destination="0L9-xI-fkj" id="13y-RB-ltz"/>
                 <outlet property="viewAdjustPlay" destination="kar-KT-mTX" id="MoO-gQ-9df"/>
                 <outlet property="viewDescription" destination="uZs-dB-OEa" id="NNC-zk-xL2"/>
             </connections>
