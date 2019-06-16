@@ -255,7 +255,7 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
                 DispatchQueue.main.async {
                     self.stopTimer()
                     self.delegate?.changeExercise(jump: 1, vc: self)
-                    
+                    self.sendNotification(name: "hihi", seconds: 60)
                 }
                
             }

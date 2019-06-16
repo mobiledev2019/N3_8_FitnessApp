@@ -125,6 +125,18 @@ class RealmManager {
         return listRe
     }
     
+    func getScheduleByDay(email: String, day: String) -> [Schedule]? {
+        let predicate = NSPredicate(format: "onwer_email = %@ AND day = %@", email, day)
+        let list = realm.objects(Schedule.self).filter(predicate)
+        
+        var liRe = [Schedule]()
+        for temp in list {
+            liRe.append(temp)
+        }
+        
+        return liRe
+    }
+    
     //MARK: - insert
     func addNewUser(user: Profile) {
         updateAllUserLogOut()
@@ -164,6 +176,12 @@ class RealmManager {
         }
     }
     
+    func addNewSchedule(sche: Schedule) {
+        try! realm.write {
+            realm.add(sche)
+        }
+    }
+    
     //MARK: update
     func updateUser(user: Profile) {
         
@@ -197,6 +215,12 @@ class RealmManager {
     func deleteUser(user: Profile) {
         try! realm.write {
             realm.delete(user)
+        }
+    }
+    
+    func deleteSchedule(sche: Schedule) {
+        try! realm.write {
+            realm.delete(sche)
         }
     }
 }

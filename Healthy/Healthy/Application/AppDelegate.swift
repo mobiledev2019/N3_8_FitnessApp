@@ -12,9 +12,10 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import FBSDKShareKit
 import GoogleSignIn
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
     var orientationLock = UIInterfaceOrientationMask.all
@@ -32,10 +33,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigation = BaseNavigationVC.init(rootViewController: loadingVC)
         SystemBoots.instance.changeRoot(window: &window, rootController: navigation)
         
+        UNUserNotificationCenter.current().delegate = self
+        let pushSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(pushSettings)
+        UIApplication.shared.registerForRemoteNotifications()
+        
         FirebaseApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         return true
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        VCService.push(type: TabbarVC.self)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("---------------app in foreground-----------")
+        //displaying the ios local notification when app is in foreground
+        completionHandler([.alert, .badge, .sound])
     }
     
     private func basicAppConfig() {

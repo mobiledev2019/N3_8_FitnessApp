@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		248E1892D8B9AC48DA6D80E9 /* Pods_Healthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAEFC8495A64087DAED5F46 /* Pods_Healthy.framework */; };
+		64570E7922B54B7200433A0F /* WeekSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E7722B54B7200433A0F /* WeekSchedule.swift */; };
+		64570E7A22B54B7200433A0F /* WeekSchedule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E7822B54B7200433A0F /* WeekSchedule.xib */; };
+		64570E7D22B54FC900433A0F /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E7B22B54FC900433A0F /* WeekCell.swift */; };
+		64570E7E22B54FC900433A0F /* WeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E7C22B54FC900433A0F /* WeekCell.xib */; };
+		64570E8222B55FEA00433A0F /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E8022B55FEA00433A0F /* DaySchedule.swift */; };
+		64570E8322B55FEA00433A0F /* DaySchedule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E8122B55FEA00433A0F /* DaySchedule.xib */; };
+		64570E8622B561FC00433A0F /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E8422B561FC00433A0F /* DayCell.swift */; };
+		64570E8722B561FC00433A0F /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E8522B561FC00433A0F /* DayCell.xib */; };
 		649CA48222AE2CC6005DDA5C /* jumping_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42122AE2CC1005DDA5C /* jumping_jack.mp3 */; };
 		649CA48322AE2CC6005DDA5C /* step_ups_with_a_kickback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42222AE2CC1005DDA5C /* step_ups_with_a_kickback.mp3 */; };
 		649CA48422AE2CC6005DDA5C /* plank_shoulder_tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42322AE2CC1005DDA5C /* plank_shoulder_tap.mp3 */; };
@@ -110,6 +118,7 @@
 		64D50A3222A1020E0072B926 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D50A3122A1020E0072B926 /* logo.png */; };
 		64D50A3422A103930072B926 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D50A3322A103930072B926 /* logo2.png */; };
 		64F55F82229FD7E600BC42C4 /* EZYGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F55F81229FD7E600BC42C4 /* EZYGradientView.swift */; };
+		64FC6CE422B5EE4500837490 /* ScheduleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC6CE322B5EE4500837490 /* ScheduleClass.swift */; };
 		960DA3FB22825C3400909932 /* extended_side_angle_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38122825C3300909932 /* extended_side_angle_left_yoga.gif */; };
 		960DA3FC22825C3400909932 /* low_lunges_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38222825C3300909932 /* low_lunges_left_yoga.gif */; };
 		960DA3FD22825C3400909932 /* plie_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38322825C3300909932 /* plie_squat.gif */; };
@@ -345,6 +354,14 @@
 
 /* Begin PBXFileReference section */
 		0FF29C92A052D71358D4CD1B /* Pods-Healthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy/Pods-Healthy.release.xcconfig"; sourceTree = "<group>"; };
+		64570E7722B54B7200433A0F /* WeekSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSchedule.swift; sourceTree = "<group>"; };
+		64570E7822B54B7200433A0F /* WeekSchedule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekSchedule.xib; sourceTree = "<group>"; };
+		64570E7B22B54FC900433A0F /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
+		64570E7C22B54FC900433A0F /* WeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekCell.xib; sourceTree = "<group>"; };
+		64570E8022B55FEA00433A0F /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		64570E8122B55FEA00433A0F /* DaySchedule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaySchedule.xib; sourceTree = "<group>"; };
+		64570E8422B561FC00433A0F /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		64570E8522B561FC00433A0F /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		649CA42122AE2CC1005DDA5C /* jumping_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jumping_jack.mp3; sourceTree = "<group>"; };
 		649CA42222AE2CC1005DDA5C /* step_ups_with_a_kickback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_ups_with_a_kickback.mp3; sourceTree = "<group>"; };
 		649CA42322AE2CC1005DDA5C /* plank_shoulder_tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_shoulder_tap.mp3; sourceTree = "<group>"; };
@@ -442,11 +459,12 @@
 		649CA47F22AE2CC6005DDA5C /* v_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v_sit.mp3; sourceTree = "<group>"; };
 		649CA48022AE2CC6005DDA5C /* inchworm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inchworm.mp3; sourceTree = "<group>"; };
 		649CA48122AE2CC6005DDA5C /* half_wall_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_wall_sit.mp3; sourceTree = "<group>"; };
-		64B93A2622B2165F000BD1AA /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		64B93A2622B2165F000BD1AA /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleVC.swift; path = ../ScheduleVC.swift; sourceTree = "<group>"; };
 		64B93A2722B2165F000BD1AA /* ScheduleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleVC.xib; sourceTree = "<group>"; };
 		64D50A3122A1020E0072B926 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		64D50A3322A103930072B926 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		64F55F81229FD7E600BC42C4 /* EZYGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZYGradientView.swift; sourceTree = "<group>"; };
+		64FC6CE322B5EE4500837490 /* ScheduleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleClass.swift; sourceTree = "<group>"; };
 		8AAEFC8495A64087DAED5F46 /* Pods_Healthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960DA38122825C3300909932 /* extended_side_angle_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_side_angle_left_yoga.gif; sourceTree = "<group>"; };
 		960DA38222825C3300909932 /* low_lunges_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = low_lunges_left_yoga.gif; sourceTree = "<group>"; };
@@ -713,6 +731,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		64570E7522B54AC300433A0F /* Add new schedule */ = {
+			isa = PBXGroup;
+			children = (
+				64B93A2622B2165F000BD1AA /* ScheduleVC.swift */,
+				64B93A2722B2165F000BD1AA /* ScheduleVC.xib */,
+			);
+			path = "Add new schedule";
+			sourceTree = "<group>";
+		};
+		64570E7622B54AFA00433A0F /* Schedule by week */ = {
+			isa = PBXGroup;
+			children = (
+				64570E7722B54B7200433A0F /* WeekSchedule.swift */,
+				64570E7822B54B7200433A0F /* WeekSchedule.xib */,
+				64570E7B22B54FC900433A0F /* WeekCell.swift */,
+				64570E7C22B54FC900433A0F /* WeekCell.xib */,
+			);
+			path = "Schedule by week";
+			sourceTree = "<group>";
+		};
+		64570E7F22B55FBC00433A0F /* Schedule by day */ = {
+			isa = PBXGroup;
+			children = (
+				64570E8022B55FEA00433A0F /* DaySchedule.swift */,
+				64570E8122B55FEA00433A0F /* DaySchedule.xib */,
+				64570E8422B561FC00433A0F /* DayCell.swift */,
+				64570E8522B561FC00433A0F /* DayCell.xib */,
+			);
+			path = "Schedule by day";
+			sourceTree = "<group>";
+		};
 		649CA42022AE2CA5005DDA5C /* sound */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,8 +878,9 @@
 		64B93A2522B21602000BD1AA /* schedule */ = {
 			isa = PBXGroup;
 			children = (
-				64B93A2622B2165F000BD1AA /* ScheduleVC.swift */,
-				64B93A2722B2165F000BD1AA /* ScheduleVC.xib */,
+				64570E7F22B55FBC00433A0F /* Schedule by day */,
+				64570E7622B54AFA00433A0F /* Schedule by week */,
+				64570E7522B54AC300433A0F /* Add new schedule */,
 			);
 			path = schedule;
 			sourceTree = "<group>";
@@ -1175,13 +1225,14 @@
 			isa = PBXGroup;
 			children = (
 				9669D9D222814B4E00C06BEE /* ShareData */,
-				9669D9D722814BE500C06BEE /* Exercise.swift */,
+				9669D9DB22814BE500C06BEE /* ProfileClass.swift */,
 				9669D9D822814BE500C06BEE /* ExerciseClass.swift */,
+				9669D9DF22814BE500C06BEE /* ListExercisesClass.swift */,
+				9669D9DD22814BE500C06BEE /* Resultclass.swift */,
+				64FC6CE322B5EE4500837490 /* ScheduleClass.swift */,
+				9669D9D722814BE500C06BEE /* Exercise.swift */,
 				9669D9DC22814BE500C06BEE /* ExerciseDetail.swift */,
 				9669D9DE22814BE500C06BEE /* Exercises.swift */,
-				9669D9DF22814BE500C06BEE /* ListExercisesClass.swift */,
-				9669D9DB22814BE500C06BEE /* ProfileClass.swift */,
-				9669D9DD22814BE500C06BEE /* Resultclass.swift */,
 				9669D9D922814BE500C06BEE /* Welcome.swift */,
 				9669D9DA22814BE500C06BEE /* Workout.swift */,
 			);
@@ -1549,6 +1600,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64570E7E22B54FC900433A0F /* WeekCell.xib in Resources */,
 				960DA43022825C3400909932 /* thread_the_needle_right_yoga.gif in Resources */,
 				960DA43322825C3400909932 /* downward_dog_yoga.gif in Resources */,
 				960DA48822825F1E00909932 /* ItemExerciseDetailCell.xib in Resources */,
@@ -1615,6 +1667,7 @@
 				649CA4B722AE2CC6005DDA5C /* half_squat.mp3 in Resources */,
 				96403025227FE7EE006D557A /* RegisterVC.xib in Resources */,
 				960DA47022825C3400909932 /* reverse_crunch.gif in Resources */,
+				64570E8322B55FEA00433A0F /* DaySchedule.xib in Resources */,
 				960DA45122825C3400909932 /* front_thigh_stretch_right.gif in Resources */,
 				960DA47322825C3400909932 /* shuffle_side_squat.gif in Resources */,
 				960DA40822825C3400909932 /* low_lunges_right_yoga.gif in Resources */,
@@ -1703,9 +1756,11 @@
 				649CA4B422AE2CC6005DDA5C /* squat_thrust.mp3 in Resources */,
 				9613C88822826A7C00D0F476 /* ExercisesDetailVC.xib in Resources */,
 				960DA48A22825F1E00909932 /* HeaderCell.xib in Resources */,
+				64570E7A22B54B7200433A0F /* WeekSchedule.xib in Resources */,
 				649CA4B922AE2CC6005DDA5C /* lying_triceps_lift.mp3 in Resources */,
 				649CA49322AE2CC6005DDA5C /* plank_hip_twist.mp3 in Resources */,
 				649CA4A922AE2CC6005DDA5C /* plank_with_leg_lift.mp3 in Resources */,
+				64570E8722B561FC00433A0F /* DayCell.xib in Resources */,
 				649CA4C722AE2CC6005DDA5C /* standing_twist.mp3 in Resources */,
 				960DA42722825C3400909932 /* dynamic_downward_dog_yoga.gif in Resources */,
 				649CA48422AE2CC6005DDA5C /* plank_shoulder_tap.mp3 in Resources */,
@@ -1814,6 +1869,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
@@ -1840,6 +1896,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
@@ -1947,6 +2004,7 @@
 				96E50B5D227E87EE00ECF162 /* SystemBoots.swift in Sources */,
 				9669D9F022814CE500C06BEE /* ForgotPasswordVC.swift in Sources */,
 				64F55F82229FD7E600BC42C4 /* EZYGradientView.swift in Sources */,
+				64570E8622B561FC00433A0F /* DayCell.swift in Sources */,
 				96E50C6F227E902300ECF162 /* CustomNibView.swift in Sources */,
 				96E4B7B12278A7A0003043B9 /* AppDelegate.swift in Sources */,
 				9669DA072281710000C06BEE /* ProfileVC.swift in Sources */,
@@ -1960,6 +2018,7 @@
 				9669D9E322814BE500C06BEE /* Workout.swift in Sources */,
 				9669D9E522814BE500C06BEE /* ExerciseDetail.swift in Sources */,
 				96E50BEF227E897500ECF162 /* LoadingVC.swift in Sources */,
+				64570E8222B55FEA00433A0F /* DaySchedule.swift in Sources */,
 				96E50C56227E902300ECF162 /* UIButton+Extension.swift in Sources */,
 				9669D9E022814BE500C06BEE /* Exercise.swift in Sources */,
 				9669D9E222814BE500C06BEE /* Welcome.swift in Sources */,
@@ -1980,13 +2039,16 @@
 				9613C88722826A7C00D0F476 /* ExercisesDetailVC.swift in Sources */,
 				96E50C60227E902300ECF162 /* TextPicker.swift in Sources */,
 				96E50C68227E902300ECF162 /* RetryHandler.swift in Sources */,
+				64570E7D22B54FC900433A0F /* WeekCell.swift in Sources */,
 				96E50C59227E902300ECF162 /* UITextView+Extension.swift in Sources */,
 				96E50C64227E902300ECF162 /* Permission.swift in Sources */,
+				64FC6CE422B5EE4500837490 /* ScheduleClass.swift in Sources */,
 				9669D9E122814BE500C06BEE /* ExerciseClass.swift in Sources */,
 				96E50C6D227E902300ECF162 /* CheckBox.swift in Sources */,
 				96E50BE4227E88F400ECF162 /* Json.swift in Sources */,
 				96E50C58227E902300ECF162 /* UIImage+Extension.swift in Sources */,
 				96E50C5A227E902300ECF162 /* UIScrollView+Extension.swift in Sources */,
+				64570E7922B54B7200433A0F /* WeekSchedule.swift in Sources */,
 				96AC4B49228405B200E1F26D /* AchivementVC.swift in Sources */,
 				96E50BEA227E894C00ECF162 /* BaseNavigationVC.swift in Sources */,
 				96E50C67227E902300ECF162 /* AutoLayoutHelper.swift in Sources */,

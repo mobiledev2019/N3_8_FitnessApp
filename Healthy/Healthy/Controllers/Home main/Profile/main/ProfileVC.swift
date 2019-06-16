@@ -146,6 +146,10 @@ class ProfileVC: BaseVC {
         lbPass.addGestureRecognizer(actionChangePass)
 //        imgNextPass.isUserInteractionEnabled = true
 //        imgNextPass.addGestureRecognizer(actionChangePass)
+        //setup action change answer
+        let actionChangeAnswer = UITapGestureRecognizer(target: self, action: #selector(changeAnswer))
+        lbAnswer.isUserInteractionEnabled = true
+        lbAnswer.addGestureRecognizer(actionChangeAnswer)
         
     }
  
@@ -218,7 +222,8 @@ class ProfileVC: BaseVC {
     }
     
     @objc func changeAnswer() {
-        showTextfieldAlert(title: "Thay đổi câu hỏi bảo mật", mess: "Nhập câu trả lời mới", type: .Answer)
+//        showTextfieldAlert(title: "Thay đổi câu hỏi bảo mật", mess: "Nhập câu trả lời mới", type: .Answer)
+        VCService.push(type: WeekSchedule.self)
     }
     
     func showTextfieldAlert(title: String, mess: String, type: Type) {

@@ -13,6 +13,7 @@ PODS:
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
   - CryptoSwift (1.0.0)
+  - DLRadioButton (1.4.12)
   - FBSDKCoreKit (4.44.1):
     - Bolts (~> 1.9)
   - FBSDKLoginKit (4.44.1):
@@ -115,6 +116,7 @@ DEPENDENCIES:
   - AlamofireObjectMapper
   - AlamofireSwiftyJSON
   - CryptoSwift
+  - DLRadioButton (~> 1.4)
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -136,6 +138,7 @@ SPEC REPOS:
     - AlamofireSwiftyJSON
     - Bolts
     - CryptoSwift
+    - DLRadioButton
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -168,6 +171,7 @@ SPEC CHECKSUMS:
   AlamofireSwiftyJSON: 74ee3804bed06d07857daf1eeb1615c85dba3997
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   FBSDKCoreKit: a823ae35bdb60ebb8d7a7e51abe7c5d87d2bfced
   FBSDKLoginKit: 54ae59987f2a8703021557c90a9aebb9e5c2bef6
   FBSDKShareKit: 526d4cfb713d24855fa23d0dd74e191accd3a720
@@ -194,6 +198,6 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 622e234c78125942d5630fb76c472c72f3439e1c
+PODFILE CHECKSUM: 9b7a164619ac8e532849934047f703bba46b0520
 
 COCOAPODS: 1.5.3
