@@ -113,13 +113,18 @@ class RealmManager {
         return realm.objects(ExerciseClass.self).filter("id = \(id)")[0]
     }
     
-    func getAllResult(mail: String) -> [ResultClass] {
+    func getAllResult7DayLater(mail: String) -> [ResultClass] {
         let predicate = NSPredicate(format: "owner_mail = %@ ", mail)
         let list = realm.objects(ResultClass.self).filter(predicate)
         
         var listRe = [ResultClass]()
+        var dem = 0
         for temp in list {
+            if dem > 6 {
+                break
+            }
             listRe.append(temp)
+            dem += 1
         }
         
         return listRe
@@ -135,6 +140,19 @@ class RealmManager {
         }
         
         return liRe
+    }
+    
+    func getResultCurrentDay() -> ResultClass? {
+        let date = Date()
+        let calendar = Calendar.current
+        let list = realm.objects(ResultClass.self)
+        for temp in list {
+            if let dateSave = temp.date, calendar.component(.year, from: date) == calendar.component(.year, from: dateSave), calendar.component(.month, from: date) == calendar.component(.month, from: dateSave), calendar.component(.day, from: date) == calendar.component(.day, from: dateSave) {
+                return temp
+            }
+        }
+        return nil
+        
     }
     
     //MARK: - insert

@@ -124,7 +124,7 @@ class LoginVC: BaseVC  {
             return false
         }
         
-        if user.passWord == pass {
+        if user.passWord != pass {
             showMess(mess: "Wrong password!")
             return false
         }

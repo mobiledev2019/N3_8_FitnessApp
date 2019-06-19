@@ -10,6 +10,7 @@ import UIKit
 import MBCircularProgressBar
 import UserNotifications
 import AVFoundation
+import RealmSwift
 
 protocol DoExerciseDelegate {
     func changeExercise(jump: Int, vc: DoExerciseVC)
@@ -40,12 +41,16 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
     var timer: DispatchSourceTimer?
     var total = 30
     
+    var complete = 0.0
+    
     var delegate: DoExerciseDelegate?
     
     //MARK: - view life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        
+        
         // Do any additional setup after loading the view.
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
             
@@ -106,6 +111,7 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
     }
     
     @IBAction func backAction(_ sender: UIButton) {
+        saveDataComplete()
         stopTimer()
         VCService.pop()
     }
@@ -113,9 +119,11 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
     @IBAction func adjustAction(_ sender: UIButton) {
         switch sender {
         case btnPrevious:
+            saveDataComplete()
             stopTimer()
             delegate?.changeExercise(jump: -1, vc: self)
         case btnNext:
+            saveDataComplete()
             stopTimer()
             delegate?.changeExercise(jump: 1, vc: self)
         default:
@@ -126,6 +134,11 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
     @IBAction func gotDescAction(_ sender: UIButton) {
         switch sender {
         case btnDes:
+            timer?.cancel()
+            imgGuide.layer.removeAllAnimations()
+            if let name = exercise?.gif_phone {
+                imgGuide.image = UIImage.getCoverImage(name: name)
+            }
             updateViewHidden(hideLbCountDown: true, hideViewAdjust: true, hideViewDes: false)
         default:
             updateViewHidden(hideLbCountDown: true, hideViewAdjust: false, hideViewDes: true)
@@ -154,6 +167,23 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
     }
     
     //MARK: - methods support
+    func saveDataComplete() {
+        let com = ((30 - Double(total)) / 30) / 81 *  100
+        if let re = RealmManager.shareInstance.getResultCurrentDay() {
+            let realm = try! Realm()
+            try! realm.write {
+                re.complete += com
+            }
+        } else {
+            let date = Date()
+            var result = ResultClass()
+            result.complete = com
+            result.date = date
+            result.owner_mail = RealmManager.shareInstance.getCurrentUser()?.email
+            RealmManager.shareInstance.addNewResult(re: result)
+        }
+    }
+    
     func changeExercise(ex: ExerciseClass) {
         stopTimer()
         exercise = ex
@@ -244,7 +274,9 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
             if self.total == 1 {
                 DispatchQueue.main.async {
                     self.playSound(sound: "sys_nextstep.mp3")
+                    self.saveDataComplete()
                 }
+                
             }
             
             self.total = self.total - 1
@@ -255,7 +287,6 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
                 DispatchQueue.main.async {
                     self.stopTimer()
                     self.delegate?.changeExercise(jump: 1, vc: self)
-                    self.sendNotification(name: "hihi", seconds: 60)
                 }
                
             }

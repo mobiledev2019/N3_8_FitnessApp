@@ -74,28 +74,28 @@ class AchivementVC: BaseVC {
     //MARK: - setup
     func setUpData() {
         if let user = RealmManager.shareInstance.getCurrentUser(), let mail = user.email {
-            listResult = RealmManager.shareInstance.getAllResult(mail: mail)
+            listResult = RealmManager.shareInstance.getAllResult7DayLater(mail: mail)
         }
     }
     
     func setUpUI() {
-//        if listResult.count == 0 {
-//            hideChart()
+        if listResult.count == 0 {
+            hideChart()
+
+        } else {
+           showChart()
+        }
+        
+//        lbNoValues.isHidden = true
+//        let lables: [String] = ["4/5", "5/5", "6/5", "7/5", "8/5", "9/5", "10/5"]
 //
-//        } else {
-//           showChart()
-//        }
-        
-        lbNoValues.isHidden = true
-        let lables: [String] = ["4/5", "5/5", "6/5", "7/5", "8/5", "9/5", "10/5"]
-        
-        lineChart.x.labels.values = lables
-        lineChart.addLine([10, 30, 50, 55, 70, 75, 90])
-        lineChart.dots.color = UIColor.Custom.AppMainDark
-        lineChart.dots.innerRadius = 16
-        lineChart.dots.outerRadius = 12
-        lineChart.colors = [UIColor.Custom.AppMainDark, UIColor.Custom.AppFirst]
-        lineChart.isHidden = false
+//        lineChart.x.labels.values = lables
+//        lineChart.addLine([10, 30, 50, 55, 70, 75, 90])
+//        lineChart.dots.color = UIColor.Custom.AppMainDark
+//        lineChart.dots.innerRadius = 16
+//        lineChart.dots.outerRadius = 12
+//        lineChart.colors = [UIColor.Custom.AppMainDark, UIColor.Custom.AppFirst]
+//        lineChart.isHidden = false
     }
     
     //MARK: - method support
@@ -135,15 +135,16 @@ class AchivementVC: BaseVC {
     func getChartValues() -> [String: Double] {
         var re = [String: Double]()
         let count = listResult.count
-        for i in count...0 {
-            let result = listResult[i]
+        for _ in listResult.count...7 {
+            re["null"] = 0
+        }
+        for i in count...1 {
+            let result = listResult[i-1]
             if let date = result.date {
                 re[date.toString(dateFormat: "dd/MM")] = result.complete
             }
         }
-        for _ in re.count...7 {
-            re["null"] = 0
-        }
+        
         return re
     }
 }
