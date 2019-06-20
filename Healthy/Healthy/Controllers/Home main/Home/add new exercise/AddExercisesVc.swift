@@ -55,6 +55,10 @@ class AddExercisesVc: BaseVC {
     }
     
     @IBAction func SaveAction(_ sender: UIButton) {
+        guard let user = RealmManager.shareInstance.getCurrentUser() else {
+            showMess(mess: "Please login to edit")
+            return
+        }
         guard let name = tfName.text, name != "" else {
             showMess(mess: "You need to enter the name of new exercise")
             return
@@ -66,6 +70,7 @@ class AddExercisesVc: BaseVC {
         }
        
         let newExes = ExercisesClass()
+        
         newExes.name = name
         newExes.isOriginal = false
         for temp in list {
@@ -80,7 +85,6 @@ class AddExercisesVc: BaseVC {
             let exes = listExercises[i]
             let listActive = listExercises[i].listActive
             for j in 0...(listActive.count - 1) {
-                print("active: \(orginalArray[i][j])")
                 try! realm.write {
                     exes.listActive[j] = orginalArray[i][j]
                 }
@@ -91,6 +95,10 @@ class AddExercisesVc: BaseVC {
         tfName.text = ""
         setupData()
         tableView.reloadData()
+        
+        try! realm.write {
+            user.listExercies.append(name)
+        }
         
     }
     

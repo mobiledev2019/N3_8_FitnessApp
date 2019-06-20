@@ -27,7 +27,13 @@ class HomeCell: UITableViewCell {
     
     func setUpCell(exes: ExercisesClass) {
         lbName.text = exes.name
-        lbNumber.text = "\(exes.listActive.count) part"
+        var dem = 0
+        for temp in exes.listActive {
+            if temp {
+                dem += 1
+            }
+        }
+        lbNumber.text = "\(dem) part"
     }
     
 }

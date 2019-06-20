@@ -28,8 +28,14 @@ class CustomExercisesVC: BaseVC {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setUpData()
+        tableView.reloadData()
+    }
+    
     //MARK: - setup
     func  setUpData() {
+        listEx.removeAll()
         guard let exes = exes else {
             return
         }

@@ -246,37 +246,32 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
         timer = DispatchSource.makeTimerSource(queue: queue)
         timer?.schedule(deadline: .now(), repeating: .milliseconds(1000), leeway: .milliseconds(10))
         timer?.setEventHandler {// `[weak self]` only needed if you reference `self` in this
-            
-            if self.total == 30 {
+            switch self.total {
+            case 30:
                 DispatchQueue.main.async {
                     self.playSound(sound: self.exercise?.sound)
                 }
-            }
-            
-            if self.total == 4 {
+            case 4:
                 DispatchQueue.main.async {
                     self.playSound(sound: "sys_countdown3.mp3")
                 }
-            }
-            
-            if self.total == 3 {
+            case 3:
                 DispatchQueue.main.async {
                     self.playSound(sound: "sys_countdown2.mp3")
                 }
-            }
-            
-            if self.total == 2 {
+            case 2:
                 DispatchQueue.main.async {
                     self.playSound(sound: "sys_countdown1.mp3")
                 }
-            }
-            
-            if self.total == 1 {
+            case 1:
                 DispatchQueue.main.async {
                     self.playSound(sound: "sys_nextstep.mp3")
                     self.saveDataComplete()
                 }
-                
+            default:
+                DispatchQueue.main.async {
+                    self.playSound(sound: "sys_dong.mp3")
+                }
             }
             
             self.total = self.total - 1
@@ -349,5 +344,4 @@ class DoExerciseVC: BaseVC, UNUserNotificationCenterDelegate {
         print("App moved to background!")
         sendNotification(name: exercise?.name, seconds: total)
     }
-    
 }

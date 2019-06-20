@@ -29,8 +29,15 @@ class HomeVC: BaseVC {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setUpData()
+        tableView.reloadData()
+    }
+    
     //MARK: - setup
     func setUpData() {
+        listExercises.removeAll()
+        
         if let  user = RealmManager.shareInstance.getCurrentUser() {
             listExercises = RealmManager.shareInstance.getAllExercises(user: user)
         } else {

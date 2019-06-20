@@ -52,18 +52,18 @@ class TabbarVC: UITabBarController {
         setupTabbarColor()
         
         let homeVC = HomeVC()
-        homeVC.title = NSLocalizedString("home", comment: "")
-        homeVC.tabBarItem.title = NSLocalizedString("home", comment: "")
+        homeVC.title = NSLocalizedString("Home", comment: "")
+        homeVC.tabBarItem.title = NSLocalizedString("Home", comment: "")
         homeVC.tabBarItem.image = UIImage(named: "ic_home")
         
         let settingVC = AchivementVC()
-        settingVC.title = NSLocalizedString("setting", comment: "")
-        settingVC.tabBarItem.title = NSLocalizedString("setting", comment: "")
+        settingVC.title = NSLocalizedString("Achievement", comment: "")
+        settingVC.tabBarItem.title = NSLocalizedString("Achievement", comment: "")
         settingVC.tabBarItem.image = UIImage(named: "ic_calendar")
         
         let profileVC = ProfileVC()
-        profileVC.title = NSLocalizedString("profile", comment: "")
-        profileVC.tabBarItem.title = NSLocalizedString("profile", comment: "")
+        profileVC.title = NSLocalizedString("Profile", comment: "")
+        profileVC.tabBarItem.title = NSLocalizedString("Profile", comment: "")
         profileVC.tabBarItem.image = UIImage(named: "ic_setting")
         
         let controllers = [homeVC, settingVC, profileVC]

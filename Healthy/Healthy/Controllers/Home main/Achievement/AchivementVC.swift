@@ -114,12 +114,12 @@ class AchivementVC: BaseVC {
     
     func showChart() {
         lbNoValues.isHidden = true
-        var lableX = [String]()
+        var lableX = getDay()
         var valuesY = [CGFloat]()
-        let listRe = getChartValues()
+        let listRe = getComplete()
         
-        for (lable, value) in listRe {
-            lableX.append(lable)
+        for value in listRe {
+//            lableX.append(lable)
             valuesY.append(CGFloat(value))
         }
         //            let lables: [String] = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"]
@@ -132,19 +132,51 @@ class AchivementVC: BaseVC {
         lineChart.dots.outerRadius = 12
         lineChart.colors = [UIColor.Custom.AppMainDark, UIColor.Custom.AppSecond]
     }
+    
     func getChartValues() -> [String: Double] {
         var re = [String: Double]()
         let count = listResult.count
-        for _ in listResult.count...7 {
+        for _ in count..<6 {
             re["null"] = 0
         }
-        for i in count...1 {
-            let result = listResult[i-1]
+        for i in 0..<count {
+            let result = listResult[i]
             if let date = result.date {
                 re[date.toString(dateFormat: "dd/MM")] = result.complete
             }
         }
         
+        print("---------------------------------------------------")
+        print(re)
+        
+        return re
+    }
+    
+    func getDay() -> [String] {
+        let cal = Calendar.current
+        let date = cal.startOfDay(for: Date())
+        var days = [String]()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM"
+        
+        for i in 0 ... 6 {
+            let newdate = cal.date(byAdding: .day, value: -(6-i), to: date)!
+            let str = dateFormatter.string(from: newdate)
+            days.append(str)
+        }
+        
+        return days
+    }
+    
+    func getComplete() -> [Double] {
+        var re = [Double]()
+        let count = listResult.count
+        for i in 0..<7-count{
+            re.append(0)
+        }
+        for i in 0..<count {
+            re.append(listResult[i].complete)
+        }
         return re
     }
 }
