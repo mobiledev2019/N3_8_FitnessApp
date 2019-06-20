@@ -34,6 +34,18 @@ class AchivementVC: BaseVC {
         setUpUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        listResult.removeAll()
+        if let user = RealmManager.shareInstance.getCurrentUser(), let mail = user.email {
+            listResult = RealmManager.shareInstance.getAllResult7DayLater(mail: mail)
+        }
+        
+        
+        lineChart.clearAll()
+        showChart()
+        
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         guard let user = RealmManager.shareInstance.getCurrentUser() else {
             lineChart.isHidden = true
