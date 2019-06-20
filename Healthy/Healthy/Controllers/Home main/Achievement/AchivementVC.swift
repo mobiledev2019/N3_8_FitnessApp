@@ -133,24 +133,6 @@ class AchivementVC: BaseVC {
         lineChart.colors = [UIColor.Custom.AppMainDark, UIColor.Custom.AppSecond]
     }
     
-    func getChartValues() -> [String: Double] {
-        var re = [String: Double]()
-        let count = listResult.count
-        for _ in count..<6 {
-            re["null"] = 0
-        }
-        for i in 0..<count {
-            let result = listResult[i]
-            if let date = result.date {
-                re[date.toString(dateFormat: "dd/MM")] = result.complete
-            }
-        }
-        
-        print("---------------------------------------------------")
-        print(re)
-        
-        return re
-    }
     
     func getDay() -> [String] {
         let cal = Calendar.current
