@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>461986285519-3ko7tfq9gq522ckqpjkv35793kmdr5tg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.461986285519-3ko7tfq9gq522ckqpjkv35793kmdr5tg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyANpOWXLWWk19revggyJ47d9z-u-u7Rb3A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>461986285519</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.product.Healthy</string>
+	<key>PROJECT_ID</key>
+	<string>healthyapp-dac06</string>
+	<key>STORAGE_BUCKET</key>
+	<string>healthyapp-dac06.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:461986285519:ios:fbdc044e85d38bd5</string>
+	<key>DATABASE_URL</key>
+	<string>https://healthyapp-dac06.firebaseio.com</string>
+</dict>
+</plist>

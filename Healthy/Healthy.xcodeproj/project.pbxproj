@@ -1,0 +1,2269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248E1892D8B9AC48DA6D80E9 /* Pods_Healthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAEFC8495A64087DAED5F46 /* Pods_Healthy.framework */; };
+		64570E7922B54B7200433A0F /* WeekSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E7722B54B7200433A0F /* WeekSchedule.swift */; };
+		64570E7A22B54B7200433A0F /* WeekSchedule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E7822B54B7200433A0F /* WeekSchedule.xib */; };
+		64570E7D22B54FC900433A0F /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E7B22B54FC900433A0F /* WeekCell.swift */; };
+		64570E7E22B54FC900433A0F /* WeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E7C22B54FC900433A0F /* WeekCell.xib */; };
+		64570E8222B55FEA00433A0F /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E8022B55FEA00433A0F /* DaySchedule.swift */; };
+		64570E8322B55FEA00433A0F /* DaySchedule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E8122B55FEA00433A0F /* DaySchedule.xib */; };
+		64570E8622B561FC00433A0F /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64570E8422B561FC00433A0F /* DayCell.swift */; };
+		64570E8722B561FC00433A0F /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64570E8522B561FC00433A0F /* DayCell.xib */; };
+		649CA48222AE2CC6005DDA5C /* jumping_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42122AE2CC1005DDA5C /* jumping_jack.mp3 */; };
+		649CA48322AE2CC6005DDA5C /* step_ups_with_a_kickback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42222AE2CC1005DDA5C /* step_ups_with_a_kickback.mp3 */; };
+		649CA48422AE2CC6005DDA5C /* plank_shoulder_tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42322AE2CC1005DDA5C /* plank_shoulder_tap.mp3 */; };
+		649CA48522AE2CC6005DDA5C /* big_arm_circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42422AE2CC1005DDA5C /* big_arm_circle.mp3 */; };
+		649CA48622AE2CC6005DDA5C /* single_leg_arm_reach_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42522AE2CC1005DDA5C /* single_leg_arm_reach_alternate.mp3 */; };
+		649CA48722AE2CC6005DDA5C /* step_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42622AE2CC1005DDA5C /* step_up.mp3 */; };
+		649CA48822AE2CC6005DDA5C /* side_kick_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42722AE2CC1005DDA5C /* side_kick_squat.mp3 */; };
+		649CA48922AE2CC6005DDA5C /* abdominal_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42822AE2CC1005DDA5C /* abdominal_crunch.mp3 */; };
+		649CA48A22AE2CC6005DDA5C /* lunge_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42922AE2CC1005DDA5C /* lunge_right.mp3 */; };
+		649CA48B22AE2CC6005DDA5C /* spiderman_plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42A22AE2CC1005DDA5C /* spiderman_plank.mp3 */; };
+		649CA48C22AE2CC6005DDA5C /* cross_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42B22AE2CC1005DDA5C /* cross_jack.mp3 */; };
+		649CA48D22AE2CC6005DDA5C /* sys_countdown3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42C22AE2CC1005DDA5C /* sys_countdown3.mp3 */; };
+		649CA48E22AE2CC6005DDA5C /* squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42D22AE2CC1005DDA5C /* squat.mp3 */; };
+		649CA48F22AE2CC6005DDA5C /* jog_in_place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42E22AE2CC1005DDA5C /* jog_in_place.mp3 */; };
+		649CA49022AE2CC6005DDA5C /* hip_thrust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA42F22AE2CC2005DDA5C /* hip_thrust.mp3 */; };
+		649CA49122AE2CC6005DDA5C /* front_thigh_stretch_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43022AE2CC2005DDA5C /* front_thigh_stretch_left.mp3 */; };
+		649CA49222AE2CC6005DDA5C /* mountain_climber.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43122AE2CC2005DDA5C /* mountain_climber.mp3 */; };
+		649CA49322AE2CC6005DDA5C /* plank_hip_twist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43222AE2CC2005DDA5C /* plank_hip_twist.mp3 */; };
+		649CA49422AE2CC6005DDA5C /* sys_countdown1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43322AE2CC2005DDA5C /* sys_countdown1.mp3 */; };
+		649CA49522AE2CC6005DDA5C /* side_plank_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43422AE2CC2005DDA5C /* side_plank_right.mp3 */; };
+		649CA49622AE2CC6005DDA5C /* side_plank_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43522AE2CC2005DDA5C /* side_plank_left.mp3 */; };
+		649CA49722AE2CC6005DDA5C /* sys_nextstep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43622AE2CC2005DDA5C /* sys_nextstep.mp3 */; };
+		649CA49822AE2CC6005DDA5C /* tricep_dip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43722AE2CC2005DDA5C /* tricep_dip.mp3 */; };
+		649CA49922AE2CC6005DDA5C /* sys_halfwaythere.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43822AE2CC2005DDA5C /* sys_halfwaythere.mp3 */; };
+		649CA49A22AE2CC6005DDA5C /* wall_sit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43922AE2CC2005DDA5C /* wall_sit.mp3 */; };
+		649CA49B22AE2CC6005DDA5C /* side_leg_raise_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43A22AE2CC2005DDA5C /* side_leg_raise_left.mp3 */; };
+		649CA49C22AE2CC6005DDA5C /* hand_release_push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43B22AE2CC2005DDA5C /* hand_release_push_up.mp3 */; };
+		649CA49D22AE2CC6005DDA5C /* russian_twist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43C22AE2CC2005DDA5C /* russian_twist.mp3 */; };
+		649CA49E22AE2CC6005DDA5C /* overhead_press.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43D22AE2CC2005DDA5C /* overhead_press.mp3 */; };
+		649CA49F22AE2CC6005DDA5C /* single_leg_hip_extension_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43E22AE2CC2005DDA5C /* single_leg_hip_extension_right.mp3 */; };
+		649CA4A022AE2CC6005DDA5C /* shoulder_blade_squeeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA43F22AE2CC2005DDA5C /* shoulder_blade_squeeze.mp3 */; };
+		649CA4A122AE2CC6005DDA5C /* up_and_down_plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44022AE2CC2005DDA5C /* up_and_down_plank.mp3 */; };
+		649CA4A222AE2CC6005DDA5C /* flutter_kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44122AE2CC2005DDA5C /* flutter_kick.mp3 */; };
+		649CA4A322AE2CC6005DDA5C /* sys_begin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44222AE2CC2005DDA5C /* sys_begin.mp3 */; };
+		649CA4A422AE2CC6005DDA5C /* marching_hip_raise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44322AE2CC3005DDA5C /* marching_hip_raise.mp3 */; };
+		649CA4A522AE2CC6005DDA5C /* flutter_kick_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44422AE2CC3005DDA5C /* flutter_kick_squat.mp3 */; };
+		649CA4A622AE2CC6005DDA5C /* single_leg_v_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44522AE2CC3005DDA5C /* single_leg_v_up.mp3 */; };
+		649CA4A722AE2CC6005DDA5C /* rest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44622AE2CC3005DDA5C /* rest.mp3 */; };
+		649CA4A822AE2CC6005DDA5C /* bicycle_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44722AE2CC3005DDA5C /* bicycle_crunch.mp3 */; };
+		649CA4A922AE2CC6005DDA5C /* plank_with_leg_lift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44822AE2CC3005DDA5C /* plank_with_leg_lift.mp3 */; };
+		649CA4AA22AE2CC6005DDA5C /* opposite_arm_leg_lift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44922AE2CC3005DDA5C /* opposite_arm_leg_lift.mp3 */; };
+		649CA4AB22AE2CC6005DDA5C /* push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44A22AE2CC3005DDA5C /* push_up.mp3 */; };
+		649CA4AC22AE2CC6005DDA5C /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44B22AE2CC3005DDA5C /* loop.mp3 */; };
+		649CA4AD22AE2CC6005DDA5C /* bent_elbow_shoulder_circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44C22AE2CC3005DDA5C /* bent_elbow_shoulder_circle.mp3 */; };
+		649CA4AE22AE2CC6005DDA5C /* switch_sides.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44D22AE2CC3005DDA5C /* switch_sides.mp3 */; };
+		649CA4AF22AE2CC6005DDA5C /* burpee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44E22AE2CC3005DDA5C /* burpee.mp3 */; };
+		649CA4B022AE2CC6005DDA5C /* butt_kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA44F22AE2CC3005DDA5C /* butt_kick.mp3 */; };
+		649CA4B122AE2CC6005DDA5C /* squat_jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45022AE2CC3005DDA5C /* squat_jump.mp3 */; };
+		649CA4B222AE2CC6005DDA5C /* lunge_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45122AE2CC3005DDA5C /* lunge_alternate.mp3 */; };
+		649CA4B322AE2CC6005DDA5C /* superman.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45222AE2CC3005DDA5C /* superman.mp3 */; };
+		649CA4B422AE2CC6005DDA5C /* squat_thrust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45322AE2CC3005DDA5C /* squat_thrust.mp3 */; };
+		649CA4B522AE2CC6005DDA5C /* step_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45422AE2CC3005DDA5C /* step_jack.mp3 */; };
+		649CA4B622AE2CC6005DDA5C /* full_plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45522AE2CC3005DDA5C /* full_plank.mp3 */; };
+		649CA4B722AE2CC6005DDA5C /* half_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45622AE2CC3005DDA5C /* half_squat.mp3 */; };
+		649CA4B822AE2CC6005DDA5C /* plank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45722AE2CC4005DDA5C /* plank.mp3 */; };
+		649CA4B922AE2CC6005DDA5C /* lying_triceps_lift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45822AE2CC4005DDA5C /* lying_triceps_lift.mp3 */; };
+		649CA4BA22AE2CC6005DDA5C /* speed_skater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45922AE2CC4005DDA5C /* speed_skater.mp3 */; };
+		649CA4BB22AE2CC6005DDA5C /* donkey_kick_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45A22AE2CC4005DDA5C /* donkey_kick_alternate.mp3 */; };
+		649CA4BC22AE2CC6005DDA5C /* sys_countdown2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45B22AE2CC4005DDA5C /* sys_countdown2.mp3 */; };
+		649CA4BD22AE2CC6005DDA5C /* side_leg_raise_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45C22AE2CC4005DDA5C /* side_leg_raise_right.mp3 */; };
+		649CA4BE22AE2CC6005DDA5C /* push_ups_with_rotation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45D22AE2CC4005DDA5C /* push_ups_with_rotation.mp3 */; };
+		649CA4BF22AE2CC6005DDA5C /* front_thigh_stretch_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45E22AE2CC4005DDA5C /* front_thigh_stretch_right.mp3 */; };
+		649CA4C022AE2CC6005DDA5C /* knee_push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA45F22AE2CC4005DDA5C /* knee_push_up.mp3 */; };
+		649CA4C122AE2CC6005DDA5C /* shuffle_side_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46022AE2CC4005DDA5C /* shuffle_side_squat.mp3 */; };
+		649CA4C222AE2CC6005DDA5C /* bicycle_kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46122AE2CC4005DDA5C /* bicycle_kick.mp3 */; };
+		649CA4C322AE2CC6005DDA5C /* high_knees_running_in_place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46222AE2CC4005DDA5C /* high_knees_running_in_place.mp3 */; };
+		649CA4C422AE2CC6005DDA5C /* half_squat_walk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46322AE2CC4005DDA5C /* half_squat_walk.mp3 */; };
+		649CA4C522AE2CC6005DDA5C /* sys_countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46422AE2CC4005DDA5C /* sys_countdown.mp3 */; };
+		649CA4C622AE2CC6005DDA5C /* sys_congratulations.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46522AE2CC4005DDA5C /* sys_congratulations.mp3 */; };
+		649CA4C722AE2CC6005DDA5C /* standing_twist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46622AE2CC4005DDA5C /* standing_twist.mp3 */; };
+		649CA4C822AE2CC6005DDA5C /* sys_start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46722AE2CC4005DDA5C /* sys_start.mp3 */; };
+		649CA4C922AE2CC6005DDA5C /* high_knee_walking_in_place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46822AE2CC4005DDA5C /* high_knee_walking_in_place.mp3 */; };
+		649CA4CA22AE2CC6005DDA5C /* vertical_leg_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46922AE2CC4005DDA5C /* vertical_leg_crunch.mp3 */; };
+		649CA4CB22AE2CC6005DDA5C /* frog_jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46A22AE2CC4005DDA5C /* frog_jump.mp3 */; };
+		649CA4CC22AE2CC6005DDA5C /* standing_side_bend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46B22AE2CC5005DDA5C /* standing_side_bend.mp3 */; };
+		649CA4CD22AE2CC6005DDA5C /* sys_getready.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46C22AE2CC5005DDA5C /* sys_getready.mp3 */; };
+		649CA4CE22AE2CC6005DDA5C /* curtsy_lunge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46D22AE2CC5005DDA5C /* curtsy_lunge.mp3 */; };
+		649CA4CF22AE2CC6005DDA5C /* hip_bridge_hold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46E22AE2CC5005DDA5C /* hip_bridge_hold.mp3 */; };
+		649CA4D022AE2CC6005DDA5C /* sys_ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA46F22AE2CC5005DDA5C /* sys_ding.mp3 */; };
+		649CA4D122AE2CC6005DDA5C /* switch_side.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47022AE2CC5005DDA5C /* switch_side.mp3 */; };
+		649CA4D222AE2CC6005DDA5C /* sys_dong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47122AE2CC5005DDA5C /* sys_dong.mp3 */; };
+		649CA4D322AE2CC6005DDA5C /* lunge_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47222AE2CC5005DDA5C /* lunge_left.mp3 */; };
+		649CA4D422AE2CC6005DDA5C /* single_leg_hip_extension_left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47322AE2CC5005DDA5C /* single_leg_hip_extension_left.mp3 */; };
+		649CA4D522AE2CC6005DDA5C /* plank_jumping_jack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47422AE2CC5005DDA5C /* plank_jumping_jack.mp3 */; };
+		649CA4D622AE2CC6005DDA5C /* plie_squat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47522AE2CC5005DDA5C /* plie_squat.mp3 */; };
+		649CA4D722AE2CC6005DDA5C /* walking_burpee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47622AE2CC5005DDA5C /* walking_burpee.mp3 */; };
+		649CA4D822AE2CC6005DDA5C /* wall_push_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47722AE2CC5005DDA5C /* wall_push_up.mp3 */; };
+		649CA4D922AE2CC6005DDA5C /* reverse_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47822AE2CC5005DDA5C /* reverse_crunch.mp3 */; };
+		649CA4DA22AE2CC6005DDA5C /* lateral_punch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47922AE2CC5005DDA5C /* lateral_punch.mp3 */; };
+		649CA4DB22AE2CC6005DDA5C /* side_lunge_alternate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47A22AE2CC5005DDA5C /* side_lunge_alternate.mp3 */; };
+		649CA4DC22AE2CC6005DDA5C /* sys_onemoretime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47B22AE2CC5005DDA5C /* sys_onemoretime.mp3 */; };
+		649CA4DD22AE2CC6005DDA5C /* standing_bicycle_crunch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47C22AE2CC5005DDA5C /* standing_bicycle_crunch.mp3 */; };
+		649CA4DE22AE2CC6005DDA5C /* swimmer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47D22AE2CC5005DDA5C /* swimmer.mp3 */; };
+		649CA4DF22AE2CC6005DDA5C /* standing_hip_circle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47E22AE2CC5005DDA5C /* standing_hip_circle.mp3 */; };
+		649CA4E022AE2CC6005DDA5C /* v_sit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA47F22AE2CC6005DDA5C /* v_sit.mp3 */; };
+		649CA4E122AE2CC6005DDA5C /* inchworm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA48022AE2CC6005DDA5C /* inchworm.mp3 */; };
+		649CA4E222AE2CC6005DDA5C /* half_wall_sit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 649CA48122AE2CC6005DDA5C /* half_wall_sit.mp3 */; };
+		64B93A2822B2165F000BD1AA /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B93A2622B2165F000BD1AA /* ScheduleVC.swift */; };
+		64B93A2922B2165F000BD1AA /* ScheduleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B93A2722B2165F000BD1AA /* ScheduleVC.xib */; };
+		64D50A3222A1020E0072B926 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D50A3122A1020E0072B926 /* logo.png */; };
+		64D50A3422A103930072B926 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D50A3322A103930072B926 /* logo2.png */; };
+		64F55F82229FD7E600BC42C4 /* EZYGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F55F81229FD7E600BC42C4 /* EZYGradientView.swift */; };
+		64FC6CE422B5EE4500837490 /* ScheduleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC6CE322B5EE4500837490 /* ScheduleClass.swift */; };
+		960DA3FB22825C3400909932 /* extended_side_angle_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38122825C3300909932 /* extended_side_angle_left_yoga.gif */; };
+		960DA3FC22825C3400909932 /* low_lunges_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38222825C3300909932 /* low_lunges_left_yoga.gif */; };
+		960DA3FD22825C3400909932 /* plie_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38322825C3300909932 /* plie_squat.gif */; };
+		960DA3FE22825C3400909932 /* hip_thrust.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38422825C3300909932 /* hip_thrust.gif */; };
+		960DA3FF22825C3400909932 /* front_thigh_stretch_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38522825C3300909932 /* front_thigh_stretch_left.gif */; };
+		960DA40022825C3400909932 /* plank_yoga_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38622825C3300909932 /* plank_yoga_yoga.gif */; };
+		960DA40122825C3400909932 /* side_lunge_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38722825C3300909932 /* side_lunge_alternate.gif */; };
+		960DA40222825C3400909932 /* upward_salute_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38822825C3300909932 /* upward_salute_pose_yoga.gif */; };
+		960DA40322825C3400909932 /* jumping_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38922825C3300909932 /* jumping_jack.gif */; };
+		960DA40422825C3400909932 /* squat_jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38A22825C3300909932 /* squat_jump.gif */; };
+		960DA40522825C3400909932 /* wall_push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38B22825C3300909932 /* wall_push_up.gif */; };
+		960DA40622825C3400909932 /* half_wall_sit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38C22825C3300909932 /* half_wall_sit.gif */; };
+		960DA40722825C3400909932 /* thread_the_needle_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38D22825C3300909932 /* thread_the_needle_left_yoga.gif */; };
+		960DA40822825C3400909932 /* low_lunges_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38E22825C3300909932 /* low_lunges_right_yoga.gif */; };
+		960DA40922825C3400909932 /* side_leg_raise_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA38F22825C3300909932 /* side_leg_raise_left.gif */; };
+		960DA40A22825C3400909932 /* extended_side_angle_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39022825C3300909932 /* extended_side_angle_right_yoga.gif */; };
+		960DA40B22825C3400909932 /* superman.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39122825C3300909932 /* superman.gif */; };
+		960DA40C22825C3400909932 /* single_leg_arm_reach_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39222825C3300909932 /* single_leg_arm_reach_alternate.gif */; };
+		960DA40D22825C3400909932 /* step_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39322825C3300909932 /* step_jack.gif */; };
+		960DA40E22825C3400909932 /* hip_bridge_hold.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39422825C3300909932 /* hip_bridge_hold.gif */; };
+		960DA40F22825C3400909932 /* hand_release_push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39522825C3300909932 /* hand_release_push_up.gif */; };
+		960DA41022825C3400909932 /* prayer_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39622825C3300909932 /* prayer_pose_yoga.gif */; };
+		960DA41122825C3400909932 /* spinal_rolling_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39722825C3300909932 /* spinal_rolling_yoga.gif */; };
+		960DA41222825C3400909932 /* extended_triangle_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39822825C3300909932 /* extended_triangle_pose_left_yoga.gif */; };
+		960DA41322825C3400909932 /* inchworm.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39922825C3300909932 /* inchworm.gif */; };
+		960DA41422825C3400909932 /* lunge_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39A22825C3300909932 /* lunge_alternate.gif */; };
+		960DA41522825C3400909932 /* easy_tree_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39B22825C3300909932 /* easy_tree_pose_right_yoga.gif */; };
+		960DA41622825C3400909932 /* bicycle_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39C22825C3300909932 /* bicycle_crunch.gif */; };
+		960DA41722825C3400909932 /* standing_side_bend.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39D22825C3300909932 /* standing_side_bend.gif */; };
+		960DA41822825C3400909932 /* full_plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39E22825C3300909932 /* full_plank.gif */; };
+		960DA41922825C3400909932 /* rest.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA39F22825C3300909932 /* rest.gif */; };
+		960DA41A22825C3400909932 /* butt_kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A022825C3300909932 /* butt_kick.gif */; };
+		960DA41B22825C3400909932 /* up_and_down_plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A122825C3300909932 /* up_and_down_plank.gif */; };
+		960DA41C22825C3400909932 /* standing_side_bend_yoga_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A222825C3300909932 /* standing_side_bend_yoga_yoga.gif */; };
+		960DA41D22825C3400909932 /* step_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A322825C3300909932 /* step_up.gif */; };
+		960DA41E22825C3400909932 /* single_leg_downward_dog_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A422825C3300909932 /* single_leg_downward_dog_left_yoga.gif */; };
+		960DA41F22825C3400909932 /* seated_spinal_twist_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A522825C3300909932 /* seated_spinal_twist_left_yoga.gif */; };
+		960DA42022825C3400909932 /* push_ups_with_rotation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A622825C3300909932 /* push_ups_with_rotation.gif */; };
+		960DA42122825C3400909932 /* plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A722825C3300909932 /* plank.gif */; };
+		960DA42222825C3400909932 /* marching_hip_raise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A822825C3300909932 /* marching_hip_raise.gif */; };
+		960DA42322825C3400909932 /* donkey_kick_alternate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3A922825C3300909932 /* donkey_kick_alternate.gif */; };
+		960DA42422825C3400909932 /* side_plank_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3AA22825C3300909932 /* side_plank_right.gif */; };
+		960DA42522825C3400909932 /* cobra_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3AB22825C3300909932 /* cobra_yoga.gif */; };
+		960DA42622825C3400909932 /* corpse_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3AC22825C3300909932 /* corpse_pose_yoga.gif */; };
+		960DA42722825C3400909932 /* dynamic_downward_dog_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3AD22825C3300909932 /* dynamic_downward_dog_yoga.gif */; };
+		960DA42822825C3400909932 /* easy_twist_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3AE22825C3300909932 /* easy_twist_right_yoga.gif */; };
+		960DA42922825C3400909932 /* squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3AF22825C3300909932 /* squat.gif */; };
+		960DA42A22825C3400909932 /* vertical_leg_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B022825C3300909932 /* vertical_leg_crunch.gif */; };
+		960DA42B22825C3400909932 /* half_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B122825C3300909932 /* half_squat.gif */; };
+		960DA42C22825C3400909932 /* v_sit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B222825C3300909932 /* v_sit.gif */; };
+		960DA42D22825C3400909932 /* walking_burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B322825C3300909932 /* walking_burpee.gif */; };
+		960DA42E22825C3400909932 /* lying_spinal_twist_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B422825C3300909932 /* lying_spinal_twist_pose_right_yoga.gif */; };
+		960DA42F22825C3400909932 /* plank_hip_twist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B522825C3300909932 /* plank_hip_twist.gif */; };
+		960DA43022825C3400909932 /* thread_the_needle_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B622825C3300909932 /* thread_the_needle_right_yoga.gif */; };
+		960DA43122825C3400909932 /* wind_relieving_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B722825C3300909932 /* wind_relieving_pose_yoga.gif */; };
+		960DA43222825C3400909932 /* mountain_climber.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B822825C3300909932 /* mountain_climber.gif */; };
+		960DA43322825C3400909932 /* downward_dog_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3B922825C3300909932 /* downward_dog_yoga.gif */; };
+		960DA43422825C3400909932 /* speed_skater.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3BA22825C3300909932 /* speed_skater.gif */; };
+		960DA43522825C3400909932 /* burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3BB22825C3300909932 /* burpee.gif */; };
+		960DA43622825C3400909932 /* tricep_dip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3BC22825C3300909932 /* tricep_dip.gif */; };
+		960DA43722825C3400909932 /* easy_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3BD22825C3300909932 /* easy_pose_yoga.gif */; };
+		960DA43822825C3400909932 /* wall_sit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3BE22825C3300909932 /* wall_sit.gif */; };
+		960DA43922825C3400909932 /* neck_stretch_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3BF22825C3300909932 /* neck_stretch_yoga.gif */; };
+		960DA43A22825C3400909932 /* seated_spinal_twist_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C022825C3300909932 /* seated_spinal_twist_right_yoga.gif */; };
+		960DA43B22825C3400909932 /* half_wind_relieving_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C122825C3300909932 /* half_wind_relieving_pose_right_yoga.gif */; };
+		960DA43C22825C3400909932 /* single_leg_hip_extension_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C222825C3300909932 /* single_leg_hip_extension_right.gif */; };
+		960DA43D22825C3400909932 /* warriori_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C322825C3300909932 /* warriori_left_yoga.gif */; };
+		960DA43E22825C3400909932 /* bound_angle_forward_bend_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C422825C3300909932 /* bound_angle_forward_bend_yoga.gif */; };
+		960DA43F22825C3400909932 /* mountain_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C522825C3300909932 /* mountain_pose_yoga.gif */; };
+		960DA44022825C3400909932 /* high_knees_running_in_place.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C622825C3300909932 /* high_knees_running_in_place.gif */; };
+		960DA44122825C3400909932 /* easy_tree_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C722825C3300909932 /* easy_tree_pose_left_yoga.gif */; };
+		960DA44222825C3400909932 /* standing_bicycle_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C822825C3300909932 /* standing_bicycle_crunch.gif */; };
+		960DA44322825C3400909932 /* shoulder_expansion_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3C922825C3300909932 /* shoulder_expansion_yoga.gif */; };
+		960DA44422825C3400909932 /* plank_shoulder_tap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3CA22825C3300909932 /* plank_shoulder_tap.gif */; };
+		960DA44522825C3400909932 /* side_leg_raise_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3CB22825C3300909932 /* side_leg_raise_right.gif */; };
+		960DA44622825C3400909932 /* half_squat_walk.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3CC22825C3300909932 /* half_squat_walk.gif */; };
+		960DA44722825C3400909932 /* flutter_kick_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3CD22825C3300909932 /* flutter_kick_squat.gif */; };
+		960DA44822825C3400909932 /* cat_camel_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3CE22825C3300909932 /* cat_camel_yoga.gif */; };
+		960DA44922825C3400909932 /* lateral_punch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3CF22825C3300909932 /* lateral_punch.gif */; };
+		960DA44A22825C3400909932 /* lying_triceps_lift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D022825C3300909932 /* lying_triceps_lift.gif */; };
+		960DA44B22825C3400909932 /* half_wind_relieving_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D122825C3300909932 /* half_wind_relieving_pose_left_yoga.gif */; };
+		960DA44C22825C3400909932 /* big_arm_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D222825C3300909932 /* big_arm_circle.gif */; };
+		960DA44D22825C3400909932 /* russian_twist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D322825C3300909932 /* russian_twist.gif */; };
+		960DA44E22825C3400909932 /* child_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D422825C3300909932 /* child_pose_yoga.gif */; };
+		960DA44F22825C3400909932 /* plank_jumping_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D522825C3300909932 /* plank_jumping_jack.gif */; };
+		960DA45022825C3400909932 /* plank_with_leg_lift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D622825C3300909932 /* plank_with_leg_lift.gif */; };
+		960DA45122825C3400909932 /* front_thigh_stretch_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D722825C3300909932 /* front_thigh_stretch_right.gif */; };
+		960DA45222825C3400909932 /* high_knee_walking_in_place.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D822825C3300909932 /* high_knee_walking_in_place.gif */; };
+		960DA45322825C3400909932 /* standing_twist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3D922825C3300909932 /* standing_twist.gif */; };
+		960DA45422825C3400909932 /* lunge_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3DA22825C3300909932 /* lunge_left.gif */; };
+		960DA45522825C3400909932 /* push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3DB22825C3300909932 /* push_up.gif */; };
+		960DA45622825C3400909932 /* side_plank_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3DC22825C3300909932 /* side_plank_left.gif */; };
+		960DA45722825C3400909932 /* opposite_arm_leg_lift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3DD22825C3300909932 /* opposite_arm_leg_lift.gif */; };
+		960DA45822825C3400909932 /* bent_elbow_shoulder_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3DE22825C3300909932 /* bent_elbow_shoulder_circle.gif */; };
+		960DA45922825C3400909932 /* flutter_kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3DF22825C3300909932 /* flutter_kick.gif */; };
+		960DA45A22825C3400909932 /* overhead_press.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E022825C3300909932 /* overhead_press.gif */; };
+		960DA45B22825C3400909932 /* swimmer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E122825C3300909932 /* swimmer.gif */; };
+		960DA45C22825C3400909932 /* single_leg_v_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E222825C3300909932 /* single_leg_v_up.gif */; };
+		960DA45D22825C3400909932 /* standing_hip_circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E322825C3300909932 /* standing_hip_circle.gif */; };
+		960DA45E22825C3400909932 /* cross_jack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E422825C3300909932 /* cross_jack.gif */; };
+		960DA45F22825C3400909932 /* shoulder_blade_squeeze.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E522825C3300909932 /* shoulder_blade_squeeze.gif */; };
+		960DA46022825C3400909932 /* single_leg_hip_extension_left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E622825C3300909932 /* single_leg_hip_extension_left.gif */; };
+		960DA46122825C3400909932 /* standing_forward_bend_pose_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E722825C3300909932 /* standing_forward_bend_pose_yoga.gif */; };
+		960DA46222825C3400909932 /* upward_salute_pose_dynamic_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E822825C3300909932 /* upward_salute_pose_dynamic_yoga.gif */; };
+		960DA46322825C3400909932 /* lunge_right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3E922825C3300909932 /* lunge_right.gif */; };
+		960DA46422825C3400909932 /* side_kick_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3EA22825C3300909932 /* side_kick_squat.gif */; };
+		960DA46522825C3400909932 /* single_leg_downward_dog_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3EB22825C3300909932 /* single_leg_downward_dog_right_yoga.gif */; };
+		960DA46622825C3400909932 /* extended_triangle_pose_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3EC22825C3300909932 /* extended_triangle_pose_right_yoga.gif */; };
+		960DA46722825C3400909932 /* curtsy_lunge.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3ED22825C3300909932 /* curtsy_lunge.gif */; };
+		960DA46822825C3400909932 /* knee_push_up.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3EE22825C3300909932 /* knee_push_up.gif */; };
+		960DA46922825C3400909932 /* abdominal_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3EF22825C3300909932 /* abdominal_crunch.gif */; };
+		960DA46A22825C3400909932 /* spiderman_plank.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F022825C3300909932 /* spiderman_plank.gif */; };
+		960DA46B22825C3400909932 /* step_ups_with_a_kickback.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F122825C3300909932 /* step_ups_with_a_kickback.gif */; };
+		960DA46C22825C3400909932 /* bicycle_kick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F222825C3300909932 /* bicycle_kick.gif */; };
+		960DA46D22825C3400909932 /* warriori_right_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F322825C3300909932 /* warriori_right_yoga.gif */; };
+		960DA46E22825C3400909932 /* lying_spinal_twist_pose_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F422825C3300909932 /* lying_spinal_twist_pose_left_yoga.gif */; };
+		960DA46F22825C3400909932 /* squat_thrust.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F522825C3300909932 /* squat_thrust.gif */; };
+		960DA47022825C3400909932 /* reverse_crunch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F622825C3300909932 /* reverse_crunch.gif */; };
+		960DA47122825C3400909932 /* easy_twist_left_yoga.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F722825C3300909932 /* easy_twist_left_yoga.gif */; };
+		960DA47222825C3400909932 /* jog_in_place.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F822825C3300909932 /* jog_in_place.gif */; };
+		960DA47322825C3400909932 /* shuffle_side_squat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3F922825C3300909932 /* shuffle_side_squat.gif */; };
+		960DA47422825C3400909932 /* frog_jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 960DA3FA22825C3300909932 /* frog_jump.gif */; };
+		960DA47622825EB300909932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960DA47522825EB300909932 /* Assets.xcassets */; };
+		960DA48422825F1E00909932 /* CustomExercisesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960DA47922825F1E00909932 /* CustomExercisesVC.xib */; };
+		960DA48522825F1E00909932 /* CustomExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DA47A22825F1E00909932 /* CustomExercisesVC.swift */; };
+		960DA48622825F1E00909932 /* AddExercisesVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DA47C22825F1E00909932 /* AddExercisesVc.swift */; };
+		960DA48722825F1E00909932 /* AddExercisesVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960DA47D22825F1E00909932 /* AddExercisesVc.xib */; };
+		960DA48822825F1E00909932 /* ItemExerciseDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960DA47F22825F1E00909932 /* ItemExerciseDetailCell.xib */; };
+		960DA48922825F1E00909932 /* ItemExerciseDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DA48022825F1E00909932 /* ItemExerciseDetailCell.swift */; };
+		960DA48A22825F1E00909932 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960DA48222825F1E00909932 /* HeaderCell.xib */; };
+		960DA48B22825F1E00909932 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DA48322825F1E00909932 /* HeaderCell.swift */; };
+		9613C88722826A7C00D0F476 /* ExercisesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9613C88522826A7C00D0F476 /* ExercisesDetailVC.swift */; };
+		9613C88822826A7C00D0F476 /* ExercisesDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9613C88622826A7C00D0F476 /* ExercisesDetailVC.xib */; };
+		9613C88E2282773600D0F476 /* ExercisesDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9613C88C2282773600D0F476 /* ExercisesDetailCell.swift */; };
+		9613C88F2282773600D0F476 /* ExercisesDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9613C88D2282773600D0F476 /* ExercisesDetailCell.xib */; };
+		96403024227FE7EE006D557A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96403022227FE7EE006D557A /* RegisterVC.swift */; };
+		96403025227FE7EE006D557A /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96403023227FE7EE006D557A /* RegisterVC.xib */; };
+		9669D9D522814B4E00C06BEE /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9D322814B4E00C06BEE /* RealmData.swift */; };
+		9669D9D622814B4E00C06BEE /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9D422814B4E00C06BEE /* SharedData.swift */; };
+		9669D9E022814BE500C06BEE /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9D722814BE500C06BEE /* Exercise.swift */; };
+		9669D9E122814BE500C06BEE /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9D822814BE500C06BEE /* ExerciseClass.swift */; };
+		9669D9E222814BE500C06BEE /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9D922814BE500C06BEE /* Welcome.swift */; };
+		9669D9E322814BE500C06BEE /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9DA22814BE500C06BEE /* Workout.swift */; };
+		9669D9E422814BE500C06BEE /* ProfileClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9DB22814BE500C06BEE /* ProfileClass.swift */; };
+		9669D9E522814BE500C06BEE /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9DC22814BE500C06BEE /* ExerciseDetail.swift */; };
+		9669D9E622814BE500C06BEE /* Resultclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9DD22814BE500C06BEE /* Resultclass.swift */; };
+		9669D9E722814BE500C06BEE /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9DE22814BE500C06BEE /* Exercises.swift */; };
+		9669D9E822814BE500C06BEE /* ListExercisesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9DF22814BE500C06BEE /* ListExercisesClass.swift */; };
+		9669D9EC22814C1700C06BEE /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9EA22814C1700C06BEE /* TutorialVC.swift */; };
+		9669D9ED22814C1700C06BEE /* TutorialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9669D9EB22814C1700C06BEE /* TutorialVC.xib */; };
+		9669D9F022814CE500C06BEE /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9EE22814CE500C06BEE /* ForgotPasswordVC.swift */; };
+		9669D9F122814CE500C06BEE /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9669D9EF22814CE500C06BEE /* ForgotPasswordVC.xib */; };
+		9669D9F52281539E00C06BEE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9F32281539E00C06BEE /* HomeVC.swift */; };
+		9669D9F62281539E00C06BEE /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9669D9F42281539E00C06BEE /* HomeVC.xib */; };
+		9669D9FA22815C4200C06BEE /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669D9F822815C4200C06BEE /* HomeCell.swift */; };
+		9669D9FB22815C4200C06BEE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9669D9F922815C4200C06BEE /* HomeCell.xib */; };
+		9669DA032281701700C06BEE /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669DA022281701700C06BEE /* TabbarVC.swift */; };
+		9669DA072281710000C06BEE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669DA052281710000C06BEE /* ProfileVC.swift */; };
+		9669DA082281710000C06BEE /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9669DA062281710000C06BEE /* ProfileVC.xib */; };
+		9669DA10228199BF00C06BEE /* DoExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669DA0E228199BF00C06BEE /* DoExerciseVC.swift */; };
+		9669DA11228199BF00C06BEE /* DoExerciseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9669DA0F228199BF00C06BEE /* DoExerciseVC.xib */; };
+		96AC4B442283CDCF00E1F26D /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC4B432283CDCF00E1F26D /* LineChart.swift */; };
+		96AC4B462283ED6200E1F26D /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 96AC4B452283ED6200E1F26D /* image.png */; };
+		96AC4B49228405B200E1F26D /* AchivementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC4B47228405B200E1F26D /* AchivementVC.swift */; };
+		96AC4B4A228405B200E1F26D /* AchivementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96AC4B48228405B200E1F26D /* AchivementVC.xib */; };
+		96E4B7B12278A7A0003043B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4B7B02278A7A0003043B9 /* AppDelegate.swift */; };
+		96E4B7B32278A7A0003043B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4B7B22278A7A0003043B9 /* ViewController.swift */; };
+		96E4B7B62278A7A0003043B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E4B7B42278A7A0003043B9 /* Main.storyboard */; };
+		96E4B7BB2278A7A3003043B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E4B7B92278A7A3003043B9 /* LaunchScreen.storyboard */; };
+		96E50B5D227E87EE00ECF162 /* SystemBoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50B5B227E87EE00ECF162 /* SystemBoots.swift */; };
+		96E50B5E227E87EE00ECF162 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50B5C227E87EE00ECF162 /* NotificationService.swift */; };
+		96E50BE4227E88F400ECF162 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BE3227E88F400ECF162 /* Json.swift */; };
+		96E50BE9227E894C00ECF162 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BE7227E894C00ECF162 /* BaseVC.swift */; };
+		96E50BEA227E894C00ECF162 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BE8227E894C00ECF162 /* BaseNavigationVC.swift */; };
+		96E50BEE227E897500ECF162 /* LoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E50BEC227E897500ECF162 /* LoadingVC.xib */; };
+		96E50BEF227E897500ECF162 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BED227E897500ECF162 /* LoadingVC.swift */; };
+		96E50BF2227E89D800ECF162 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BF0227E89D800ECF162 /* LoginVC.swift */; };
+		96E50BF3227E89D800ECF162 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E50BF1227E89D800ECF162 /* LoginVC.xib */; };
+		96E50C40227E902300ECF162 /* KeyboardHandlerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BF6227E902300ECF162 /* KeyboardHandlerScrollView.swift */; };
+		96E50C41227E902300ECF162 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BF8227E902300ECF162 /* BaseTableView.swift */; };
+		96E50C42227E902300ECF162 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BFA227E902300ECF162 /* BaseTextView.swift */; };
+		96E50C43227E902300ECF162 /* InsetTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BFB227E902300ECF162 /* InsetTextView.swift */; };
+		96E50C44227E902300ECF162 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BFD227E902300ECF162 /* GifImage.swift */; };
+		96E50C45227E902300ECF162 /* ColorImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50BFE227E902300ECF162 /* ColorImageView.swift */; };
+		96E50C46227E902300ECF162 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C00227E902300ECF162 /* BaseCollectionView.swift */; };
+		96E50C48227E902300ECF162 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C03227E902300ECF162 /* BaseTextField.swift */; };
+		96E50C49227E902300ECF162 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C04227E902300ECF162 /* BorderTextField.swift */; };
+		96E50C4A227E902300ECF162 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C05227E902300ECF162 /* InsetTextField.swift */; };
+		96E50C4B227E902300ECF162 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C09227E902300ECF162 /* UIFont+Extension.swift */; };
+		96E50C4C227E902300ECF162 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C0A227E902300ECF162 /* Date+Extension.swift */; };
+		96E50C4D227E902300ECF162 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C0B227E902300ECF162 /* Extension.swift */; };
+		96E50C4E227E902300ECF162 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C0D227E902300ECF162 /* UIApplication+Extension.swift */; };
+		96E50C4F227E902300ECF162 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C0E227E902300ECF162 /* UIAlertController+Extension.swift */; };
+		96E50C50227E902300ECF162 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C0F227E902300ECF162 /* UINavigationController+Extension.swift */; };
+		96E50C51227E902300ECF162 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C10227E902300ECF162 /* UIViewController+Extension.swift */; };
+		96E50C52227E902300ECF162 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C12227E902300ECF162 /* Int+Extension.swift */; };
+		96E50C53227E902300ECF162 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C13227E902300ECF162 /* Float+Extension.swift */; };
+		96E50C54227E902300ECF162 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C15227E902300ECF162 /* UIImageView+Extension.swift */; };
+		96E50C55227E902300ECF162 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C16227E902300ECF162 /* UILabel+Extension.swift */; };
+		96E50C56227E902300ECF162 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C17227E902300ECF162 /* UIButton+Extension.swift */; };
+		96E50C57227E902300ECF162 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C18227E902300ECF162 /* UIView+Extension.swift */; };
+		96E50C58227E902300ECF162 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C19227E902300ECF162 /* UIImage+Extension.swift */; };
+		96E50C59227E902300ECF162 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C1A227E902300ECF162 /* UITextView+Extension.swift */; };
+		96E50C5A227E902300ECF162 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C1B227E902300ECF162 /* UIScrollView+Extension.swift */; };
+		96E50C5B227E902300ECF162 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C1C227E902300ECF162 /* UITextField+Extension.swift */; };
+		96E50C5C227E902300ECF162 /* AttributeString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C1E227E902300ECF162 /* AttributeString+Extension.swift */; };
+		96E50C5D227E902300ECF162 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C1F227E902300ECF162 /* String+Extension.swift */; };
+		96E50C5E227E902300ECF162 /* BasePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C21227E902300ECF162 /* BasePicker.swift */; };
+		96E50C5F227E902300ECF162 /* PickerViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C22227E902300ECF162 /* PickerViewer.swift */; };
+		96E50C60227E902300ECF162 /* TextPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C23227E902300ECF162 /* TextPicker.swift */; };
+		96E50C61227E902300ECF162 /* DateTimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E50C24227E902300ECF162 /* DateTimePicker.xib */; };
+		96E50C62227E902300ECF162 /* TextPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E50C25227E902300ECF162 /* TextPicker.xib */; };
+		96E50C63227E902300ECF162 /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C26227E902300ECF162 /* DateTimePicker.swift */; };
+		96E50C64227E902300ECF162 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C28227E902300ECF162 /* Permission.swift */; };
+		96E50C65227E902300ECF162 /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C29227E902300ECF162 /* SystemInfo.swift */; };
+		96E50C66227E902300ECF162 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C2A227E902300ECF162 /* Utils.swift */; };
+		96E50C67227E902300ECF162 /* AutoLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C2C227E902300ECF162 /* AutoLayoutHelper.swift */; };
+		96E50C68227E902300ECF162 /* RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C2D227E902300ECF162 /* RetryHandler.swift */; };
+		96E50C69227E902300ECF162 /* IndicatorViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C2E227E902300ECF162 /* IndicatorViewer.swift */; };
+		96E50C6A227E902300ECF162 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C30227E902300ECF162 /* GradientLayer.swift */; };
+		96E50C6B227E902300ECF162 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C32227E902300ECF162 /* ShadowButton.swift */; };
+		96E50C6C227E902300ECF162 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C33227E902300ECF162 /* GradientButton.swift */; };
+		96E50C6D227E902300ECF162 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C34227E902300ECF162 /* CheckBox.swift */; };
+		96E50C6E227E902300ECF162 /* TapActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C36227E902300ECF162 /* TapActionView.swift */; };
+		96E50C6F227E902300ECF162 /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C37227E902300ECF162 /* CustomNibView.swift */; };
+		96E50C70227E902300ECF162 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C38227E902300ECF162 /* RoundedView.swift */; };
+		96E50C71227E902300ECF162 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C39227E902300ECF162 /* ShadowView.swift */; };
+		96E50C72227E902300ECF162 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C3A227E902300ECF162 /* GradientView.swift */; };
+		96E50C75227E902300ECF162 /* VCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C3E227E902300ECF162 /* VCService.swift */; };
+		96E50C76227E902300ECF162 /* CameraPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E50C3F227E902300ECF162 /* CameraPhotoService.swift */; };
+		96F242F2227AC2060051FEB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96F242F1227AC2060051FEB1 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FF29C92A052D71358D4CD1B /* Pods-Healthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy/Pods-Healthy.release.xcconfig"; sourceTree = "<group>"; };
+		64570E7722B54B7200433A0F /* WeekSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSchedule.swift; sourceTree = "<group>"; };
+		64570E7822B54B7200433A0F /* WeekSchedule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekSchedule.xib; sourceTree = "<group>"; };
+		64570E7B22B54FC900433A0F /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
+		64570E7C22B54FC900433A0F /* WeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekCell.xib; sourceTree = "<group>"; };
+		64570E8022B55FEA00433A0F /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		64570E8122B55FEA00433A0F /* DaySchedule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaySchedule.xib; sourceTree = "<group>"; };
+		64570E8422B561FC00433A0F /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		64570E8522B561FC00433A0F /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
+		649CA42122AE2CC1005DDA5C /* jumping_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jumping_jack.mp3; sourceTree = "<group>"; };
+		649CA42222AE2CC1005DDA5C /* step_ups_with_a_kickback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_ups_with_a_kickback.mp3; sourceTree = "<group>"; };
+		649CA42322AE2CC1005DDA5C /* plank_shoulder_tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_shoulder_tap.mp3; sourceTree = "<group>"; };
+		649CA42422AE2CC1005DDA5C /* big_arm_circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = big_arm_circle.mp3; sourceTree = "<group>"; };
+		649CA42522AE2CC1005DDA5C /* single_leg_arm_reach_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_arm_reach_alternate.mp3; sourceTree = "<group>"; };
+		649CA42622AE2CC1005DDA5C /* step_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_up.mp3; sourceTree = "<group>"; };
+		649CA42722AE2CC1005DDA5C /* side_kick_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_kick_squat.mp3; sourceTree = "<group>"; };
+		649CA42822AE2CC1005DDA5C /* abdominal_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = abdominal_crunch.mp3; sourceTree = "<group>"; };
+		649CA42922AE2CC1005DDA5C /* lunge_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunge_right.mp3; sourceTree = "<group>"; };
+		649CA42A22AE2CC1005DDA5C /* spiderman_plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spiderman_plank.mp3; sourceTree = "<group>"; };
+		649CA42B22AE2CC1005DDA5C /* cross_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cross_jack.mp3; sourceTree = "<group>"; };
+		649CA42C22AE2CC1005DDA5C /* sys_countdown3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown3.mp3; sourceTree = "<group>"; };
+		649CA42D22AE2CC1005DDA5C /* squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = squat.mp3; sourceTree = "<group>"; };
+		649CA42E22AE2CC1005DDA5C /* jog_in_place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jog_in_place.mp3; sourceTree = "<group>"; };
+		649CA42F22AE2CC2005DDA5C /* hip_thrust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hip_thrust.mp3; sourceTree = "<group>"; };
+		649CA43022AE2CC2005DDA5C /* front_thigh_stretch_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = front_thigh_stretch_left.mp3; sourceTree = "<group>"; };
+		649CA43122AE2CC2005DDA5C /* mountain_climber.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mountain_climber.mp3; sourceTree = "<group>"; };
+		649CA43222AE2CC2005DDA5C /* plank_hip_twist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_hip_twist.mp3; sourceTree = "<group>"; };
+		649CA43322AE2CC2005DDA5C /* sys_countdown1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown1.mp3; sourceTree = "<group>"; };
+		649CA43422AE2CC2005DDA5C /* side_plank_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_plank_right.mp3; sourceTree = "<group>"; };
+		649CA43522AE2CC2005DDA5C /* side_plank_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_plank_left.mp3; sourceTree = "<group>"; };
+		649CA43622AE2CC2005DDA5C /* sys_nextstep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_nextstep.mp3; sourceTree = "<group>"; };
+		649CA43722AE2CC2005DDA5C /* tricep_dip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tricep_dip.mp3; sourceTree = "<group>"; };
+		649CA43822AE2CC2005DDA5C /* sys_halfwaythere.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_halfwaythere.mp3; sourceTree = "<group>"; };
+		649CA43922AE2CC2005DDA5C /* wall_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wall_sit.mp3; sourceTree = "<group>"; };
+		649CA43A22AE2CC2005DDA5C /* side_leg_raise_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_leg_raise_left.mp3; sourceTree = "<group>"; };
+		649CA43B22AE2CC2005DDA5C /* hand_release_push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hand_release_push_up.mp3; sourceTree = "<group>"; };
+		649CA43C22AE2CC2005DDA5C /* russian_twist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = russian_twist.mp3; sourceTree = "<group>"; };
+		649CA43D22AE2CC2005DDA5C /* overhead_press.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overhead_press.mp3; sourceTree = "<group>"; };
+		649CA43E22AE2CC2005DDA5C /* single_leg_hip_extension_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_hip_extension_right.mp3; sourceTree = "<group>"; };
+		649CA43F22AE2CC2005DDA5C /* shoulder_blade_squeeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoulder_blade_squeeze.mp3; sourceTree = "<group>"; };
+		649CA44022AE2CC2005DDA5C /* up_and_down_plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = up_and_down_plank.mp3; sourceTree = "<group>"; };
+		649CA44122AE2CC2005DDA5C /* flutter_kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flutter_kick.mp3; sourceTree = "<group>"; };
+		649CA44222AE2CC2005DDA5C /* sys_begin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_begin.mp3; sourceTree = "<group>"; };
+		649CA44322AE2CC3005DDA5C /* marching_hip_raise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marching_hip_raise.mp3; sourceTree = "<group>"; };
+		649CA44422AE2CC3005DDA5C /* flutter_kick_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flutter_kick_squat.mp3; sourceTree = "<group>"; };
+		649CA44522AE2CC3005DDA5C /* single_leg_v_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_v_up.mp3; sourceTree = "<group>"; };
+		649CA44622AE2CC3005DDA5C /* rest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rest.mp3; sourceTree = "<group>"; };
+		649CA44722AE2CC3005DDA5C /* bicycle_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicycle_crunch.mp3; sourceTree = "<group>"; };
+		649CA44822AE2CC3005DDA5C /* plank_with_leg_lift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_with_leg_lift.mp3; sourceTree = "<group>"; };
+		649CA44922AE2CC3005DDA5C /* opposite_arm_leg_lift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = opposite_arm_leg_lift.mp3; sourceTree = "<group>"; };
+		649CA44A22AE2CC3005DDA5C /* push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = push_up.mp3; sourceTree = "<group>"; };
+		649CA44B22AE2CC3005DDA5C /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
+		649CA44C22AE2CC3005DDA5C /* bent_elbow_shoulder_circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bent_elbow_shoulder_circle.mp3; sourceTree = "<group>"; };
+		649CA44D22AE2CC3005DDA5C /* switch_sides.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch_sides.mp3; sourceTree = "<group>"; };
+		649CA44E22AE2CC3005DDA5C /* burpee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = burpee.mp3; sourceTree = "<group>"; };
+		649CA44F22AE2CC3005DDA5C /* butt_kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = butt_kick.mp3; sourceTree = "<group>"; };
+		649CA45022AE2CC3005DDA5C /* squat_jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = squat_jump.mp3; sourceTree = "<group>"; };
+		649CA45122AE2CC3005DDA5C /* lunge_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunge_alternate.mp3; sourceTree = "<group>"; };
+		649CA45222AE2CC3005DDA5C /* superman.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = superman.mp3; sourceTree = "<group>"; };
+		649CA45322AE2CC3005DDA5C /* squat_thrust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = squat_thrust.mp3; sourceTree = "<group>"; };
+		649CA45422AE2CC3005DDA5C /* step_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_jack.mp3; sourceTree = "<group>"; };
+		649CA45522AE2CC3005DDA5C /* full_plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = full_plank.mp3; sourceTree = "<group>"; };
+		649CA45622AE2CC3005DDA5C /* half_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_squat.mp3; sourceTree = "<group>"; };
+		649CA45722AE2CC4005DDA5C /* plank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank.mp3; sourceTree = "<group>"; };
+		649CA45822AE2CC4005DDA5C /* lying_triceps_lift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lying_triceps_lift.mp3; sourceTree = "<group>"; };
+		649CA45922AE2CC4005DDA5C /* speed_skater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = speed_skater.mp3; sourceTree = "<group>"; };
+		649CA45A22AE2CC4005DDA5C /* donkey_kick_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = donkey_kick_alternate.mp3; sourceTree = "<group>"; };
+		649CA45B22AE2CC4005DDA5C /* sys_countdown2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown2.mp3; sourceTree = "<group>"; };
+		649CA45C22AE2CC4005DDA5C /* side_leg_raise_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_leg_raise_right.mp3; sourceTree = "<group>"; };
+		649CA45D22AE2CC4005DDA5C /* push_ups_with_rotation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = push_ups_with_rotation.mp3; sourceTree = "<group>"; };
+		649CA45E22AE2CC4005DDA5C /* front_thigh_stretch_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = front_thigh_stretch_right.mp3; sourceTree = "<group>"; };
+		649CA45F22AE2CC4005DDA5C /* knee_push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knee_push_up.mp3; sourceTree = "<group>"; };
+		649CA46022AE2CC4005DDA5C /* shuffle_side_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shuffle_side_squat.mp3; sourceTree = "<group>"; };
+		649CA46122AE2CC4005DDA5C /* bicycle_kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicycle_kick.mp3; sourceTree = "<group>"; };
+		649CA46222AE2CC4005DDA5C /* high_knees_running_in_place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = high_knees_running_in_place.mp3; sourceTree = "<group>"; };
+		649CA46322AE2CC4005DDA5C /* half_squat_walk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_squat_walk.mp3; sourceTree = "<group>"; };
+		649CA46422AE2CC4005DDA5C /* sys_countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_countdown.mp3; sourceTree = "<group>"; };
+		649CA46522AE2CC4005DDA5C /* sys_congratulations.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_congratulations.mp3; sourceTree = "<group>"; };
+		649CA46622AE2CC4005DDA5C /* standing_twist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_twist.mp3; sourceTree = "<group>"; };
+		649CA46722AE2CC4005DDA5C /* sys_start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_start.mp3; sourceTree = "<group>"; };
+		649CA46822AE2CC4005DDA5C /* high_knee_walking_in_place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = high_knee_walking_in_place.mp3; sourceTree = "<group>"; };
+		649CA46922AE2CC4005DDA5C /* vertical_leg_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vertical_leg_crunch.mp3; sourceTree = "<group>"; };
+		649CA46A22AE2CC4005DDA5C /* frog_jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frog_jump.mp3; sourceTree = "<group>"; };
+		649CA46B22AE2CC5005DDA5C /* standing_side_bend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_side_bend.mp3; sourceTree = "<group>"; };
+		649CA46C22AE2CC5005DDA5C /* sys_getready.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_getready.mp3; sourceTree = "<group>"; };
+		649CA46D22AE2CC5005DDA5C /* curtsy_lunge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = curtsy_lunge.mp3; sourceTree = "<group>"; };
+		649CA46E22AE2CC5005DDA5C /* hip_bridge_hold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hip_bridge_hold.mp3; sourceTree = "<group>"; };
+		649CA46F22AE2CC5005DDA5C /* sys_ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_ding.mp3; sourceTree = "<group>"; };
+		649CA47022AE2CC5005DDA5C /* switch_side.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch_side.mp3; sourceTree = "<group>"; };
+		649CA47122AE2CC5005DDA5C /* sys_dong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_dong.mp3; sourceTree = "<group>"; };
+		649CA47222AE2CC5005DDA5C /* lunge_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lunge_left.mp3; sourceTree = "<group>"; };
+		649CA47322AE2CC5005DDA5C /* single_leg_hip_extension_left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = single_leg_hip_extension_left.mp3; sourceTree = "<group>"; };
+		649CA47422AE2CC5005DDA5C /* plank_jumping_jack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plank_jumping_jack.mp3; sourceTree = "<group>"; };
+		649CA47522AE2CC5005DDA5C /* plie_squat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plie_squat.mp3; sourceTree = "<group>"; };
+		649CA47622AE2CC5005DDA5C /* walking_burpee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walking_burpee.mp3; sourceTree = "<group>"; };
+		649CA47722AE2CC5005DDA5C /* wall_push_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wall_push_up.mp3; sourceTree = "<group>"; };
+		649CA47822AE2CC5005DDA5C /* reverse_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reverse_crunch.mp3; sourceTree = "<group>"; };
+		649CA47922AE2CC5005DDA5C /* lateral_punch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lateral_punch.mp3; sourceTree = "<group>"; };
+		649CA47A22AE2CC5005DDA5C /* side_lunge_alternate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = side_lunge_alternate.mp3; sourceTree = "<group>"; };
+		649CA47B22AE2CC5005DDA5C /* sys_onemoretime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sys_onemoretime.mp3; sourceTree = "<group>"; };
+		649CA47C22AE2CC5005DDA5C /* standing_bicycle_crunch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_bicycle_crunch.mp3; sourceTree = "<group>"; };
+		649CA47D22AE2CC5005DDA5C /* swimmer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swimmer.mp3; sourceTree = "<group>"; };
+		649CA47E22AE2CC5005DDA5C /* standing_hip_circle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standing_hip_circle.mp3; sourceTree = "<group>"; };
+		649CA47F22AE2CC6005DDA5C /* v_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v_sit.mp3; sourceTree = "<group>"; };
+		649CA48022AE2CC6005DDA5C /* inchworm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inchworm.mp3; sourceTree = "<group>"; };
+		649CA48122AE2CC6005DDA5C /* half_wall_sit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = half_wall_sit.mp3; sourceTree = "<group>"; };
+		64B93A2622B2165F000BD1AA /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleVC.swift; path = ../ScheduleVC.swift; sourceTree = "<group>"; };
+		64B93A2722B2165F000BD1AA /* ScheduleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleVC.xib; sourceTree = "<group>"; };
+		64D50A3122A1020E0072B926 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		64D50A3322A103930072B926 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		64F55F81229FD7E600BC42C4 /* EZYGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZYGradientView.swift; sourceTree = "<group>"; };
+		64FC6CE322B5EE4500837490 /* ScheduleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleClass.swift; sourceTree = "<group>"; };
+		8AAEFC8495A64087DAED5F46 /* Pods_Healthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960DA38122825C3300909932 /* extended_side_angle_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_side_angle_left_yoga.gif; sourceTree = "<group>"; };
+		960DA38222825C3300909932 /* low_lunges_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = low_lunges_left_yoga.gif; sourceTree = "<group>"; };
+		960DA38322825C3300909932 /* plie_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plie_squat.gif; sourceTree = "<group>"; };
+		960DA38422825C3300909932 /* hip_thrust.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hip_thrust.gif; sourceTree = "<group>"; };
+		960DA38522825C3300909932 /* front_thigh_stretch_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = front_thigh_stretch_left.gif; sourceTree = "<group>"; };
+		960DA38622825C3300909932 /* plank_yoga_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_yoga_yoga.gif; sourceTree = "<group>"; };
+		960DA38722825C3300909932 /* side_lunge_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_lunge_alternate.gif; sourceTree = "<group>"; };
+		960DA38822825C3300909932 /* upward_salute_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = upward_salute_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA38922825C3300909932 /* jumping_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jumping_jack.gif; sourceTree = "<group>"; };
+		960DA38A22825C3300909932 /* squat_jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat_jump.gif; sourceTree = "<group>"; };
+		960DA38B22825C3300909932 /* wall_push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wall_push_up.gif; sourceTree = "<group>"; };
+		960DA38C22825C3300909932 /* half_wall_sit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_wall_sit.gif; sourceTree = "<group>"; };
+		960DA38D22825C3300909932 /* thread_the_needle_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thread_the_needle_left_yoga.gif; sourceTree = "<group>"; };
+		960DA38E22825C3300909932 /* low_lunges_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = low_lunges_right_yoga.gif; sourceTree = "<group>"; };
+		960DA38F22825C3300909932 /* side_leg_raise_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_leg_raise_left.gif; sourceTree = "<group>"; };
+		960DA39022825C3300909932 /* extended_side_angle_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_side_angle_right_yoga.gif; sourceTree = "<group>"; };
+		960DA39122825C3300909932 /* superman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = superman.gif; sourceTree = "<group>"; };
+		960DA39222825C3300909932 /* single_leg_arm_reach_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_arm_reach_alternate.gif; sourceTree = "<group>"; };
+		960DA39322825C3300909932 /* step_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = step_jack.gif; sourceTree = "<group>"; };
+		960DA39422825C3300909932 /* hip_bridge_hold.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hip_bridge_hold.gif; sourceTree = "<group>"; };
+		960DA39522825C3300909932 /* hand_release_push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hand_release_push_up.gif; sourceTree = "<group>"; };
+		960DA39622825C3300909932 /* prayer_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = prayer_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA39722825C3300909932 /* spinal_rolling_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinal_rolling_yoga.gif; sourceTree = "<group>"; };
+		960DA39822825C3300909932 /* extended_triangle_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_triangle_pose_left_yoga.gif; sourceTree = "<group>"; };
+		960DA39922825C3300909932 /* inchworm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inchworm.gif; sourceTree = "<group>"; };
+		960DA39A22825C3300909932 /* lunge_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lunge_alternate.gif; sourceTree = "<group>"; };
+		960DA39B22825C3300909932 /* easy_tree_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_tree_pose_right_yoga.gif; sourceTree = "<group>"; };
+		960DA39C22825C3300909932 /* bicycle_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bicycle_crunch.gif; sourceTree = "<group>"; };
+		960DA39D22825C3300909932 /* standing_side_bend.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_side_bend.gif; sourceTree = "<group>"; };
+		960DA39E22825C3300909932 /* full_plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = full_plank.gif; sourceTree = "<group>"; };
+		960DA39F22825C3300909932 /* rest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rest.gif; sourceTree = "<group>"; };
+		960DA3A022825C3300909932 /* butt_kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = butt_kick.gif; sourceTree = "<group>"; };
+		960DA3A122825C3300909932 /* up_and_down_plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = up_and_down_plank.gif; sourceTree = "<group>"; };
+		960DA3A222825C3300909932 /* standing_side_bend_yoga_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_side_bend_yoga_yoga.gif; sourceTree = "<group>"; };
+		960DA3A322825C3300909932 /* step_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = step_up.gif; sourceTree = "<group>"; };
+		960DA3A422825C3300909932 /* single_leg_downward_dog_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_downward_dog_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3A522825C3300909932 /* seated_spinal_twist_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seated_spinal_twist_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3A622825C3300909932 /* push_ups_with_rotation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = push_ups_with_rotation.gif; sourceTree = "<group>"; };
+		960DA3A722825C3300909932 /* plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank.gif; sourceTree = "<group>"; };
+		960DA3A822825C3300909932 /* marching_hip_raise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = marching_hip_raise.gif; sourceTree = "<group>"; };
+		960DA3A922825C3300909932 /* donkey_kick_alternate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = donkey_kick_alternate.gif; sourceTree = "<group>"; };
+		960DA3AA22825C3300909932 /* side_plank_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_plank_right.gif; sourceTree = "<group>"; };
+		960DA3AB22825C3300909932 /* cobra_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cobra_yoga.gif; sourceTree = "<group>"; };
+		960DA3AC22825C3300909932 /* corpse_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = corpse_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA3AD22825C3300909932 /* dynamic_downward_dog_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dynamic_downward_dog_yoga.gif; sourceTree = "<group>"; };
+		960DA3AE22825C3300909932 /* easy_twist_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_twist_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3AF22825C3300909932 /* squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat.gif; sourceTree = "<group>"; };
+		960DA3B022825C3300909932 /* vertical_leg_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vertical_leg_crunch.gif; sourceTree = "<group>"; };
+		960DA3B122825C3300909932 /* half_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_squat.gif; sourceTree = "<group>"; };
+		960DA3B222825C3300909932 /* v_sit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = v_sit.gif; sourceTree = "<group>"; };
+		960DA3B322825C3300909932 /* walking_burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walking_burpee.gif; sourceTree = "<group>"; };
+		960DA3B422825C3300909932 /* lying_spinal_twist_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lying_spinal_twist_pose_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3B522825C3300909932 /* plank_hip_twist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_hip_twist.gif; sourceTree = "<group>"; };
+		960DA3B622825C3300909932 /* thread_the_needle_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thread_the_needle_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3B722825C3300909932 /* wind_relieving_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wind_relieving_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA3B822825C3300909932 /* mountain_climber.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mountain_climber.gif; sourceTree = "<group>"; };
+		960DA3B922825C3300909932 /* downward_dog_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = downward_dog_yoga.gif; sourceTree = "<group>"; };
+		960DA3BA22825C3300909932 /* speed_skater.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = speed_skater.gif; sourceTree = "<group>"; };
+		960DA3BB22825C3300909932 /* burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = burpee.gif; sourceTree = "<group>"; };
+		960DA3BC22825C3300909932 /* tricep_dip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tricep_dip.gif; sourceTree = "<group>"; };
+		960DA3BD22825C3300909932 /* easy_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA3BE22825C3300909932 /* wall_sit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wall_sit.gif; sourceTree = "<group>"; };
+		960DA3BF22825C3300909932 /* neck_stretch_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = neck_stretch_yoga.gif; sourceTree = "<group>"; };
+		960DA3C022825C3300909932 /* seated_spinal_twist_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seated_spinal_twist_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3C122825C3300909932 /* half_wind_relieving_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_wind_relieving_pose_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3C222825C3300909932 /* single_leg_hip_extension_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_hip_extension_right.gif; sourceTree = "<group>"; };
+		960DA3C322825C3300909932 /* warriori_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = warriori_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3C422825C3300909932 /* bound_angle_forward_bend_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bound_angle_forward_bend_yoga.gif; sourceTree = "<group>"; };
+		960DA3C522825C3300909932 /* mountain_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mountain_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA3C622825C3300909932 /* high_knees_running_in_place.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = high_knees_running_in_place.gif; sourceTree = "<group>"; };
+		960DA3C722825C3300909932 /* easy_tree_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_tree_pose_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3C822825C3300909932 /* standing_bicycle_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_bicycle_crunch.gif; sourceTree = "<group>"; };
+		960DA3C922825C3300909932 /* shoulder_expansion_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shoulder_expansion_yoga.gif; sourceTree = "<group>"; };
+		960DA3CA22825C3300909932 /* plank_shoulder_tap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_shoulder_tap.gif; sourceTree = "<group>"; };
+		960DA3CB22825C3300909932 /* side_leg_raise_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_leg_raise_right.gif; sourceTree = "<group>"; };
+		960DA3CC22825C3300909932 /* half_squat_walk.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_squat_walk.gif; sourceTree = "<group>"; };
+		960DA3CD22825C3300909932 /* flutter_kick_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flutter_kick_squat.gif; sourceTree = "<group>"; };
+		960DA3CE22825C3300909932 /* cat_camel_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cat_camel_yoga.gif; sourceTree = "<group>"; };
+		960DA3CF22825C3300909932 /* lateral_punch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lateral_punch.gif; sourceTree = "<group>"; };
+		960DA3D022825C3300909932 /* lying_triceps_lift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lying_triceps_lift.gif; sourceTree = "<group>"; };
+		960DA3D122825C3300909932 /* half_wind_relieving_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = half_wind_relieving_pose_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3D222825C3300909932 /* big_arm_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = big_arm_circle.gif; sourceTree = "<group>"; };
+		960DA3D322825C3300909932 /* russian_twist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = russian_twist.gif; sourceTree = "<group>"; };
+		960DA3D422825C3300909932 /* child_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = child_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA3D522825C3300909932 /* plank_jumping_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_jumping_jack.gif; sourceTree = "<group>"; };
+		960DA3D622825C3300909932 /* plank_with_leg_lift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = plank_with_leg_lift.gif; sourceTree = "<group>"; };
+		960DA3D722825C3300909932 /* front_thigh_stretch_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = front_thigh_stretch_right.gif; sourceTree = "<group>"; };
+		960DA3D822825C3300909932 /* high_knee_walking_in_place.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = high_knee_walking_in_place.gif; sourceTree = "<group>"; };
+		960DA3D922825C3300909932 /* standing_twist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_twist.gif; sourceTree = "<group>"; };
+		960DA3DA22825C3300909932 /* lunge_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lunge_left.gif; sourceTree = "<group>"; };
+		960DA3DB22825C3300909932 /* push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = push_up.gif; sourceTree = "<group>"; };
+		960DA3DC22825C3300909932 /* side_plank_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_plank_left.gif; sourceTree = "<group>"; };
+		960DA3DD22825C3300909932 /* opposite_arm_leg_lift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = opposite_arm_leg_lift.gif; sourceTree = "<group>"; };
+		960DA3DE22825C3300909932 /* bent_elbow_shoulder_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bent_elbow_shoulder_circle.gif; sourceTree = "<group>"; };
+		960DA3DF22825C3300909932 /* flutter_kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flutter_kick.gif; sourceTree = "<group>"; };
+		960DA3E022825C3300909932 /* overhead_press.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = overhead_press.gif; sourceTree = "<group>"; };
+		960DA3E122825C3300909932 /* swimmer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swimmer.gif; sourceTree = "<group>"; };
+		960DA3E222825C3300909932 /* single_leg_v_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_v_up.gif; sourceTree = "<group>"; };
+		960DA3E322825C3300909932 /* standing_hip_circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_hip_circle.gif; sourceTree = "<group>"; };
+		960DA3E422825C3300909932 /* cross_jack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cross_jack.gif; sourceTree = "<group>"; };
+		960DA3E522825C3300909932 /* shoulder_blade_squeeze.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shoulder_blade_squeeze.gif; sourceTree = "<group>"; };
+		960DA3E622825C3300909932 /* single_leg_hip_extension_left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_hip_extension_left.gif; sourceTree = "<group>"; };
+		960DA3E722825C3300909932 /* standing_forward_bend_pose_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = standing_forward_bend_pose_yoga.gif; sourceTree = "<group>"; };
+		960DA3E822825C3300909932 /* upward_salute_pose_dynamic_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = upward_salute_pose_dynamic_yoga.gif; sourceTree = "<group>"; };
+		960DA3E922825C3300909932 /* lunge_right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lunge_right.gif; sourceTree = "<group>"; };
+		960DA3EA22825C3300909932 /* side_kick_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = side_kick_squat.gif; sourceTree = "<group>"; };
+		960DA3EB22825C3300909932 /* single_leg_downward_dog_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = single_leg_downward_dog_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3EC22825C3300909932 /* extended_triangle_pose_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extended_triangle_pose_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3ED22825C3300909932 /* curtsy_lunge.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = curtsy_lunge.gif; sourceTree = "<group>"; };
+		960DA3EE22825C3300909932 /* knee_push_up.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = knee_push_up.gif; sourceTree = "<group>"; };
+		960DA3EF22825C3300909932 /* abdominal_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = abdominal_crunch.gif; sourceTree = "<group>"; };
+		960DA3F022825C3300909932 /* spiderman_plank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spiderman_plank.gif; sourceTree = "<group>"; };
+		960DA3F122825C3300909932 /* step_ups_with_a_kickback.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = step_ups_with_a_kickback.gif; sourceTree = "<group>"; };
+		960DA3F222825C3300909932 /* bicycle_kick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bicycle_kick.gif; sourceTree = "<group>"; };
+		960DA3F322825C3300909932 /* warriori_right_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = warriori_right_yoga.gif; sourceTree = "<group>"; };
+		960DA3F422825C3300909932 /* lying_spinal_twist_pose_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lying_spinal_twist_pose_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3F522825C3300909932 /* squat_thrust.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = squat_thrust.gif; sourceTree = "<group>"; };
+		960DA3F622825C3300909932 /* reverse_crunch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = reverse_crunch.gif; sourceTree = "<group>"; };
+		960DA3F722825C3300909932 /* easy_twist_left_yoga.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = easy_twist_left_yoga.gif; sourceTree = "<group>"; };
+		960DA3F822825C3300909932 /* jog_in_place.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jog_in_place.gif; sourceTree = "<group>"; };
+		960DA3F922825C3300909932 /* shuffle_side_squat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shuffle_side_squat.gif; sourceTree = "<group>"; };
+		960DA3FA22825C3300909932 /* frog_jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = frog_jump.gif; sourceTree = "<group>"; };
+		960DA47522825EB300909932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		960DA47922825F1E00909932 /* CustomExercisesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomExercisesVC.xib; sourceTree = "<group>"; };
+		960DA47A22825F1E00909932 /* CustomExercisesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExercisesVC.swift; sourceTree = "<group>"; };
+		960DA47C22825F1E00909932 /* AddExercisesVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExercisesVc.swift; sourceTree = "<group>"; };
+		960DA47D22825F1E00909932 /* AddExercisesVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddExercisesVc.xib; sourceTree = "<group>"; };
+		960DA47F22825F1E00909932 /* ItemExerciseDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemExerciseDetailCell.xib; sourceTree = "<group>"; };
+		960DA48022825F1E00909932 /* ItemExerciseDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemExerciseDetailCell.swift; sourceTree = "<group>"; };
+		960DA48222825F1E00909932 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		960DA48322825F1E00909932 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		9613C88522826A7C00D0F476 /* ExercisesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesDetailVC.swift; sourceTree = "<group>"; };
+		9613C88622826A7C00D0F476 /* ExercisesDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExercisesDetailVC.xib; sourceTree = "<group>"; };
+		9613C88C2282773600D0F476 /* ExercisesDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesDetailCell.swift; sourceTree = "<group>"; };
+		9613C88D2282773600D0F476 /* ExercisesDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExercisesDetailCell.xib; sourceTree = "<group>"; };
+		96403022227FE7EE006D557A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		96403023227FE7EE006D557A /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		9669D9D322814B4E00C06BEE /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		9669D9D422814B4E00C06BEE /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		9669D9D722814BE500C06BEE /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		9669D9D822814BE500C06BEE /* ExerciseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
+		9669D9D922814BE500C06BEE /* Welcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		9669D9DA22814BE500C06BEE /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		9669D9DB22814BE500C06BEE /* ProfileClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClass.swift; sourceTree = "<group>"; };
+		9669D9DC22814BE500C06BEE /* ExerciseDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
+		9669D9DD22814BE500C06BEE /* Resultclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resultclass.swift; sourceTree = "<group>"; };
+		9669D9DE22814BE500C06BEE /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		9669D9DF22814BE500C06BEE /* ListExercisesClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListExercisesClass.swift; sourceTree = "<group>"; };
+		9669D9EA22814C1700C06BEE /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		9669D9EB22814C1700C06BEE /* TutorialVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialVC.xib; sourceTree = "<group>"; };
+		9669D9EE22814CE500C06BEE /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		9669D9EF22814CE500C06BEE /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		9669D9F32281539E00C06BEE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9669D9F42281539E00C06BEE /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		9669D9F822815C4200C06BEE /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		9669D9F922815C4200C06BEE /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		9669DA022281701700C06BEE /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		9669DA052281710000C06BEE /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		9669DA062281710000C06BEE /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		9669DA0E228199BF00C06BEE /* DoExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoExerciseVC.swift; sourceTree = "<group>"; };
+		9669DA0F228199BF00C06BEE /* DoExerciseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoExerciseVC.xib; sourceTree = "<group>"; };
+		96AC4B432283CDCF00E1F26D /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		96AC4B452283ED6200E1F26D /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		96AC4B47228405B200E1F26D /* AchivementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementVC.swift; sourceTree = "<group>"; };
+		96AC4B48228405B200E1F26D /* AchivementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchivementVC.xib; sourceTree = "<group>"; };
+		96E4B7AD2278A7A0003043B9 /* Healthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E4B7B02278A7A0003043B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96E4B7B22278A7A0003043B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96E4B7B52278A7A0003043B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96E4B7BA2278A7A3003043B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96E4B7BC2278A7A3003043B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E50B5B227E87EE00ECF162 /* SystemBoots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemBoots.swift; sourceTree = "<group>"; };
+		96E50B5C227E87EE00ECF162 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		96E50BE3227E88F400ECF162 /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		96E50BE7227E894C00ECF162 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		96E50BE8227E894C00ECF162 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
+		96E50BEC227E897500ECF162 /* LoadingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingVC.xib; sourceTree = "<group>"; };
+		96E50BED227E897500ECF162 /* LoadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		96E50BF0227E89D800ECF162 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		96E50BF1227E89D800ECF162 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		96E50BF6227E902300ECF162 /* KeyboardHandlerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandlerScrollView.swift; sourceTree = "<group>"; };
+		96E50BF8227E902300ECF162 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		96E50BFA227E902300ECF162 /* BaseTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		96E50BFB227E902300ECF162 /* InsetTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextView.swift; sourceTree = "<group>"; };
+		96E50BFD227E902300ECF162 /* GifImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		96E50BFE227E902300ECF162 /* ColorImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorImageView.swift; sourceTree = "<group>"; };
+		96E50C00227E902300ECF162 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		96E50C03227E902300ECF162 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		96E50C04227E902300ECF162 /* BorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		96E50C05227E902300ECF162 /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		96E50C09227E902300ECF162 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		96E50C0A227E902300ECF162 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		96E50C0B227E902300ECF162 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		96E50C0D227E902300ECF162 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		96E50C0E227E902300ECF162 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		96E50C0F227E902300ECF162 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		96E50C10227E902300ECF162 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		96E50C12227E902300ECF162 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		96E50C13227E902300ECF162 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		96E50C15227E902300ECF162 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		96E50C16227E902300ECF162 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		96E50C17227E902300ECF162 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		96E50C18227E902300ECF162 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		96E50C19227E902300ECF162 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		96E50C1A227E902300ECF162 /* UITextView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		96E50C1B227E902300ECF162 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		96E50C1C227E902300ECF162 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		96E50C1E227E902300ECF162 /* AttributeString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AttributeString+Extension.swift"; sourceTree = "<group>"; };
+		96E50C1F227E902300ECF162 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		96E50C21227E902300ECF162 /* BasePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePicker.swift; sourceTree = "<group>"; };
+		96E50C22227E902300ECF162 /* PickerViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewer.swift; sourceTree = "<group>"; };
+		96E50C23227E902300ECF162 /* TextPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPicker.swift; sourceTree = "<group>"; };
+		96E50C24227E902300ECF162 /* DateTimePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateTimePicker.xib; sourceTree = "<group>"; };
+		96E50C25227E902300ECF162 /* TextPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextPicker.xib; sourceTree = "<group>"; };
+		96E50C26227E902300ECF162 /* DateTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
+		96E50C28227E902300ECF162 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		96E50C29227E902300ECF162 /* SystemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
+		96E50C2A227E902300ECF162 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		96E50C2C227E902300ECF162 /* AutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHelper.swift; sourceTree = "<group>"; };
+		96E50C2D227E902300ECF162 /* RetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryHandler.swift; sourceTree = "<group>"; };
+		96E50C2E227E902300ECF162 /* IndicatorViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorViewer.swift; sourceTree = "<group>"; };
+		96E50C30227E902300ECF162 /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		96E50C32227E902300ECF162 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		96E50C33227E902300ECF162 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		96E50C34227E902300ECF162 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		96E50C36227E902300ECF162 /* TapActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapActionView.swift; sourceTree = "<group>"; };
+		96E50C37227E902300ECF162 /* CustomNibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		96E50C38227E902300ECF162 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		96E50C39227E902300ECF162 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		96E50C3A227E902300ECF162 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		96E50C3E227E902300ECF162 /* VCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCService.swift; sourceTree = "<group>"; };
+		96E50C3F227E902300ECF162 /* CameraPhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPhotoService.swift; sourceTree = "<group>"; };
+		96F242F1227AC2060051FEB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCE79CBBBA84404D803C81B4 /* Pods-Healthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Healthy/Pods-Healthy.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96E4B7AA2278A7A0003043B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248E1892D8B9AC48DA6D80E9 /* Pods_Healthy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A000BDC84C6D9FD4A2C9277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AAEFC8495A64087DAED5F46 /* Pods_Healthy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FF6CE44F03830036B56B2C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE79CBBBA84404D803C81B4 /* Pods-Healthy.debug.xcconfig */,
+				0FF29C92A052D71358D4CD1B /* Pods-Healthy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64570E7522B54AC300433A0F /* Add new schedule */ = {
+			isa = PBXGroup;
+			children = (
+				64B93A2622B2165F000BD1AA /* ScheduleVC.swift */,
+				64B93A2722B2165F000BD1AA /* ScheduleVC.xib */,
+			);
+			path = "Add new schedule";
+			sourceTree = "<group>";
+		};
+		64570E7622B54AFA00433A0F /* Schedule by week */ = {
+			isa = PBXGroup;
+			children = (
+				64570E7722B54B7200433A0F /* WeekSchedule.swift */,
+				64570E7822B54B7200433A0F /* WeekSchedule.xib */,
+				64570E7B22B54FC900433A0F /* WeekCell.swift */,
+				64570E7C22B54FC900433A0F /* WeekCell.xib */,
+			);
+			path = "Schedule by week";
+			sourceTree = "<group>";
+		};
+		64570E7F22B55FBC00433A0F /* Schedule by day */ = {
+			isa = PBXGroup;
+			children = (
+				64570E8022B55FEA00433A0F /* DaySchedule.swift */,
+				64570E8122B55FEA00433A0F /* DaySchedule.xib */,
+				64570E8422B561FC00433A0F /* DayCell.swift */,
+				64570E8522B561FC00433A0F /* DayCell.xib */,
+			);
+			path = "Schedule by day";
+			sourceTree = "<group>";
+		};
+		649CA42022AE2CA5005DDA5C /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				649CA42822AE2CC1005DDA5C /* abdominal_crunch.mp3 */,
+				649CA44C22AE2CC3005DDA5C /* bent_elbow_shoulder_circle.mp3 */,
+				649CA44722AE2CC3005DDA5C /* bicycle_crunch.mp3 */,
+				649CA46122AE2CC4005DDA5C /* bicycle_kick.mp3 */,
+				649CA42422AE2CC1005DDA5C /* big_arm_circle.mp3 */,
+				649CA44E22AE2CC3005DDA5C /* burpee.mp3 */,
+				649CA44F22AE2CC3005DDA5C /* butt_kick.mp3 */,
+				649CA42B22AE2CC1005DDA5C /* cross_jack.mp3 */,
+				649CA46D22AE2CC5005DDA5C /* curtsy_lunge.mp3 */,
+				649CA45A22AE2CC4005DDA5C /* donkey_kick_alternate.mp3 */,
+				649CA44422AE2CC3005DDA5C /* flutter_kick_squat.mp3 */,
+				649CA44122AE2CC2005DDA5C /* flutter_kick.mp3 */,
+				649CA46A22AE2CC4005DDA5C /* frog_jump.mp3 */,
+				649CA43022AE2CC2005DDA5C /* front_thigh_stretch_left.mp3 */,
+				649CA45E22AE2CC4005DDA5C /* front_thigh_stretch_right.mp3 */,
+				649CA45522AE2CC3005DDA5C /* full_plank.mp3 */,
+				649CA46322AE2CC4005DDA5C /* half_squat_walk.mp3 */,
+				649CA45622AE2CC3005DDA5C /* half_squat.mp3 */,
+				649CA48122AE2CC6005DDA5C /* half_wall_sit.mp3 */,
+				649CA43B22AE2CC2005DDA5C /* hand_release_push_up.mp3 */,
+				649CA46822AE2CC4005DDA5C /* high_knee_walking_in_place.mp3 */,
+				649CA46222AE2CC4005DDA5C /* high_knees_running_in_place.mp3 */,
+				649CA46E22AE2CC5005DDA5C /* hip_bridge_hold.mp3 */,
+				649CA42F22AE2CC2005DDA5C /* hip_thrust.mp3 */,
+				649CA48022AE2CC6005DDA5C /* inchworm.mp3 */,
+				649CA42E22AE2CC1005DDA5C /* jog_in_place.mp3 */,
+				649CA42122AE2CC1005DDA5C /* jumping_jack.mp3 */,
+				649CA45F22AE2CC4005DDA5C /* knee_push_up.mp3 */,
+				649CA47922AE2CC5005DDA5C /* lateral_punch.mp3 */,
+				649CA44B22AE2CC3005DDA5C /* loop.mp3 */,
+				649CA45122AE2CC3005DDA5C /* lunge_alternate.mp3 */,
+				649CA47222AE2CC5005DDA5C /* lunge_left.mp3 */,
+				649CA42922AE2CC1005DDA5C /* lunge_right.mp3 */,
+				649CA45822AE2CC4005DDA5C /* lying_triceps_lift.mp3 */,
+				649CA44322AE2CC3005DDA5C /* marching_hip_raise.mp3 */,
+				649CA43122AE2CC2005DDA5C /* mountain_climber.mp3 */,
+				649CA44922AE2CC3005DDA5C /* opposite_arm_leg_lift.mp3 */,
+				649CA43D22AE2CC2005DDA5C /* overhead_press.mp3 */,
+				649CA43222AE2CC2005DDA5C /* plank_hip_twist.mp3 */,
+				649CA47422AE2CC5005DDA5C /* plank_jumping_jack.mp3 */,
+				649CA42322AE2CC1005DDA5C /* plank_shoulder_tap.mp3 */,
+				649CA44822AE2CC3005DDA5C /* plank_with_leg_lift.mp3 */,
+				649CA45722AE2CC4005DDA5C /* plank.mp3 */,
+				649CA47522AE2CC5005DDA5C /* plie_squat.mp3 */,
+				649CA44A22AE2CC3005DDA5C /* push_up.mp3 */,
+				649CA45D22AE2CC4005DDA5C /* push_ups_with_rotation.mp3 */,
+				649CA44622AE2CC3005DDA5C /* rest.mp3 */,
+				649CA47822AE2CC5005DDA5C /* reverse_crunch.mp3 */,
+				649CA43C22AE2CC2005DDA5C /* russian_twist.mp3 */,
+				649CA43F22AE2CC2005DDA5C /* shoulder_blade_squeeze.mp3 */,
+				649CA46022AE2CC4005DDA5C /* shuffle_side_squat.mp3 */,
+				649CA42722AE2CC1005DDA5C /* side_kick_squat.mp3 */,
+				649CA43A22AE2CC2005DDA5C /* side_leg_raise_left.mp3 */,
+				649CA45C22AE2CC4005DDA5C /* side_leg_raise_right.mp3 */,
+				649CA47A22AE2CC5005DDA5C /* side_lunge_alternate.mp3 */,
+				649CA43522AE2CC2005DDA5C /* side_plank_left.mp3 */,
+				649CA43422AE2CC2005DDA5C /* side_plank_right.mp3 */,
+				649CA42522AE2CC1005DDA5C /* single_leg_arm_reach_alternate.mp3 */,
+				649CA47322AE2CC5005DDA5C /* single_leg_hip_extension_left.mp3 */,
+				649CA43E22AE2CC2005DDA5C /* single_leg_hip_extension_right.mp3 */,
+				649CA44522AE2CC3005DDA5C /* single_leg_v_up.mp3 */,
+				649CA45922AE2CC4005DDA5C /* speed_skater.mp3 */,
+				649CA42A22AE2CC1005DDA5C /* spiderman_plank.mp3 */,
+				649CA45022AE2CC3005DDA5C /* squat_jump.mp3 */,
+				649CA45322AE2CC3005DDA5C /* squat_thrust.mp3 */,
+				649CA42D22AE2CC1005DDA5C /* squat.mp3 */,
+				649CA47C22AE2CC5005DDA5C /* standing_bicycle_crunch.mp3 */,
+				649CA47E22AE2CC5005DDA5C /* standing_hip_circle.mp3 */,
+				649CA46B22AE2CC5005DDA5C /* standing_side_bend.mp3 */,
+				649CA46622AE2CC4005DDA5C /* standing_twist.mp3 */,
+				649CA45422AE2CC3005DDA5C /* step_jack.mp3 */,
+				649CA42622AE2CC1005DDA5C /* step_up.mp3 */,
+				649CA42222AE2CC1005DDA5C /* step_ups_with_a_kickback.mp3 */,
+				649CA45222AE2CC3005DDA5C /* superman.mp3 */,
+				649CA47D22AE2CC5005DDA5C /* swimmer.mp3 */,
+				649CA47022AE2CC5005DDA5C /* switch_side.mp3 */,
+				649CA44D22AE2CC3005DDA5C /* switch_sides.mp3 */,
+				649CA44222AE2CC2005DDA5C /* sys_begin.mp3 */,
+				649CA46522AE2CC4005DDA5C /* sys_congratulations.mp3 */,
+				649CA46422AE2CC4005DDA5C /* sys_countdown.mp3 */,
+				649CA43322AE2CC2005DDA5C /* sys_countdown1.mp3 */,
+				649CA45B22AE2CC4005DDA5C /* sys_countdown2.mp3 */,
+				649CA42C22AE2CC1005DDA5C /* sys_countdown3.mp3 */,
+				649CA46F22AE2CC5005DDA5C /* sys_ding.mp3 */,
+				649CA47122AE2CC5005DDA5C /* sys_dong.mp3 */,
+				649CA46C22AE2CC5005DDA5C /* sys_getready.mp3 */,
+				649CA43822AE2CC2005DDA5C /* sys_halfwaythere.mp3 */,
+				649CA43622AE2CC2005DDA5C /* sys_nextstep.mp3 */,
+				649CA47B22AE2CC5005DDA5C /* sys_onemoretime.mp3 */,
+				649CA46722AE2CC4005DDA5C /* sys_start.mp3 */,
+				649CA43722AE2CC2005DDA5C /* tricep_dip.mp3 */,
+				649CA44022AE2CC2005DDA5C /* up_and_down_plank.mp3 */,
+				649CA47F22AE2CC6005DDA5C /* v_sit.mp3 */,
+				649CA46922AE2CC4005DDA5C /* vertical_leg_crunch.mp3 */,
+				649CA47622AE2CC5005DDA5C /* walking_burpee.mp3 */,
+				649CA47722AE2CC5005DDA5C /* wall_push_up.mp3 */,
+				649CA43922AE2CC2005DDA5C /* wall_sit.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		64B93A2422B215E2000BD1AA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				9669DA052281710000C06BEE /* ProfileVC.swift */,
+				9669DA062281710000C06BEE /* ProfileVC.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		64B93A2522B21602000BD1AA /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				64570E7F22B55FBC00433A0F /* Schedule by day */,
+				64570E7622B54AFA00433A0F /* Schedule by week */,
+				64570E7522B54AC300433A0F /* Add new schedule */,
+			);
+			path = schedule;
+			sourceTree = "<group>";
+		};
+		960CE031227A80ED007E606E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9669DA022281701700C06BEE /* TabbarVC.swift */,
+				96E50BE6227E894C00ECF162 /* Base */,
+				96E50BEB227E897500ECF162 /* Start */,
+				9669D9E922814C1700C06BEE /* Tutorial */,
+				96E50BE5227E891100ECF162 /* Login */,
+				9669D9F22281533900C06BEE /* Home main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		960DA38022825C3300909932 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				960DA38122825C3300909932 /* extended_side_angle_left_yoga.gif */,
+				960DA38222825C3300909932 /* low_lunges_left_yoga.gif */,
+				960DA38322825C3300909932 /* plie_squat.gif */,
+				960DA38422825C3300909932 /* hip_thrust.gif */,
+				960DA38522825C3300909932 /* front_thigh_stretch_left.gif */,
+				960DA38622825C3300909932 /* plank_yoga_yoga.gif */,
+				960DA38722825C3300909932 /* side_lunge_alternate.gif */,
+				960DA38822825C3300909932 /* upward_salute_pose_yoga.gif */,
+				960DA38922825C3300909932 /* jumping_jack.gif */,
+				960DA38A22825C3300909932 /* squat_jump.gif */,
+				960DA38B22825C3300909932 /* wall_push_up.gif */,
+				960DA38C22825C3300909932 /* half_wall_sit.gif */,
+				960DA38D22825C3300909932 /* thread_the_needle_left_yoga.gif */,
+				960DA38E22825C3300909932 /* low_lunges_right_yoga.gif */,
+				960DA38F22825C3300909932 /* side_leg_raise_left.gif */,
+				960DA39022825C3300909932 /* extended_side_angle_right_yoga.gif */,
+				960DA39122825C3300909932 /* superman.gif */,
+				960DA39222825C3300909932 /* single_leg_arm_reach_alternate.gif */,
+				960DA39322825C3300909932 /* step_jack.gif */,
+				960DA39422825C3300909932 /* hip_bridge_hold.gif */,
+				960DA39522825C3300909932 /* hand_release_push_up.gif */,
+				960DA39622825C3300909932 /* prayer_pose_yoga.gif */,
+				960DA39722825C3300909932 /* spinal_rolling_yoga.gif */,
+				960DA39822825C3300909932 /* extended_triangle_pose_left_yoga.gif */,
+				960DA39922825C3300909932 /* inchworm.gif */,
+				960DA39A22825C3300909932 /* lunge_alternate.gif */,
+				960DA39B22825C3300909932 /* easy_tree_pose_right_yoga.gif */,
+				960DA39C22825C3300909932 /* bicycle_crunch.gif */,
+				960DA39D22825C3300909932 /* standing_side_bend.gif */,
+				960DA39E22825C3300909932 /* full_plank.gif */,
+				960DA39F22825C3300909932 /* rest.gif */,
+				960DA3A022825C3300909932 /* butt_kick.gif */,
+				960DA3A122825C3300909932 /* up_and_down_plank.gif */,
+				960DA3A222825C3300909932 /* standing_side_bend_yoga_yoga.gif */,
+				960DA3A322825C3300909932 /* step_up.gif */,
+				960DA3A422825C3300909932 /* single_leg_downward_dog_left_yoga.gif */,
+				960DA3A522825C3300909932 /* seated_spinal_twist_left_yoga.gif */,
+				960DA3A622825C3300909932 /* push_ups_with_rotation.gif */,
+				960DA3A722825C3300909932 /* plank.gif */,
+				960DA3A822825C3300909932 /* marching_hip_raise.gif */,
+				960DA3A922825C3300909932 /* donkey_kick_alternate.gif */,
+				960DA3AA22825C3300909932 /* side_plank_right.gif */,
+				960DA3AB22825C3300909932 /* cobra_yoga.gif */,
+				960DA3AC22825C3300909932 /* corpse_pose_yoga.gif */,
+				960DA3AD22825C3300909932 /* dynamic_downward_dog_yoga.gif */,
+				960DA3AE22825C3300909932 /* easy_twist_right_yoga.gif */,
+				960DA3AF22825C3300909932 /* squat.gif */,
+				960DA3B022825C3300909932 /* vertical_leg_crunch.gif */,
+				960DA3B122825C3300909932 /* half_squat.gif */,
+				960DA3B222825C3300909932 /* v_sit.gif */,
+				960DA3B322825C3300909932 /* walking_burpee.gif */,
+				960DA3B422825C3300909932 /* lying_spinal_twist_pose_right_yoga.gif */,
+				960DA3B522825C3300909932 /* plank_hip_twist.gif */,
+				960DA3B622825C3300909932 /* thread_the_needle_right_yoga.gif */,
+				960DA3B722825C3300909932 /* wind_relieving_pose_yoga.gif */,
+				960DA3B822825C3300909932 /* mountain_climber.gif */,
+				960DA3B922825C3300909932 /* downward_dog_yoga.gif */,
+				960DA3BA22825C3300909932 /* speed_skater.gif */,
+				960DA3BB22825C3300909932 /* burpee.gif */,
+				960DA3BC22825C3300909932 /* tricep_dip.gif */,
+				960DA3BD22825C3300909932 /* easy_pose_yoga.gif */,
+				960DA3BE22825C3300909932 /* wall_sit.gif */,
+				960DA3BF22825C3300909932 /* neck_stretch_yoga.gif */,
+				960DA3C022825C3300909932 /* seated_spinal_twist_right_yoga.gif */,
+				960DA3C122825C3300909932 /* half_wind_relieving_pose_right_yoga.gif */,
+				960DA3C222825C3300909932 /* single_leg_hip_extension_right.gif */,
+				960DA3C322825C3300909932 /* warriori_left_yoga.gif */,
+				960DA3C422825C3300909932 /* bound_angle_forward_bend_yoga.gif */,
+				960DA3C522825C3300909932 /* mountain_pose_yoga.gif */,
+				960DA3C622825C3300909932 /* high_knees_running_in_place.gif */,
+				960DA3C722825C3300909932 /* easy_tree_pose_left_yoga.gif */,
+				960DA3C822825C3300909932 /* standing_bicycle_crunch.gif */,
+				960DA3C922825C3300909932 /* shoulder_expansion_yoga.gif */,
+				960DA3CA22825C3300909932 /* plank_shoulder_tap.gif */,
+				960DA3CB22825C3300909932 /* side_leg_raise_right.gif */,
+				960DA3CC22825C3300909932 /* half_squat_walk.gif */,
+				960DA3CD22825C3300909932 /* flutter_kick_squat.gif */,
+				960DA3CE22825C3300909932 /* cat_camel_yoga.gif */,
+				960DA3CF22825C3300909932 /* lateral_punch.gif */,
+				960DA3D022825C3300909932 /* lying_triceps_lift.gif */,
+				960DA3D122825C3300909932 /* half_wind_relieving_pose_left_yoga.gif */,
+				960DA3D222825C3300909932 /* big_arm_circle.gif */,
+				960DA3D322825C3300909932 /* russian_twist.gif */,
+				960DA3D422825C3300909932 /* child_pose_yoga.gif */,
+				960DA3D522825C3300909932 /* plank_jumping_jack.gif */,
+				960DA3D622825C3300909932 /* plank_with_leg_lift.gif */,
+				960DA3D722825C3300909932 /* front_thigh_stretch_right.gif */,
+				960DA3D822825C3300909932 /* high_knee_walking_in_place.gif */,
+				960DA3D922825C3300909932 /* standing_twist.gif */,
+				960DA3DA22825C3300909932 /* lunge_left.gif */,
+				960DA3DB22825C3300909932 /* push_up.gif */,
+				960DA3DC22825C3300909932 /* side_plank_left.gif */,
+				960DA3DD22825C3300909932 /* opposite_arm_leg_lift.gif */,
+				960DA3DE22825C3300909932 /* bent_elbow_shoulder_circle.gif */,
+				960DA3DF22825C3300909932 /* flutter_kick.gif */,
+				960DA3E022825C3300909932 /* overhead_press.gif */,
+				960DA3E122825C3300909932 /* swimmer.gif */,
+				960DA3E222825C3300909932 /* single_leg_v_up.gif */,
+				960DA3E322825C3300909932 /* standing_hip_circle.gif */,
+				960DA3E422825C3300909932 /* cross_jack.gif */,
+				960DA3E522825C3300909932 /* shoulder_blade_squeeze.gif */,
+				960DA3E622825C3300909932 /* single_leg_hip_extension_left.gif */,
+				960DA3E722825C3300909932 /* standing_forward_bend_pose_yoga.gif */,
+				960DA3E822825C3300909932 /* upward_salute_pose_dynamic_yoga.gif */,
+				960DA3E922825C3300909932 /* lunge_right.gif */,
+				960DA3EA22825C3300909932 /* side_kick_squat.gif */,
+				960DA3EB22825C3300909932 /* single_leg_downward_dog_right_yoga.gif */,
+				960DA3EC22825C3300909932 /* extended_triangle_pose_right_yoga.gif */,
+				960DA3ED22825C3300909932 /* curtsy_lunge.gif */,
+				960DA3EE22825C3300909932 /* knee_push_up.gif */,
+				960DA3EF22825C3300909932 /* abdominal_crunch.gif */,
+				960DA3F022825C3300909932 /* spiderman_plank.gif */,
+				960DA3F122825C3300909932 /* step_ups_with_a_kickback.gif */,
+				960DA3F222825C3300909932 /* bicycle_kick.gif */,
+				960DA3F322825C3300909932 /* warriori_right_yoga.gif */,
+				960DA3F422825C3300909932 /* lying_spinal_twist_pose_left_yoga.gif */,
+				960DA3F522825C3300909932 /* squat_thrust.gif */,
+				960DA3F622825C3300909932 /* reverse_crunch.gif */,
+				960DA3F722825C3300909932 /* easy_twist_left_yoga.gif */,
+				960DA3F822825C3300909932 /* jog_in_place.gif */,
+				960DA3F922825C3300909932 /* shuffle_side_squat.gif */,
+				960DA3FA22825C3300909932 /* frog_jump.gif */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		960DA47722825F1E00909932 /* CustomExercise */ = {
+			isa = PBXGroup;
+			children = (
+				960DA47822825F1E00909932 /* customExercises */,
+				960DA47E22825F1E00909932 /* Cell */,
+				960DA48122825F1E00909932 /* header */,
+			);
+			path = CustomExercise;
+			sourceTree = "<group>";
+		};
+		960DA47822825F1E00909932 /* customExercises */ = {
+			isa = PBXGroup;
+			children = (
+				960DA47922825F1E00909932 /* CustomExercisesVC.xib */,
+				960DA47A22825F1E00909932 /* CustomExercisesVC.swift */,
+			);
+			path = customExercises;
+			sourceTree = "<group>";
+		};
+		960DA47B22825F1E00909932 /* add new exercise */ = {
+			isa = PBXGroup;
+			children = (
+				960DA47C22825F1E00909932 /* AddExercisesVc.swift */,
+				960DA47D22825F1E00909932 /* AddExercisesVc.xib */,
+			);
+			path = "add new exercise";
+			sourceTree = "<group>";
+		};
+		960DA47E22825F1E00909932 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				960DA47F22825F1E00909932 /* ItemExerciseDetailCell.xib */,
+				960DA48022825F1E00909932 /* ItemExerciseDetailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		960DA48122825F1E00909932 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				960DA48222825F1E00909932 /* HeaderCell.xib */,
+				960DA48322825F1E00909932 /* HeaderCell.swift */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		9613C88922826A8400D0F476 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9669D9F32281539E00C06BEE /* HomeVC.swift */,
+				9669D9F42281539E00C06BEE /* HomeVC.xib */,
+				9669D9F822815C4200C06BEE /* HomeCell.swift */,
+				9669D9F922815C4200C06BEE /* HomeCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9613C88A22826A9600D0F476 /* DetailExercise */ = {
+			isa = PBXGroup;
+			children = (
+				9669DA092281974F00C06BEE /* DoExcercise */,
+				960DA47722825F1E00909932 /* CustomExercise */,
+				9613C89022829E7A00D0F476 /* ViewAllExercise */,
+			);
+			path = DetailExercise;
+			sourceTree = "<group>";
+		};
+		9613C88B2282770800D0F476 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9613C88C2282773600D0F476 /* ExercisesDetailCell.swift */,
+				9613C88D2282773600D0F476 /* ExercisesDetailCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9613C89022829E7A00D0F476 /* ViewAllExercise */ = {
+			isa = PBXGroup;
+			children = (
+				9613C88B2282770800D0F476 /* cell */,
+				9613C88522826A7C00D0F476 /* ExercisesDetailVC.swift */,
+				9613C88622826A7C00D0F476 /* ExercisesDetailVC.xib */,
+			);
+			path = ViewAllExercise;
+			sourceTree = "<group>";
+		};
+		9669D9D222814B4E00C06BEE /* ShareData */ = {
+			isa = PBXGroup;
+			children = (
+				9669D9D322814B4E00C06BEE /* RealmData.swift */,
+				9669D9D422814B4E00C06BEE /* SharedData.swift */,
+			);
+			path = ShareData;
+			sourceTree = "<group>";
+		};
+		9669D9E922814C1700C06BEE /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				9669D9EA22814C1700C06BEE /* TutorialVC.swift */,
+				9669D9EB22814C1700C06BEE /* TutorialVC.xib */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		9669D9F22281533900C06BEE /* Home main */ = {
+			isa = PBXGroup;
+			children = (
+				9669D9F7228153E300C06BEE /* Home */,
+				96B7825B2284DEF4009D3B45 /* Achievement */,
+				9669DA042281710000C06BEE /* Profile */,
+			);
+			path = "Home main";
+			sourceTree = "<group>";
+		};
+		9669D9F7228153E300C06BEE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9613C88922826A8400D0F476 /* Home */,
+				9613C88A22826A9600D0F476 /* DetailExercise */,
+				960DA47B22825F1E00909932 /* add new exercise */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9669DA042281710000C06BEE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				64B93A2522B21602000BD1AA /* schedule */,
+				64B93A2422B215E2000BD1AA /* main */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9669DA092281974F00C06BEE /* DoExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				9669DA0E228199BF00C06BEE /* DoExerciseVC.swift */,
+				9669DA0F228199BF00C06BEE /* DoExerciseVC.xib */,
+			);
+			path = DoExcercise;
+			sourceTree = "<group>";
+		};
+		96AC4B422283CDB500E1F26D /* Line-chart */ = {
+			isa = PBXGroup;
+			children = (
+				96AC4B432283CDCF00E1F26D /* LineChart.swift */,
+			);
+			path = "Line-chart";
+			sourceTree = "<group>";
+		};
+		96B7825B2284DEF4009D3B45 /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				96AC4B47228405B200E1F26D /* AchivementVC.swift */,
+				96AC4B48228405B200E1F26D /* AchivementVC.xib */,
+			);
+			path = Achievement;
+			sourceTree = "<group>";
+		};
+		96E4B7A42278A7A0003043B9 = {
+			isa = PBXGroup;
+			children = (
+				96E4B7AF2278A7A0003043B9 /* Healthy */,
+				96E4B7AE2278A7A0003043B9 /* Products */,
+				4FF6CE44F03830036B56B2C5 /* Pods */,
+				0A000BDC84C6D9FD4A2C9277 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96E4B7AE2278A7A0003043B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96E4B7AD2278A7A0003043B9 /* Healthy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96E4B7AF2278A7A0003043B9 /* Healthy */ = {
+			isa = PBXGroup;
+			children = (
+				96E50AD6227E874000ECF162 /* Application */,
+				96E50BF4227E902300ECF162 /* Libraries */,
+				96E50BE2227E88F400ECF162 /* Constaints */,
+				960CE031227A80ED007E606E /* Controllers */,
+				96E50AD7227E878E00ECF162 /* Resource */,
+				96E50B5A227E87EE00ECF162 /* Services */,
+				96E4B7C22278A981003043B9 /* Models */,
+				96E50C79227EA7D400ECF162 /* Utils */,
+				96E4B7B22278A7A0003043B9 /* ViewController.swift */,
+				96F242F1227AC2060051FEB1 /* GoogleService-Info.plist */,
+			);
+			path = Healthy;
+			sourceTree = "<group>";
+		};
+		96E4B7C22278A981003043B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9669D9D222814B4E00C06BEE /* ShareData */,
+				9669D9DB22814BE500C06BEE /* ProfileClass.swift */,
+				9669D9D822814BE500C06BEE /* ExerciseClass.swift */,
+				9669D9DF22814BE500C06BEE /* ListExercisesClass.swift */,
+				9669D9DD22814BE500C06BEE /* Resultclass.swift */,
+				64FC6CE322B5EE4500837490 /* ScheduleClass.swift */,
+				9669D9D722814BE500C06BEE /* Exercise.swift */,
+				9669D9DC22814BE500C06BEE /* ExerciseDetail.swift */,
+				9669D9DE22814BE500C06BEE /* Exercises.swift */,
+				9669D9D922814BE500C06BEE /* Welcome.swift */,
+				9669D9DA22814BE500C06BEE /* Workout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96E50AD6227E874000ECF162 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				96E4B7B02278A7A0003043B9 /* AppDelegate.swift */,
+				96E4B7B42278A7A0003043B9 /* Main.storyboard */,
+				96E4B7B92278A7A3003043B9 /* LaunchScreen.storyboard */,
+				96E4B7BC2278A7A3003043B9 /* Info.plist */,
+				64D50A3322A103930072B926 /* logo2.png */,
+				64D50A3122A1020E0072B926 /* logo.png */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		96E50AD7227E878E00ECF162 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				649CA42022AE2CA5005DDA5C /* sound */,
+				960DA47522825EB300909932 /* Assets.xcassets */,
+				96AC4B452283ED6200E1F26D /* image.png */,
+				960DA38022825C3300909932 /* image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		96E50B5A227E87EE00ECF162 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				96E50B5B227E87EE00ECF162 /* SystemBoots.swift */,
+				96E50B5C227E87EE00ECF162 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		96E50BE2227E88F400ECF162 /* Constaints */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BE3227E88F400ECF162 /* Json.swift */,
+			);
+			path = Constaints;
+			sourceTree = "<group>";
+		};
+		96E50BE5227E891100ECF162 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BF0227E89D800ECF162 /* LoginVC.swift */,
+				96E50BF1227E89D800ECF162 /* LoginVC.xib */,
+				96403022227FE7EE006D557A /* RegisterVC.swift */,
+				96403023227FE7EE006D557A /* RegisterVC.xib */,
+				9669D9EE22814CE500C06BEE /* ForgotPasswordVC.swift */,
+				9669D9EF22814CE500C06BEE /* ForgotPasswordVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		96E50BE6227E894C00ECF162 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BE7227E894C00ECF162 /* BaseVC.swift */,
+				96E50BE8227E894C00ECF162 /* BaseNavigationVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		96E50BEB227E897500ECF162 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BEC227E897500ECF162 /* LoadingVC.xib */,
+				96E50BED227E897500ECF162 /* LoadingVC.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		96E50BF4227E902300ECF162 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				96AC4B422283CDB500E1F26D /* Line-chart */,
+				96E50BF5227E902300ECF162 /* ScrollView */,
+				96E50BF7227E902300ECF162 /* TableView */,
+				96E50BF9227E902300ECF162 /* TextView */,
+				96E50BFC227E902300ECF162 /* ImageView */,
+				96E50BFF227E902300ECF162 /* CollectionView */,
+				96E50C02227E902300ECF162 /* TextField */,
+				96E50C06227E902300ECF162 /* Utilities */,
+				96E50C2F227E902300ECF162 /* Layer */,
+				96E50C31227E902300ECF162 /* Button */,
+				96E50C35227E902300ECF162 /* View */,
+				96E50C3D227E902300ECF162 /* Services */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		96E50BF5227E902300ECF162 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BF6227E902300ECF162 /* KeyboardHandlerScrollView.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		96E50BF7227E902300ECF162 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BF8227E902300ECF162 /* BaseTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		96E50BF9227E902300ECF162 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BFA227E902300ECF162 /* BaseTextView.swift */,
+				96E50BFB227E902300ECF162 /* InsetTextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		96E50BFC227E902300ECF162 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				96E50BFD227E902300ECF162 /* GifImage.swift */,
+				96E50BFE227E902300ECF162 /* ColorImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		96E50BFF227E902300ECF162 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C00227E902300ECF162 /* BaseCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		96E50C02227E902300ECF162 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C03227E902300ECF162 /* BaseTextField.swift */,
+				96E50C04227E902300ECF162 /* BorderTextField.swift */,
+				96E50C05227E902300ECF162 /* InsetTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		96E50C06227E902300ECF162 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C07227E902300ECF162 /* Extension */,
+				96E50C20227E902300ECF162 /* Picker */,
+				96E50C27227E902300ECF162 /* Utils */,
+				96E50C2B227E902300ECF162 /* Helper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		96E50C07227E902300ECF162 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C08227E902300ECF162 /* Other */,
+				96E50C0C227E902300ECF162 /* Controller */,
+				96E50C11227E902300ECF162 /* Numeric */,
+				96E50C14227E902300ECF162 /* View */,
+				96E50C1D227E902300ECF162 /* Text */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		96E50C08227E902300ECF162 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C09227E902300ECF162 /* UIFont+Extension.swift */,
+				96E50C0A227E902300ECF162 /* Date+Extension.swift */,
+				96E50C0B227E902300ECF162 /* Extension.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		96E50C0C227E902300ECF162 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C0D227E902300ECF162 /* UIApplication+Extension.swift */,
+				96E50C0E227E902300ECF162 /* UIAlertController+Extension.swift */,
+				96E50C0F227E902300ECF162 /* UINavigationController+Extension.swift */,
+				96E50C10227E902300ECF162 /* UIViewController+Extension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96E50C11227E902300ECF162 /* Numeric */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C12227E902300ECF162 /* Int+Extension.swift */,
+				96E50C13227E902300ECF162 /* Float+Extension.swift */,
+			);
+			path = Numeric;
+			sourceTree = "<group>";
+		};
+		96E50C14227E902300ECF162 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C15227E902300ECF162 /* UIImageView+Extension.swift */,
+				96E50C16227E902300ECF162 /* UILabel+Extension.swift */,
+				96E50C17227E902300ECF162 /* UIButton+Extension.swift */,
+				96E50C18227E902300ECF162 /* UIView+Extension.swift */,
+				96E50C19227E902300ECF162 /* UIImage+Extension.swift */,
+				96E50C1A227E902300ECF162 /* UITextView+Extension.swift */,
+				96E50C1B227E902300ECF162 /* UIScrollView+Extension.swift */,
+				96E50C1C227E902300ECF162 /* UITextField+Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96E50C1D227E902300ECF162 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C1E227E902300ECF162 /* AttributeString+Extension.swift */,
+				96E50C1F227E902300ECF162 /* String+Extension.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		96E50C20227E902300ECF162 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C21227E902300ECF162 /* BasePicker.swift */,
+				96E50C22227E902300ECF162 /* PickerViewer.swift */,
+				96E50C23227E902300ECF162 /* TextPicker.swift */,
+				96E50C24227E902300ECF162 /* DateTimePicker.xib */,
+				96E50C25227E902300ECF162 /* TextPicker.xib */,
+				96E50C26227E902300ECF162 /* DateTimePicker.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		96E50C27227E902300ECF162 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C28227E902300ECF162 /* Permission.swift */,
+				96E50C29227E902300ECF162 /* SystemInfo.swift */,
+				96E50C2A227E902300ECF162 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		96E50C2B227E902300ECF162 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C2C227E902300ECF162 /* AutoLayoutHelper.swift */,
+				96E50C2D227E902300ECF162 /* RetryHandler.swift */,
+				96E50C2E227E902300ECF162 /* IndicatorViewer.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		96E50C2F227E902300ECF162 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C30227E902300ECF162 /* GradientLayer.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		96E50C31227E902300ECF162 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C32227E902300ECF162 /* ShadowButton.swift */,
+				96E50C33227E902300ECF162 /* GradientButton.swift */,
+				96E50C34227E902300ECF162 /* CheckBox.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		96E50C35227E902300ECF162 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64F55F81229FD7E600BC42C4 /* EZYGradientView.swift */,
+				96E50C36227E902300ECF162 /* TapActionView.swift */,
+				96E50C37227E902300ECF162 /* CustomNibView.swift */,
+				96E50C38227E902300ECF162 /* RoundedView.swift */,
+				96E50C39227E902300ECF162 /* ShadowView.swift */,
+				96E50C3A227E902300ECF162 /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96E50C3D227E902300ECF162 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				96E50C3E227E902300ECF162 /* VCService.swift */,
+				96E50C3F227E902300ECF162 /* CameraPhotoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		96E50C79227EA7D400ECF162 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96E4B7AC2278A7A0003043B9 /* Healthy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E4B7BF2278A7A3003043B9 /* Build configuration list for PBXNativeTarget "Healthy" */;
+			buildPhases = (
+				10974489FFB626D113A191E6 /* [CP] Check Pods Manifest.lock */,
+				96E4B7A92278A7A0003043B9 /* Sources */,
+				96E4B7AA2278A7A0003043B9 /* Frameworks */,
+				96E4B7AB2278A7A0003043B9 /* Resources */,
+				0CB269380FD0CD007FED6283 /* [CP] Embed Pods Frameworks */,
+				7D14E78FAED73012AE92DC52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Healthy;
+			productName = Healthy;
+			productReference = 96E4B7AD2278A7A0003043B9 /* Healthy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96E4B7A52278A7A0003043B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Phuong_Nguyen;
+				TargetAttributes = {
+					96E4B7AC2278A7A0003043B9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 96E4B7A82278A7A0003043B9 /* Build configuration list for PBXProject "Healthy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96E4B7A42278A7A0003043B9;
+			productRefGroup = 96E4B7AE2278A7A0003043B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96E4B7AC2278A7A0003043B9 /* Healthy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96E4B7AB2278A7A0003043B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64570E7E22B54FC900433A0F /* WeekCell.xib in Resources */,
+				960DA43022825C3400909932 /* thread_the_needle_right_yoga.gif in Resources */,
+				960DA43322825C3400909932 /* downward_dog_yoga.gif in Resources */,
+				960DA48822825F1E00909932 /* ItemExerciseDetailCell.xib in Resources */,
+				649CA4D622AE2CC6005DDA5C /* plie_squat.mp3 in Resources */,
+				649CA49D22AE2CC6005DDA5C /* russian_twist.mp3 in Resources */,
+				960DA40E22825C3400909932 /* hip_bridge_hold.gif in Resources */,
+				960DA46A22825C3400909932 /* spiderman_plank.gif in Resources */,
+				960DA41A22825C3400909932 /* butt_kick.gif in Resources */,
+				960DA46E22825C3400909932 /* lying_spinal_twist_pose_left_yoga.gif in Resources */,
+				96E4B7BB2278A7A3003043B9 /* LaunchScreen.storyboard in Resources */,
+				649CA4A122AE2CC6005DDA5C /* up_and_down_plank.mp3 in Resources */,
+				9669D9F62281539E00C06BEE /* HomeVC.xib in Resources */,
+				96F242F2227AC2060051FEB1 /* GoogleService-Info.plist in Resources */,
+				960DA41B22825C3400909932 /* up_and_down_plank.gif in Resources */,
+				649CA49722AE2CC6005DDA5C /* sys_nextstep.mp3 in Resources */,
+				960DA41D22825C3400909932 /* step_up.gif in Resources */,
+				96E50C62227E902300ECF162 /* TextPicker.xib in Resources */,
+				649CA4C622AE2CC6005DDA5C /* sys_congratulations.mp3 in Resources */,
+				960DA44E22825C3400909932 /* child_pose_yoga.gif in Resources */,
+				649CA4CE22AE2CC6005DDA5C /* curtsy_lunge.mp3 in Resources */,
+				960DA41622825C3400909932 /* bicycle_crunch.gif in Resources */,
+				960DA42622825C3400909932 /* corpse_pose_yoga.gif in Resources */,
+				649CA4B222AE2CC6005DDA5C /* lunge_alternate.mp3 in Resources */,
+				649CA49F22AE2CC6005DDA5C /* single_leg_hip_extension_right.mp3 in Resources */,
+				649CA4BB22AE2CC6005DDA5C /* donkey_kick_alternate.mp3 in Resources */,
+				960DA43F22825C3400909932 /* mountain_pose_yoga.gif in Resources */,
+				960DA41C22825C3400909932 /* standing_side_bend_yoga_yoga.gif in Resources */,
+				960DA46D22825C3400909932 /* warriori_right_yoga.gif in Resources */,
+				960DA43522825C3400909932 /* burpee.gif in Resources */,
+				649CA4BD22AE2CC6005DDA5C /* side_leg_raise_right.mp3 in Resources */,
+				960DA45722825C3400909932 /* opposite_arm_leg_lift.gif in Resources */,
+				960DA3FC22825C3400909932 /* low_lunges_left_yoga.gif in Resources */,
+				960DA43422825C3400909932 /* speed_skater.gif in Resources */,
+				649CA4D822AE2CC6005DDA5C /* wall_push_up.mp3 in Resources */,
+				9669DA082281710000C06BEE /* ProfileVC.xib in Resources */,
+				9669DA11228199BF00C06BEE /* DoExerciseVC.xib in Resources */,
+				960DA41022825C3400909932 /* prayer_pose_yoga.gif in Resources */,
+				649CA48822AE2CC6005DDA5C /* side_kick_squat.mp3 in Resources */,
+				649CA4A822AE2CC6005DDA5C /* bicycle_crunch.mp3 in Resources */,
+				649CA49922AE2CC6005DDA5C /* sys_halfwaythere.mp3 in Resources */,
+				649CA49A22AE2CC6005DDA5C /* wall_sit.mp3 in Resources */,
+				649CA49C22AE2CC6005DDA5C /* hand_release_push_up.mp3 in Resources */,
+				649CA4C222AE2CC6005DDA5C /* bicycle_kick.mp3 in Resources */,
+				649CA4BC22AE2CC6005DDA5C /* sys_countdown2.mp3 in Resources */,
+				960DA41822825C3400909932 /* full_plank.gif in Resources */,
+				649CA4AC22AE2CC6005DDA5C /* loop.mp3 in Resources */,
+				960DA41322825C3400909932 /* inchworm.gif in Resources */,
+				96AC4B4A228405B200E1F26D /* AchivementVC.xib in Resources */,
+				960DA43622825C3400909932 /* tricep_dip.gif in Resources */,
+				960DA45C22825C3400909932 /* single_leg_v_up.gif in Resources */,
+				960DA46422825C3400909932 /* side_kick_squat.gif in Resources */,
+				649CA4CA22AE2CC6005DDA5C /* vertical_leg_crunch.mp3 in Resources */,
+				649CA4D322AE2CC6005DDA5C /* lunge_left.mp3 in Resources */,
+				960DA46F22825C3400909932 /* squat_thrust.gif in Resources */,
+				960DA46922825C3400909932 /* abdominal_crunch.gif in Resources */,
+				960DA45822825C3400909932 /* bent_elbow_shoulder_circle.gif in Resources */,
+				960DA40B22825C3400909932 /* superman.gif in Resources */,
+				649CA4DF22AE2CC6005DDA5C /* standing_hip_circle.mp3 in Resources */,
+				649CA49E22AE2CC6005DDA5C /* overhead_press.mp3 in Resources */,
+				649CA4D522AE2CC6005DDA5C /* plank_jumping_jack.mp3 in Resources */,
+				649CA4AA22AE2CC6005DDA5C /* opposite_arm_leg_lift.mp3 in Resources */,
+				649CA4A322AE2CC6005DDA5C /* sys_begin.mp3 in Resources */,
+				960DA42A22825C3400909932 /* vertical_leg_crunch.gif in Resources */,
+				649CA4B722AE2CC6005DDA5C /* half_squat.mp3 in Resources */,
+				96403025227FE7EE006D557A /* RegisterVC.xib in Resources */,
+				960DA47022825C3400909932 /* reverse_crunch.gif in Resources */,
+				64570E8322B55FEA00433A0F /* DaySchedule.xib in Resources */,
+				960DA45122825C3400909932 /* front_thigh_stretch_right.gif in Resources */,
+				960DA47322825C3400909932 /* shuffle_side_squat.gif in Resources */,
+				960DA40822825C3400909932 /* low_lunges_right_yoga.gif in Resources */,
+				960DA43E22825C3400909932 /* bound_angle_forward_bend_yoga.gif in Resources */,
+				960DA43722825C3400909932 /* easy_pose_yoga.gif in Resources */,
+				649CA4C422AE2CC6005DDA5C /* half_squat_walk.mp3 in Resources */,
+				960DA40A22825C3400909932 /* extended_side_angle_right_yoga.gif in Resources */,
+				649CA4C122AE2CC6005DDA5C /* shuffle_side_squat.mp3 in Resources */,
+				960DA42822825C3400909932 /* easy_twist_right_yoga.gif in Resources */,
+				960DA46222825C3400909932 /* upward_salute_pose_dynamic_yoga.gif in Resources */,
+				960DA40222825C3400909932 /* upward_salute_pose_yoga.gif in Resources */,
+				9669D9ED22814C1700C06BEE /* TutorialVC.xib in Resources */,
+				960DA40D22825C3400909932 /* step_jack.gif in Resources */,
+				960DA43C22825C3400909932 /* single_leg_hip_extension_right.gif in Resources */,
+				649CA49122AE2CC6005DDA5C /* front_thigh_stretch_left.mp3 in Resources */,
+				960DA44222825C3400909932 /* standing_bicycle_crunch.gif in Resources */,
+				649CA4CD22AE2CC6005DDA5C /* sys_getready.mp3 in Resources */,
+				960DA45322825C3400909932 /* standing_twist.gif in Resources */,
+				649CA48322AE2CC6005DDA5C /* step_ups_with_a_kickback.mp3 in Resources */,
+				960DA46B22825C3400909932 /* step_ups_with_a_kickback.gif in Resources */,
+				960DA42422825C3400909932 /* side_plank_right.gif in Resources */,
+				649CA49822AE2CC6005DDA5C /* tricep_dip.mp3 in Resources */,
+				649CA4E222AE2CC6005DDA5C /* half_wall_sit.mp3 in Resources */,
+				960DA42922825C3400909932 /* squat.gif in Resources */,
+				649CA4CF22AE2CC6005DDA5C /* hip_bridge_hold.mp3 in Resources */,
+				649CA4C822AE2CC6005DDA5C /* sys_start.mp3 in Resources */,
+				960DA42022825C3400909932 /* push_ups_with_rotation.gif in Resources */,
+				960DA44622825C3400909932 /* half_squat_walk.gif in Resources */,
+				960DA42522825C3400909932 /* cobra_yoga.gif in Resources */,
+				960DA41422825C3400909932 /* lunge_alternate.gif in Resources */,
+				649CA48222AE2CC6005DDA5C /* jumping_jack.mp3 in Resources */,
+				649CA48B22AE2CC6005DDA5C /* spiderman_plank.mp3 in Resources */,
+				960DA47422825C3400909932 /* frog_jump.gif in Resources */,
+				960DA44B22825C3400909932 /* half_wind_relieving_pose_left_yoga.gif in Resources */,
+				960DA40722825C3400909932 /* thread_the_needle_left_yoga.gif in Resources */,
+				960DA45422825C3400909932 /* lunge_left.gif in Resources */,
+				649CA4D122AE2CC6005DDA5C /* switch_side.mp3 in Resources */,
+				960DA41F22825C3400909932 /* seated_spinal_twist_left_yoga.gif in Resources */,
+				960DA40122825C3400909932 /* side_lunge_alternate.gif in Resources */,
+				960DA41922825C3400909932 /* rest.gif in Resources */,
+				960DA42B22825C3400909932 /* half_squat.gif in Resources */,
+				960DA43D22825C3400909932 /* warriori_left_yoga.gif in Resources */,
+				960DA42F22825C3400909932 /* plank_hip_twist.gif in Resources */,
+				649CA49022AE2CC6005DDA5C /* hip_thrust.mp3 in Resources */,
+				649CA49522AE2CC6005DDA5C /* side_plank_right.mp3 in Resources */,
+				649CA4DE22AE2CC6005DDA5C /* swimmer.mp3 in Resources */,
+				960DA43A22825C3400909932 /* seated_spinal_twist_right_yoga.gif in Resources */,
+				649CA49B22AE2CC6005DDA5C /* side_leg_raise_left.mp3 in Resources */,
+				649CA48922AE2CC6005DDA5C /* abdominal_crunch.mp3 in Resources */,
+				649CA4B322AE2CC6005DDA5C /* superman.mp3 in Resources */,
+				649CA4A222AE2CC6005DDA5C /* flutter_kick.mp3 in Resources */,
+				649CA4A622AE2CC6005DDA5C /* single_leg_v_up.mp3 in Resources */,
+				960DA41122825C3400909932 /* spinal_rolling_yoga.gif in Resources */,
+				960DA44022825C3400909932 /* high_knees_running_in_place.gif in Resources */,
+				649CA4C522AE2CC6005DDA5C /* sys_countdown.mp3 in Resources */,
+				960DA44122825C3400909932 /* easy_tree_pose_left_yoga.gif in Resources */,
+				960DA45E22825C3400909932 /* cross_jack.gif in Resources */,
+				649CA4A722AE2CC6005DDA5C /* rest.mp3 in Resources */,
+				960DA47622825EB300909932 /* Assets.xcassets in Resources */,
+				960DA42122825C3400909932 /* plank.gif in Resources */,
+				649CA4AF22AE2CC6005DDA5C /* burpee.mp3 in Resources */,
+				649CA4D222AE2CC6005DDA5C /* sys_dong.mp3 in Resources */,
+				960DA46622825C3400909932 /* extended_triangle_pose_right_yoga.gif in Resources */,
+				960DA43822825C3400909932 /* wall_sit.gif in Resources */,
+				649CA48D22AE2CC6005DDA5C /* sys_countdown3.mp3 in Resources */,
+				960DA41722825C3400909932 /* standing_side_bend.gif in Resources */,
+				960DA44422825C3400909932 /* plank_shoulder_tap.gif in Resources */,
+				649CA4B822AE2CC6005DDA5C /* plank.mp3 in Resources */,
+				960DA42322825C3400909932 /* donkey_kick_alternate.gif in Resources */,
+				649CA4D022AE2CC6005DDA5C /* sys_ding.mp3 in Resources */,
+				960DA44A22825C3400909932 /* lying_triceps_lift.gif in Resources */,
+				649CA4A522AE2CC6005DDA5C /* flutter_kick_squat.mp3 in Resources */,
+				64D50A3422A103930072B926 /* logo2.png in Resources */,
+				649CA4BA22AE2CC6005DDA5C /* speed_skater.mp3 in Resources */,
+				9669D9FB22815C4200C06BEE /* HomeCell.xib in Resources */,
+				649CA4BE22AE2CC6005DDA5C /* push_ups_with_rotation.mp3 in Resources */,
+				960DA40922825C3400909932 /* side_leg_raise_left.gif in Resources */,
+				649CA48522AE2CC6005DDA5C /* big_arm_circle.mp3 in Resources */,
+				649CA4DC22AE2CC6005DDA5C /* sys_onemoretime.mp3 in Resources */,
+				649CA4DD22AE2CC6005DDA5C /* standing_bicycle_crunch.mp3 in Resources */,
+				649CA4D722AE2CC6005DDA5C /* walking_burpee.mp3 in Resources */,
+				960DA45022825C3400909932 /* plank_with_leg_lift.gif in Resources */,
+				960DA40C22825C3400909932 /* single_leg_arm_reach_alternate.gif in Resources */,
+				649CA48A22AE2CC6005DDA5C /* lunge_right.mp3 in Resources */,
+				649CA4A022AE2CC6005DDA5C /* shoulder_blade_squeeze.mp3 in Resources */,
+				649CA4B422AE2CC6005DDA5C /* squat_thrust.mp3 in Resources */,
+				9613C88822826A7C00D0F476 /* ExercisesDetailVC.xib in Resources */,
+				960DA48A22825F1E00909932 /* HeaderCell.xib in Resources */,
+				64570E7A22B54B7200433A0F /* WeekSchedule.xib in Resources */,
+				649CA4B922AE2CC6005DDA5C /* lying_triceps_lift.mp3 in Resources */,
+				649CA49322AE2CC6005DDA5C /* plank_hip_twist.mp3 in Resources */,
+				649CA4A922AE2CC6005DDA5C /* plank_with_leg_lift.mp3 in Resources */,
+				64570E8722B561FC00433A0F /* DayCell.xib in Resources */,
+				649CA4C722AE2CC6005DDA5C /* standing_twist.mp3 in Resources */,
+				960DA42722825C3400909932 /* dynamic_downward_dog_yoga.gif in Resources */,
+				649CA48422AE2CC6005DDA5C /* plank_shoulder_tap.mp3 in Resources */,
+				960DA46022825C3400909932 /* single_leg_hip_extension_left.gif in Resources */,
+				960DA44522825C3400909932 /* side_leg_raise_right.gif in Resources */,
+				960DA44C22825C3400909932 /* big_arm_circle.gif in Resources */,
+				960DA45B22825C3400909932 /* swimmer.gif in Resources */,
+				649CA4E122AE2CC6005DDA5C /* inchworm.mp3 in Resources */,
+				649CA4D922AE2CC6005DDA5C /* reverse_crunch.mp3 in Resources */,
+				649CA4C922AE2CC6005DDA5C /* high_knee_walking_in_place.mp3 in Resources */,
+				960DA43122825C3400909932 /* wind_relieving_pose_yoga.gif in Resources */,
+				960DA45F22825C3400909932 /* shoulder_blade_squeeze.gif in Resources */,
+				649CA48622AE2CC6005DDA5C /* single_leg_arm_reach_alternate.mp3 in Resources */,
+				649CA4CC22AE2CC6005DDA5C /* standing_side_bend.mp3 in Resources */,
+				960DA48422825F1E00909932 /* CustomExercisesVC.xib in Resources */,
+				649CA4C022AE2CC6005DDA5C /* knee_push_up.mp3 in Resources */,
+				64B93A2922B2165F000BD1AA /* ScheduleVC.xib in Resources */,
+				960DA40F22825C3400909932 /* hand_release_push_up.gif in Resources */,
+				96AC4B462283ED6200E1F26D /* image.png in Resources */,
+				960DA47122825C3400909932 /* easy_twist_left_yoga.gif in Resources */,
+				960DA46322825C3400909932 /* lunge_right.gif in Resources */,
+				649CA49222AE2CC6005DDA5C /* mountain_climber.mp3 in Resources */,
+				960DA3FF22825C3400909932 /* front_thigh_stretch_left.gif in Resources */,
+				96E50C61227E902300ECF162 /* DateTimePicker.xib in Resources */,
+				649CA48F22AE2CC6005DDA5C /* jog_in_place.mp3 in Resources */,
+				649CA4AB22AE2CC6005DDA5C /* push_up.mp3 in Resources */,
+				9613C88F2282773600D0F476 /* ExercisesDetailCell.xib in Resources */,
+				649CA4D422AE2CC6005DDA5C /* single_leg_hip_extension_left.mp3 in Resources */,
+				960DA40322825C3400909932 /* jumping_jack.gif in Resources */,
+				960DA3FE22825C3400909932 /* hip_thrust.gif in Resources */,
+				649CA48E22AE2CC6005DDA5C /* squat.mp3 in Resources */,
+				9669D9F122814CE500C06BEE /* ForgotPasswordVC.xib in Resources */,
+				960DA46C22825C3400909932 /* bicycle_kick.gif in Resources */,
+				960DA41522825C3400909932 /* easy_tree_pose_right_yoga.gif in Resources */,
+				960DA43922825C3400909932 /* neck_stretch_yoga.gif in Resources */,
+				960DA42E22825C3400909932 /* lying_spinal_twist_pose_right_yoga.gif in Resources */,
+				960DA40522825C3400909932 /* wall_push_up.gif in Resources */,
+				649CA4C322AE2CC6005DDA5C /* high_knees_running_in_place.mp3 in Resources */,
+				649CA4AE22AE2CC6005DDA5C /* switch_sides.mp3 in Resources */,
+				960DA43B22825C3400909932 /* half_wind_relieving_pose_right_yoga.gif in Resources */,
+				960DA46722825C3400909932 /* curtsy_lunge.gif in Resources */,
+				960DA45622825C3400909932 /* side_plank_left.gif in Resources */,
+				960DA41222825C3400909932 /* extended_triangle_pose_left_yoga.gif in Resources */,
+				649CA4AD22AE2CC6005DDA5C /* bent_elbow_shoulder_circle.mp3 in Resources */,
+				649CA4E022AE2CC6005DDA5C /* v_sit.mp3 in Resources */,
+				649CA4B122AE2CC6005DDA5C /* squat_jump.mp3 in Resources */,
+				649CA4CB22AE2CC6005DDA5C /* frog_jump.mp3 in Resources */,
+				960DA42222825C3400909932 /* marching_hip_raise.gif in Resources */,
+				96E50BEE227E897500ECF162 /* LoadingVC.xib in Resources */,
+				960DA44F22825C3400909932 /* plank_jumping_jack.gif in Resources */,
+				960DA46122825C3400909932 /* standing_forward_bend_pose_yoga.gif in Resources */,
+				649CA4DB22AE2CC6005DDA5C /* side_lunge_alternate.mp3 in Resources */,
+				64D50A3222A1020E0072B926 /* logo.png in Resources */,
+				960DA40022825C3400909932 /* plank_yoga_yoga.gif in Resources */,
+				960DA44722825C3400909932 /* flutter_kick_squat.gif in Resources */,
+				649CA49622AE2CC6005DDA5C /* side_plank_left.mp3 in Resources */,
+				960DA44322825C3400909932 /* shoulder_expansion_yoga.gif in Resources */,
+				649CA4DA22AE2CC6005DDA5C /* lateral_punch.mp3 in Resources */,
+				649CA48C22AE2CC6005DDA5C /* cross_jack.mp3 in Resources */,
+				960DA46522825C3400909932 /* single_leg_downward_dog_right_yoga.gif in Resources */,
+				960DA40422825C3400909932 /* squat_jump.gif in Resources */,
+				96E50BF3227E89D800ECF162 /* LoginVC.xib in Resources */,
+				960DA47222825C3400909932 /* jog_in_place.gif in Resources */,
+				649CA4B522AE2CC6005DDA5C /* step_jack.mp3 in Resources */,
+				960DA42C22825C3400909932 /* v_sit.gif in Resources */,
+				960DA44D22825C3400909932 /* russian_twist.gif in Resources */,
+				960DA45D22825C3400909932 /* standing_hip_circle.gif in Resources */,
+				960DA45922825C3400909932 /* flutter_kick.gif in Resources */,
+				960DA3FD22825C3400909932 /* plie_squat.gif in Resources */,
+				649CA48722AE2CC6005DDA5C /* step_up.mp3 in Resources */,
+				960DA3FB22825C3400909932 /* extended_side_angle_left_yoga.gif in Resources */,
+				960DA45222825C3400909932 /* high_knee_walking_in_place.gif in Resources */,
+				649CA49422AE2CC6005DDA5C /* sys_countdown1.mp3 in Resources */,
+				960DA42D22825C3400909932 /* walking_burpee.gif in Resources */,
+				960DA41E22825C3400909932 /* single_leg_downward_dog_left_yoga.gif in Resources */,
+				649CA4B022AE2CC6005DDA5C /* butt_kick.mp3 in Resources */,
+				960DA45522825C3400909932 /* push_up.gif in Resources */,
+				960DA40622825C3400909932 /* half_wall_sit.gif in Resources */,
+				960DA46822825C3400909932 /* knee_push_up.gif in Resources */,
+				960DA48722825F1E00909932 /* AddExercisesVc.xib in Resources */,
+				649CA4A422AE2CC6005DDA5C /* marching_hip_raise.mp3 in Resources */,
+				960DA43222825C3400909932 /* mountain_climber.gif in Resources */,
+				960DA44822825C3400909932 /* cat_camel_yoga.gif in Resources */,
+				649CA4B622AE2CC6005DDA5C /* full_plank.mp3 in Resources */,
+				649CA4BF22AE2CC6005DDA5C /* front_thigh_stretch_right.mp3 in Resources */,
+				960DA44922825C3400909932 /* lateral_punch.gif in Resources */,
+				960DA45A22825C3400909932 /* overhead_press.gif in Resources */,
+				96E4B7B62278A7A0003043B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB269380FD0CD007FED6283 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Healthy/Pods-Healthy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Healthy/Pods-Healthy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10974489FFB626D113A191E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Healthy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D14E78FAED73012AE92DC52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Healthy/Pods-Healthy-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Healthy/Pods-Healthy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96E4B7A92278A7A0003043B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960DA48922825F1E00909932 /* ItemExerciseDetailCell.swift in Sources */,
+				96E50C57227E902300ECF162 /* UIView+Extension.swift in Sources */,
+				96E50C54227E902300ECF162 /* UIImageView+Extension.swift in Sources */,
+				9669D9FA22815C4200C06BEE /* HomeCell.swift in Sources */,
+				96E50C51227E902300ECF162 /* UIViewController+Extension.swift in Sources */,
+				96AC4B442283CDCF00E1F26D /* LineChart.swift in Sources */,
+				96E50C4D227E902300ECF162 /* Extension.swift in Sources */,
+				96E50C53227E902300ECF162 /* Float+Extension.swift in Sources */,
+				9669D9E622814BE500C06BEE /* Resultclass.swift in Sources */,
+				96E50C4F227E902300ECF162 /* UIAlertController+Extension.swift in Sources */,
+				96E50C4B227E902300ECF162 /* UIFont+Extension.swift in Sources */,
+				96E50C4C227E902300ECF162 /* Date+Extension.swift in Sources */,
+				96E50BF2227E89D800ECF162 /* LoginVC.swift in Sources */,
+				9613C88E2282773600D0F476 /* ExercisesDetailCell.swift in Sources */,
+				96E50C50227E902300ECF162 /* UINavigationController+Extension.swift in Sources */,
+				96E50C75227E902300ECF162 /* VCService.swift in Sources */,
+				96E50C45227E902300ECF162 /* ColorImageView.swift in Sources */,
+				960DA48622825F1E00909932 /* AddExercisesVc.swift in Sources */,
+				96E4B7B32278A7A0003043B9 /* ViewController.swift in Sources */,
+				96E50C43227E902300ECF162 /* InsetTextView.swift in Sources */,
+				96E50C6B227E902300ECF162 /* ShadowButton.swift in Sources */,
+				9669D9E822814BE500C06BEE /* ListExercisesClass.swift in Sources */,
+				96E50BE9227E894C00ECF162 /* BaseVC.swift in Sources */,
+				96E50C46227E902300ECF162 /* BaseCollectionView.swift in Sources */,
+				96E50C70227E902300ECF162 /* RoundedView.swift in Sources */,
+				9669D9E722814BE500C06BEE /* Exercises.swift in Sources */,
+				9669D9F52281539E00C06BEE /* HomeVC.swift in Sources */,
+				96E50C66227E902300ECF162 /* Utils.swift in Sources */,
+				96E50C40227E902300ECF162 /* KeyboardHandlerScrollView.swift in Sources */,
+				96E50C4E227E902300ECF162 /* UIApplication+Extension.swift in Sources */,
+				96403024227FE7EE006D557A /* RegisterVC.swift in Sources */,
+				96E50B5D227E87EE00ECF162 /* SystemBoots.swift in Sources */,
+				9669D9F022814CE500C06BEE /* ForgotPasswordVC.swift in Sources */,
+				64F55F82229FD7E600BC42C4 /* EZYGradientView.swift in Sources */,
+				64570E8622B561FC00433A0F /* DayCell.swift in Sources */,
+				96E50C6F227E902300ECF162 /* CustomNibView.swift in Sources */,
+				96E4B7B12278A7A0003043B9 /* AppDelegate.swift in Sources */,
+				9669DA072281710000C06BEE /* ProfileVC.swift in Sources */,
+				96E50C5D227E902300ECF162 /* String+Extension.swift in Sources */,
+				9669DA10228199BF00C06BEE /* DoExerciseVC.swift in Sources */,
+				96E50C6A227E902300ECF162 /* GradientLayer.swift in Sources */,
+				96E50C5E227E902300ECF162 /* BasePicker.swift in Sources */,
+				96E50C72227E902300ECF162 /* GradientView.swift in Sources */,
+				96E50C41227E902300ECF162 /* BaseTableView.swift in Sources */,
+				96E50C52227E902300ECF162 /* Int+Extension.swift in Sources */,
+				9669D9E322814BE500C06BEE /* Workout.swift in Sources */,
+				9669D9E522814BE500C06BEE /* ExerciseDetail.swift in Sources */,
+				96E50BEF227E897500ECF162 /* LoadingVC.swift in Sources */,
+				64570E8222B55FEA00433A0F /* DaySchedule.swift in Sources */,
+				96E50C56227E902300ECF162 /* UIButton+Extension.swift in Sources */,
+				9669D9E022814BE500C06BEE /* Exercise.swift in Sources */,
+				9669D9E222814BE500C06BEE /* Welcome.swift in Sources */,
+				96E50C76227E902300ECF162 /* CameraPhotoService.swift in Sources */,
+				960DA48522825F1E00909932 /* CustomExercisesVC.swift in Sources */,
+				9669D9EC22814C1700C06BEE /* TutorialVC.swift in Sources */,
+				96E50C4A227E902300ECF162 /* InsetTextField.swift in Sources */,
+				96E50C42227E902300ECF162 /* BaseTextView.swift in Sources */,
+				9669D9D622814B4E00C06BEE /* SharedData.swift in Sources */,
+				96E50C6E227E902300ECF162 /* TapActionView.swift in Sources */,
+				64B93A2822B2165F000BD1AA /* ScheduleVC.swift in Sources */,
+				9669DA032281701700C06BEE /* TabbarVC.swift in Sources */,
+				96E50C48227E902300ECF162 /* BaseTextField.swift in Sources */,
+				96E50C65227E902300ECF162 /* SystemInfo.swift in Sources */,
+				9669D9E422814BE500C06BEE /* ProfileClass.swift in Sources */,
+				96E50C44227E902300ECF162 /* GifImage.swift in Sources */,
+				96E50C71227E902300ECF162 /* ShadowView.swift in Sources */,
+				9613C88722826A7C00D0F476 /* ExercisesDetailVC.swift in Sources */,
+				96E50C60227E902300ECF162 /* TextPicker.swift in Sources */,
+				96E50C68227E902300ECF162 /* RetryHandler.swift in Sources */,
+				64570E7D22B54FC900433A0F /* WeekCell.swift in Sources */,
+				96E50C59227E902300ECF162 /* UITextView+Extension.swift in Sources */,
+				96E50C64227E902300ECF162 /* Permission.swift in Sources */,
+				64FC6CE422B5EE4500837490 /* ScheduleClass.swift in Sources */,
+				9669D9E122814BE500C06BEE /* ExerciseClass.swift in Sources */,
+				96E50C6D227E902300ECF162 /* CheckBox.swift in Sources */,
+				96E50BE4227E88F400ECF162 /* Json.swift in Sources */,
+				96E50C58227E902300ECF162 /* UIImage+Extension.swift in Sources */,
+				96E50C5A227E902300ECF162 /* UIScrollView+Extension.swift in Sources */,
+				64570E7922B54B7200433A0F /* WeekSchedule.swift in Sources */,
+				96AC4B49228405B200E1F26D /* AchivementVC.swift in Sources */,
+				96E50BEA227E894C00ECF162 /* BaseNavigationVC.swift in Sources */,
+				96E50C67227E902300ECF162 /* AutoLayoutHelper.swift in Sources */,
+				96E50C55227E902300ECF162 /* UILabel+Extension.swift in Sources */,
+				96E50C49227E902300ECF162 /* BorderTextField.swift in Sources */,
+				96E50C5B227E902300ECF162 /* UITextField+Extension.swift in Sources */,
+				960DA48B22825F1E00909932 /* HeaderCell.swift in Sources */,
+				96E50C5F227E902300ECF162 /* PickerViewer.swift in Sources */,
+				96E50B5E227E87EE00ECF162 /* NotificationService.swift in Sources */,
+				96E50C5C227E902300ECF162 /* AttributeString+Extension.swift in Sources */,
+				96E50C6C227E902300ECF162 /* GradientButton.swift in Sources */,
+				9669D9D522814B4E00C06BEE /* RealmData.swift in Sources */,
+				96E50C63227E902300ECF162 /* DateTimePicker.swift in Sources */,
+				96E50C69227E902300ECF162 /* IndicatorViewer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96E4B7B42278A7A0003043B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E4B7B52278A7A0003043B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96E4B7B92278A7A3003043B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E4B7BA2278A7A3003043B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96E4B7BD2278A7A3003043B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96E4B7BE2278A7A3003043B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96E4B7C02278A7A3003043B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE79CBBBA84404D803C81B4 /* Pods-Healthy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAVN8ZF699;
+				INFOPLIST_FILE = "$(SRCROOT)/Healthy/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.product.Healthy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96E4B7C12278A7A3003043B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF29C92A052D71358D4CD1B /* Pods-Healthy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAVN8ZF699;
+				INFOPLIST_FILE = "$(SRCROOT)/Healthy/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.product.Healthy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96E4B7A82278A7A0003043B9 /* Build configuration list for PBXProject "Healthy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E4B7BD2278A7A3003043B9 /* Debug */,
+				96E4B7BE2278A7A3003043B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E4B7BF2278A7A3003043B9 /* Build configuration list for PBXNativeTarget "Healthy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E4B7C02278A7A3003043B9 /* Debug */,
+				96E4B7C12278A7A3003043B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96E4B7A52278A7A0003043B9 /* Project object */;
+}
